@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brampton</title> FBLC & TA Content Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            color: #333;
+        }
+        header {
+            background-color: #031e5f;
+            color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .tagline {
+            font-style: italic;
+            color: #f9f9f9;
+            margin-top: 10px;
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        nav li {
+            margin: 5px 10px 5px 0;
+        }
+        nav a {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: #031e5f;
+            color: white;
+            text-decoration: none;
+            border-radius: 3px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #bc1540;
+        }
+        .content-container {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .toc {
+            width: 250px;
+            padding: 15px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        .toc h2 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        .toc ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .toc li {
+            margin-bottom: 10px;
+        }
+        .toc a {
+            color: #031e5f;
+            text-decoration: none;
+        }
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            flex-grow: 1;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .page-content {
+            display: none;
+        }
+        .page-content.active {
+            display: block;
+        }
+        .content h2 {
+            margin-top: 0;
+            color: #031e5f;
+            border-bottom: 2px solid #bc1540;
+            padding-bottom: 10px;
+        }
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+        .social {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .content-container {
+                flex-direction: column;
+            }
+            .toc {
+                width: auto;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Brampton FBLC & TA</h1>
+        <div class="tagline">Empowering Future Leaders, One Step at a Time!</div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home" onclick="showPage('home')">Home</a></li>
+            <li><a href="#about-us" onclick="showPage('about-us')">About Us</a></li>
+            <li><a href="#join-us" onclick="showPage('join-us')">Join Us</a></li>
+            <li><a href="#competitions" onclick="showPage('competitions')">Competitions</a></li>
+            <li><a href="#meet-the-team" onclick="showPage('meet-the-team')">Meet the Team</a></li>
+            <li><a href="#opportunities" onclick="showPage('opportunities')">Opportunities</a></li>
+            <li><a href="#ai-blogs" onclick="showPage('ai-blogs')">AI Blogs</a></li>
+            <li><a href="#connect" onclick="showPage('connect')">Connect</a></li>
+        </ul>
+    </nav>
+
+    <div class="content-container">
+        <div class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#home" onclick="showPage('home')">Home</a></li>
+                <li><a href="#about-us" onclick="showPage('about-us')">About Us</a></li>
+                <li><a href="#join-us" onclick="showPage('join-us')">Join Us</a></li>
+                <li><a href="#competitions" onclick="showPage('competitions')">Competitions</a></li>
+                <li><a href="#meet-the-team" onclick="showPage('meet-the-team')">Meet the Team</a></li>
+                <li><a href="#opportunities" onclick="showPage('opportunities')">Opportunities</a></li>
+                <li><a href="#ai-blogs" onclick="showPage('ai-blogs')">AI Blogs</a></li>
+                <li>
+                    <ul>
+                        <li><a href="#ai-personalize"</ul> onclick="showPage('ai-personalize')">How AI Can Personalize Learning</a></li>
+                    </ul>
+                </li>
+                <li><a href="#hq-website" onclick="showPage('hq-website')">HQ Website</a></li>
+                <li><a href="#connect" onclick="showPage('connect')">Connect</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <!-- Home Page Content -->
+            <div id="home" class="page-content active">
+                <h2>Home</h2>
+                <p>Empowering Future Leaders, One Step at a Time!</p>
+                <!-- Home page content loaded from external file -->
+                <div id="home-content"></div>
+            </div>
+
+            <!-- About Us Page Content -->
+            <div id="about-us" class="page-content">
+                <h2>About Us</h2>
+                <!-- About us content loaded from external file -->
+                <div id="about-us-content"></div>
+            </div>
+
+            <!-- Join Us Page Content -->
+            <div id="join-us" class="page-content">
+                <h2>Join Us</h2>
+                <!-- Join us content loaded from external file -->
+                <div id="join-us-content"></div>
+            </div>
+
+            <!-- Competitions Page Content -->
+            <div id="competitions" class="page-content">
+                <h2>Competitions</h2>
+                <!-- Competitions content loaded from external file -->
+                <div id="competitions-content"></div>
+            </div>
+
+            <!-- Meet the Team Page Content -->
+            <div id="meet-the-team" class="page-content">
+                <h2>Meet the Team</h2>
+                <!-- Meet the team content loaded from external file -->
+                <div id="meet-the-team-content"></div>
+            </div>
+
+            <!-- Opportunities Page Content -->
+            <div id="opportunities" class="page-content">
+                <h2>Opportunities</h2>
+                <!-- Opportunities content loaded from external file -->
+                <div id="opportunities-content"></div>
+            </div>
+
+            <!-- AI Blogs Page Content -->
+            <div id="ai-blogs" class="page-content">
+                <h2>AI Blogs</h2>
+                <!-- AI Blogs content loaded from external file -->
+                <div id="ai-blogs-content"></div>
+            </div>
+
+            <!-- AI Personalize Learning Page Content -->
+            <div id="ai-personalize" class="page-content">
+                <h2>How AI Can Personalize Learning Experiences for Every Student</h2>
+                <!-- AI Personalize content loaded from external file -->
+                <div id="ai-personalize-content"></div>
+            </div>
+
+            <!-- HQ Website Page Content -->
+            <div id="hq-website" class="page-content">
+                <h2>HQ Website</h2>
+                <!-- HQ Website content loaded from external file -->
+                <div id="hq-website-content"></div>
+            </div>
+
+            <!-- Connect Page Content -->
+            <div id="connect" class="page-content">
+                <h2>Connect</h2>
+                <!-- Connect content loaded from external file -->
+                <div id="connect-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="social">
+        <p>Instagram: @bramptonfblc & @targetalpha_brampton</p>
+        <p>Google Public Classroom Code: hfxswrh</p>
+    </div>
+
+    <footer>
+        <p>This is an offline archive of the Brampton FBLC & TA website content. Last updated: August 2025.</p>
+    </footer>
+
+    <script>
+        // Function to show the selected page
+        function showPage(pageId) {
+            // Hide all pages
+            document.querySelectorAll('.page-content').forEach(page => {
+                page.classList.remove('active');
+            });
+
+            // Show the selected page
+            document.getElementById(pageId).classList.add('active');
+        }
+
+        // Function to load content from text files
+        function loadContent() {
+            loadFile('httrack_extracted_content/home.txt', 'home-content');
+            loadFile('httrack_extracted_content/about-us.txt', 'about-us-content');
+            loadFile('httrack_extracted_content/join-us.txt', 'join-us-content');
+            loadFile('httrack_extracted_content/competitions.txt', 'competitions-content');
+            loadFile('httrack_extracted_content/meet-the-team.txt', 'meet-the-team-content');
+            loadFile('httrack_extracted_content/opportunities.txt', 'opportunities-content');
+            loadFile('httrack_extracted_content/ai-blogs.txt', 'ai-blogs-content');
+            loadFile('httrack_extracted_content/how-ai-can-personalize-learning-experiences-for-every-student.txt', 'ai-personalize-content');
+            loadFile('httrack_extracted_content/hq-website.txt', 'hq-website-content');
+            loadFile('httrack_extracted_content/connect.txt', 'connect-content');
+        }
+
+        // Function to load a text file and display its content
+        function loadFile(filePath, elementId) {
+            fetch(filePath)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.text();
+                })
+                .then(text => {
+                    // Remove the title line and format the content
+                    const contentLines = text.split('\n');
+                    if (contentLines.length > 2) {
+                        contentLines.splice(0, 2); // Remove the first two lines (title)
+                    }
+                    const formattedText = contentLines.join('\n')
+                        .replace(/\n{3,}/g, '\n\n') // Remove excessive newlines
+                        .split('\n\n')
+                        .map(paragraph => `<p>${paragraph}</p>`)
+                        .join('');
+
+                    document.getElementById(elementId).innerHTML = formattedText;
+                })
+                .catch(error => {
+                    console.error('Error loading file:', error);
+                    document.getElementById(elementId).innerHTML = '<p>Error loading content. Please check if the file exists.</p>';
+                });
+        }
+
+        // Load all content when the page loads
+        window.onload = loadContent;
+    </script>
+</body>
+</html>
