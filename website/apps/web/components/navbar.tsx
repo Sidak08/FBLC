@@ -110,15 +110,6 @@ export function Navbar({ className }: NavbarProps) {
                   {link.name}
                 </Link>
               ))}
-              <div className="pt-4 flex justify-center">
-                <Link
-                  href="/login"
-                  className="text-black bg-gray-100 rounded-full px-6 py-2 text-base font-semibold"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Login
-                </Link>
-              </div>
             </div>
           </div>
         )}
