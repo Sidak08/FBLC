@@ -46,7 +46,7 @@ export function Navbar({ className }: NavbarProps) {
                   <Link
                     key={link.name}
                     href={link.href}
-                    className="text-black px-3 py-2 text-sm font-semibold"
+                    className="text-black px-3 py-2 text-sm font-medium"
                   >
                     {link.name}
                   </Link>
