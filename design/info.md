@@ -1,4 +1,4 @@
-Brampton FBLC & TA Website Design Document
+create a design with dark blue backgrounds; and city skyline images; keep it modern clean and minimal with the following info Brampton FBLC & TA Website Design Document
 
 ## 1. Home Page
 **Content:** Tagline "Empowering Future Leaders, One Step at a Time!" with Instagram handles and Google Classroom code.

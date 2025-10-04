@@ -7,8 +7,8 @@ export default function Navigation() {
 
   const navLinks = [
     { href: "#about", label: "About Us" },
-    { href: "#join", label: "Join Us" },
-    { href: "#team", label: "Meet the Team" },
+    { href: "/join", label: "Join Us" },
+    { href: "/team", label: "Meet the Team" },
     { href: "#elp", label: "ELP" },
     { href: "#flp", label: "FLP" },
     { href: "#ap", label: "AP" },
