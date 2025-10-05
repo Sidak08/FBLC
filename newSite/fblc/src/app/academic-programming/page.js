@@ -149,80 +149,33 @@ export default function AcademicProgramming() {
 
       {/* What to Expect Section - Container Centered, Content Left-Aligned */}
       <section className="py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto mt-[130px] min-h-[465px] flex flex-col gap-8">
-          <h2 className="text-white text-4xl sm:text-5xl lg:text-6xl font-black font-[Poppins] mb-16 text-center lg:text-left">
-            What to expect?
-          </h2>
+        <div className="mx-auto mt-[130px] min-h-[465px] flex flex-col justify-center items-center">
+          {/* Heading moved inside content box for vertical centering */}
 
-          <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-8 lg:p-12 shadow-[15px_15px_30px_rgba(0,0,0,0.3)] flex flex-col flex-1 gap-8">
-            <p className="text-white/90 text-lg sm:text-xl font-normal font-[Poppins] mb-8 leading-relaxed">
-              Academics at Brampton FBLC, JEC, and TA believes in a
-              case-oriented and hands-on approach to learning business,
-              facilitating a fun and productive learning environment. Specific
-              examples from the real world help to bolster understanding of
-              concepts and see them in action.
-            </p>
+          <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl py-8 lg:py-12 px-12 lg:px-20 shadow-[15px_15px_30px_rgba(0,0,0,0.3)] flex flex-col justify-center gap-10 w-[90%] h-[470px] mx-auto">
+            <div className="w-full" style={{ paddingLeft: "150px" }}>
+              <h2 className="text-white text-4xl sm:text-5xl lg:text-6xl font-black font-[Poppins] mb-6 text-left">
+                What to expect?
+              </h2>
+              <p className="text-white/90 text-lg sm:text-xl font-normal font-[Poppins] mb-8 leading-relaxed">
+                Academics at Brampton FBLC, JEC, and TA believes in a
+                case-oriented and hands-on approach to learning business,
+                facilitating a fun and productive learning environment. Specific
+                examples from the real world help to bolster understanding of
+                concepts and see them in action.
+              </p>
 
-            {/* Tabs */}
-            <div className="flex flex-wrap gap-4 mb-8">
-              {[
-                { id: "training", label: "Weekly Training" },
-                { id: "workshops", label: "Workshops" },
-                { id: "assessments", label: "Assessments" },
-              ].map((tab) => (
-                <button
-                  key={tab.id}
-                  onClick={() => setActiveTab(tab.id)}
-                  className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
-                    activeTab === tab.id
-                      ? "bg-[#1E40AF] text-white shadow-lg"
-                      : "bg-slate-700/50 text-white/80 hover:bg-slate-600/50"
-                  }`}
-                >
-                  {tab.label}
-                </button>
-              ))}
-            </div>
-
-            {/* Tab Content */}
-            <div className="bg-slate-900/50 rounded-xl p-6 flex-1 flex flex-col">
-              <div className="text-white flex-1 flex flex-col">
-                {activeTab === "training" && (
-                  <div>
-                    <h3 className="text-2xl font-bold mb-4">
-                      Weekly Training Sessions
-                    </h3>
-                    <p className="text-lg leading-relaxed">
-                      Participate in comprehensive weekly training sessions
-                      covering essential business topics, case studies, and
-                      practical applications. Our interactive approach ensures
-                      deep understanding and retention.
-                    </p>
-                  </div>
-                )}
-                {activeTab === "workshops" && (
-                  <div>
-                    <h3 className="text-2xl font-bold mb-4">
-                      Interactive Workshops
-                    </h3>
-                    <p className="text-lg leading-relaxed">
-                      Engage in hands-on workshops designed to build practical
-                      skills through real-world scenarios, group projects, and
-                      collaborative problem-solving exercises.
-                    </p>
-                  </div>
-                )}
-                {activeTab === "assessments" && (
-                  <div>
-                    <h3 className="text-2xl font-bold mb-4">
-                      Performance Assessments
-                    </h3>
-                    <p className="text-lg leading-relaxed">
-                      Regular assessments help track your progress and identify
-                      areas for improvement, ensuring you&apos;re meeting your
-                      learning objectives and developing key competencies.
-                    </p>
-                  </div>
+              {/* Tabs (static labels with a thin line before each) */}
+              <div className="flex flex-wrap gap-12 mb-8 items-center">
+                {["Weekly Training", "Workshops", "Assessments"].map(
+                  (label) => (
+                    <div key={label} className="flex items-center gap-3">
+                      <span className="inline-block w-[2px] h-[12px] bg-blue-500"></span>
+                      <span className="text-white text-lg font-medium font-[Poppins]">
+                        {label}
+                      </span>
+                    </div>
+                  ),
                 )}
               </div>
             </div>
@@ -230,72 +183,70 @@ export default function AcademicProgramming() {
         </div>
       </section>
 
-      {/* Education Hub Section - Container Centered, Two-Column Layout */}
+      {/* Education Hub Section - Refined Layout */}
       <section className="py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
-            {/* Left Side - Content Left-Aligned */}
-            <div className="flex flex-col justify-center text-center lg:text-left">
-              <h2 className="text-white text-4xl sm:text-5xl font-black font-[Poppins] mb-8">
+        <div className="mx-auto w-4/5 relative">
+          {/* Fixed-height panel */}
+          <div className="relative w-full h-[276px] rounded-2xl bg-[#0E1420] border border-[#3B82F6] overflow-visible p-6 pt-12 flex">
+            {/* Left content block */}
+            <div className="flex flex-col justify-center w-[55%] min-w-[520px] pl-20 pr-4">
+              <h2 className="text-white text-5xl font-black font-[Poppins] leading-tight mb-3">
                 Education Hub
               </h2>
-              <p className="text-white/90 text-lg lg:text-xl font-normal font-[Poppins] mb-10 leading-relaxed">
+              <p className="text-white/90 text-xl font-normal font-[Poppins] leading-relaxed max-w-[640px]">
                 The Education Hub is a comprehensive document listing thousands
                 of resources under many topics.
               </p>
-
-              {/* Subject Tags - Centered on mobile, Left-aligned on desktop */}
-              <div className="flex flex-wrap gap-3 mb-8 justify-center lg:justify-start">
-                {subjects.map((subject, index) => (
-                  <span
-                    key={index}
-                    className="bg-[#1E40AF] text-white px-5 py-3 rounded-full text-sm font-semibold hover:bg-[#1D4ED8] transition-colors duration-300 cursor-pointer"
-                  >
-                    {subject}
-                  </span>
-                ))}
-              </div>
             </div>
 
-            {/* Right Side - Document Preview Centered in Column */}
-            <div className="flex justify-center">
-              <div className="relative max-w-md w-full">
-                <div className="bg-white rounded-2xl p-8 shadow-[20px_20px_40px_rgba(0,0,0,0.3)] transform rotate-2 hover:rotate-0 transition-transform duration-300">
-                  <div className="text-slate-900">
-                    <div className="flex items-center gap-3 mb-6">
-                      <div className="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center">
-                        <span className="text-white font-bold text-xl">📚</span>
-                      </div>
-                      <h3 className="text-2xl font-bold text-red-600">
-                        The Education Hub
-                      </h3>
-                    </div>
+            {/* Right layered cards container */}
+            <div className="relative flex-1">
+              {/* Main white card positioned to the far right and vertically centered */}
+              <div className="absolute top-1/2 -translate-y-1/2 right-12 bg-white rounded-xl shadow-[0_8px_40px_-8px_rgba(0,0,0,0.55)] border border-slate-200 w-[500px] max-w-[500px] p-8">
+                <h3 className="text-center text-[#B91C1C] font-bold text-2xl mb-4 tracking-wide">
+                  The Education Hub
+                </h3>
+                <div className="h-px w-full bg-slate-300 mb-5" />
+                <p className="text-slate-800 text-sm leading-relaxed mb-4">
+                  <strong>This Education Hub</strong> was created for the
+                  purpose of compiling over <strong>1000+ resources</strong>{" "}
+                  that general members of Brampton FBLC, JEC, &amp; TA can use.
+                  All of these resources have been officially approved by the
+                  Department of Education.
+                </p>
+                <p className="text-slate-800 text-sm leading-relaxed">
+                  The document was created and initially developed by
+                  Co-President Piraneerth Pathmajeyalan, who serves as the
+                  original author and lead curator. The Department of Education
+                  contributes additional content and ongoing updates to support
+                  the document’s continued development.
+                </p>
+              </div>
 
-                    <div className="space-y-4 text-sm">
-                      <p className="font-semibold">
-                        This document was created and initially developed by the
-                        Brampton Future Business Leaders Conference (FBLC-JEC).
-                        It is a form-course and it hosts resources.
-                      </p>
-                      <p>
-                        It is hoped that you can contribute to this document and
-                        further develop it as opportunities for the Department
-                        of Education.
-                      </p>
-                      <p>
-                        This document was updated and initially developed by the
-                        Brampton Future Business Leaders Conference (FBLC-JEC).
-                        We suggest to the request section and The Department of
-                        Education as available, other topics.
-                      </p>
-                      <p className="font-semibold">
-                        The Department of Education (hereto onwards...
-                      </p>
-                    </div>
-                  </div>
-                </div>
+              {/* Mini card overlapping main card (tucked closer) */}
+              <div className="absolute top-[18%] -left-6 bg-white rounded-lg shadow-[0_6px_28px_-6px_rgba(0,0,0,0.5)] border border-slate-200 w-44 p-5">
+                <div className="h-2 w-20 bg-slate-300 mb-3 rounded" />
+                <ul className="space-y-1 text-[10px] leading-snug text-slate-700">
+                  <li className="underline text-blue-600">
+                    Learning resources
+                  </li>
+                  <li className="underline text-blue-600">Frameworks</li>
+                  <li className="underline text-blue-600">Cases</li>
+                  <li className="underline text-blue-600">Videos</li>
+                </ul>
               </div>
             </div>
+          </div>
+          {/* Tags row moved fully below panel (matches separated look) */}
+          <div className="mt-6 flex flex-wrap gap-3">
+            {subjects.map((subject, index) => (
+              <span
+                key={index}
+                className="w-[250px] h-[65px] flex items-center justify-center rounded-md bg-slate-800/80 border border-slate-600/40 text-white text-sm font-medium font-[Poppins] backdrop-blur-sm hover:bg-slate-700/80 transition-colors"
+              >
+                {subject}
+              </span>
+            ))}
           </div>
         </div>
       </section>
@@ -307,9 +258,8 @@ export default function AcademicProgramming() {
           <Image
             src="/ap/Rectangle.svg"
             alt="Background rectangle"
-            layout="fill"
-            objectFit="cover"
-            className="w-full h-full"
+            fill
+            className="object-cover w-full h-full"
             priority
           />
         </div>
@@ -353,10 +303,7 @@ export default function AcademicProgramming() {
       <footer className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
-            {/* Footer Logo */}
-            <div className="w-52 h-32 bg-gradient-to-br from-red-600 to-red-800 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
-              <span className="text-white text-2xl font-bold">FBLC</span>
-            </div>
+            {/* Footer Logo removed */}
             {/* Footer Text */}
             <div className="flex-1 text-center md:text-left">
               <p className="text-white text-lg lg:text-xl font-normal font-[Kufam] leading-relaxed">
