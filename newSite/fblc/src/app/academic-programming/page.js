@@ -57,14 +57,22 @@ export default function AcademicProgramming() {
 
   const adminTeam = [
     {
-      name: "Piraneerth Pathmajeyalan",
-      role: "Supervising Admin",
-      image: "/team/piraneerth.jpg",
+      name: "Dhruv Aggarwal",
+      role: "Deputy Director of Academic Programming",
+      image: "/team/dhruv.jpg",
+      hasTag: false,
     },
     {
       name: "Swathi Vasupilli",
-      role: "Director of the academic programming",
+      role: "Director of the Academic Programming",
       image: "/team/swathi.jpg",
+      hasTag: true,
+    },
+    {
+      name: "Piraneerth Pathmajeyalan",
+      role: "Supervising Administrator",
+      image: "/team/piraneerth.jpg",
+      hasTag: false,
     },
   ];
 
@@ -120,11 +128,12 @@ export default function AcademicProgramming() {
       {/* Stats Section - Cards Centered */}
       <section className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 flex justify-center">
         <div className="mx-auto w-full">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 place-items-center">
+          <div className="flex justify-center items-center gap-8 flex-wrap">
             {statsData.map((stat, index) => (
               <div
                 key={index}
                 className="bg-slate-800/50 backdrop-blur-sm border-2 border-blue-500/30 rounded-2xl p-8 text-center shadow-[10px_10px_20px_rgba(0,0,0,0.3)] hover:shadow-[15px_15px_30px_rgba(0,0,0,0.4)] transition-all duration-300 hover:-translate-y-2 w-full max-w-sm min-w-[400px] min-h-[300px] flex flex-col items-center justify-center"
+                style={{ margin: "40px" }}
               >
                 <div className="mb-3 flex justify-center">
                   <Image
@@ -148,7 +157,10 @@ export default function AcademicProgramming() {
       </section>
 
       {/* What to Expect Section - Container Centered, Content Left-Aligned */}
-      <section className="py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
+      <section
+        className="py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8"
+        style={{ marginTop: "100px" }}
+      >
         <div className="mx-auto mt-[130px] min-h-[465px] flex flex-col justify-center items-center">
           {/* Heading moved inside content box for vertical centering */}
 
@@ -184,12 +196,15 @@ export default function AcademicProgramming() {
       </section>
 
       {/* Education Hub Section - Refined Layout */}
-      <section className="py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto w-4/5 relative">
+      <section className="py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 flex justify-center">
+        <div className="w-4/5 relative" style={{ marginTop: "80px" }}>
           {/* Fixed-height panel */}
-          <div className="relative w-full h-[276px] rounded-2xl bg-[#0E1420] border border-[#3B82F6] overflow-visible p-6 pt-12 flex">
+          <div className="relative w-full h-[276px] rounded-2xl bg-[#0E1420] border border-[#3B82F6] overflow-visible py-6 pr-6 flex">
             {/* Left content block */}
-            <div className="flex flex-col justify-center w-[55%] min-w-[520px] pl-20 pr-4">
+            <div
+              className="flex flex-col justify-center w-[55%] min-w-[520px] pr-4"
+              style={{ marginLeft: "80px !important" }}
+            >
               <h2 className="text-white text-5xl font-black font-[Poppins] leading-tight mb-3">
                 Education Hub
               </h2>
@@ -238,7 +253,10 @@ export default function AcademicProgramming() {
             </div>
           </div>
           {/* Tags row moved fully below panel (matches separated look) */}
-          <div className="mt-6 flex flex-wrap gap-3">
+          <div
+            className="mt-6 flex flex-wrap gap-3"
+            style={{ marginTop: "24px !important" }}
+          >
             {subjects.map((subject, index) => (
               <span
                 key={index}
@@ -252,7 +270,10 @@ export default function AcademicProgramming() {
       </section>
 
       {/* Administration Section - All Content Centered */}
-      <section className="relative py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
+      <section
+        className="relative py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8"
+        style={{ marginTop: "100px" }}
+      >
         {/* Full-width background rectangle */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -272,29 +293,83 @@ export default function AcademicProgramming() {
             redirect it to these people.
           </p>
 
-          {/* Cards Centered */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-12 max-w-5xl mx-auto justify-items-center">
-            {adminTeam.map((member, index) => (
-              <div
-                key={index}
-                className="bg-slate-800/50 backdrop-blur-sm border-2 border-blue-500/30 rounded-2xl p-10 shadow-[15px_15px_30px_rgba(0,0,0,0.3)] hover:shadow-[20px_20px_40px_rgba(0,0,0,0.4)] transition-all duration-300 hover:-translate-y-2 w-full max-w-sm"
-              >
-                {/* Profile Image Placeholder - Centered */}
-                <div className="w-36 h-36 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full mx-auto mb-8 flex items-center justify-center text-4xl text-white font-bold">
-                  {member.name
-                    .split(" ")
-                    .map((name) => name[0])
-                    .join("")}
-                </div>
+          {/* Cards Layout - 2 on top, 1 below centered */}
+          <div className="max-w-7xl mx-auto">
+            {/* Top row - 2 cards */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+              {adminTeam.slice(0, 2).map((member, index) => (
+                <div key={index} className="relative">
+                  {member.hasTag && (
+                    <div className="absolute -top-3 left-8 bg-blue-500 text-white px-3 py-1 rounded text-sm font-medium z-10">
+                      Rectangle
+                    </div>
+                  )}
+                  <div className="bg-slate-900/80 backdrop-blur-sm border border-blue-500/40 rounded-2xl p-8 flex items-center gap-6 shadow-[10px_10px_30px_rgba(0,0,0,0.4)] hover:shadow-[15px_15px_40px_rgba(0,0,0,0.5)] transition-all duration-300 min-h-[200px]">
+                    {/* Profile Image */}
+                    <div className="flex-shrink-0">
+                      <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-blue-500/30">
+                        <Image
+                          src={member.image}
+                          alt={member.name}
+                          width={128}
+                          height={128}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    </div>
 
-                <div className="text-white text-sm font-medium font-[Poppins] mb-3 opacity-80 text-center">
-                  {member.role}
+                    {/* Text Content */}
+                    <div className="flex-1">
+                      <div className="text-white/80 text-sm font-medium font-[Poppins] mb-2">
+                        {member.role}
+                      </div>
+                      <h3 className="text-white text-2xl lg:text-3xl font-bold font-[Poppins] leading-tight">
+                        {member.name.split(" ").map((word, i) => (
+                          <div key={i}>{word}</div>
+                        ))}
+                      </h3>
+                    </div>
+                  </div>
                 </div>
-                <h3 className="text-white text-xl lg:text-2xl font-bold font-[Poppins] text-center">
-                  {member.name}
-                </h3>
+              ))}
+            </div>
+
+            {/* Bottom row - 1 card centered */}
+            <div className="flex justify-center">
+              <div className="w-full max-w-2xl">
+                {adminTeam.slice(2).map((member, index) => (
+                  <div
+                    key={index}
+                    className="bg-slate-900/80 backdrop-blur-sm border border-blue-500/40 rounded-2xl p-8 flex items-center gap-6 shadow-[10px_10px_30px_rgba(0,0,0,0.4)] hover:shadow-[15px_15px_40px_rgba(0,0,0,0.5)] transition-all duration-300 min-h-[200px]"
+                  >
+                    {/* Profile Image */}
+                    <div className="flex-shrink-0">
+                      <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-blue-500/30">
+                        <Image
+                          src={member.image}
+                          alt={member.name}
+                          width={128}
+                          height={128}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    </div>
+
+                    {/* Text Content */}
+                    <div className="flex-1">
+                      <div className="text-white/80 text-sm font-medium font-[Poppins] mb-2">
+                        {member.role}
+                      </div>
+                      <h3 className="text-white text-2xl lg:text-3xl font-bold font-[Poppins] leading-tight">
+                        {member.name.split(" ").map((word, i) => (
+                          <div key={i}>{word}</div>
+                        ))}
+                      </h3>
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
