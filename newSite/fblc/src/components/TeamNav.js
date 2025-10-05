@@ -23,18 +23,19 @@ export default function TeamNav({ activeTab = "admins", onTabChange }) {
   };
 
   return (
-    <div className="max-w-5xl mx-auto px-6 py-4">
-      <div className="bg-[#1E293B] rounded-xl p-2 flex flex-wrap gap-2">
+    <div
+      className="w-full flex justify-center px-6"
+      style={{ paddingTop: "50px", paddingBottom: "50px" }}
+    >
+      <div className="bg-[#334155] rounded-lg p-1 flex gap-10 max-w-fit min-h-[65px] items-center">
         {tabs.map((tab) => (
           <button
             key={tab.id}
             onClick={() => handleTabClick(tab.id, tab.label)}
-            className={`px-6 py-3 rounded-lg font-semibold transition-colors ${
+            className={`px-5 py-3 rounded-md font-medium transition-all duration-200 whitespace-nowrap h-[60px] flex items-center ${
               tab.id === active
-                ? "bg-[#1E40AF] text-white"
-                : tab.active && (tab.id === "special" || tab.id === "marketing")
-                  ? "text-white hover:bg-[#1E40AF]/20"
-                  : "text-[#93C5FD] hover:text-white hover:bg-[#1E40AF]/10"
+                ? "bg-[#1E40AF] text-white shadow-sm"
+                : "text-white/80 hover:text-white hover:bg-white/10"
             }`}
           >
             {tab.label}

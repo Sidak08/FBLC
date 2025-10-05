@@ -87,6 +87,18 @@ export default function MeetTheTeam() {
         <div className="flex justify-center w-full">
           <Navigation />
         </div>
+
+        {/* Hero Section with Description */}
+        <div className="text-center mb-16 px-6">
+          <h1 className="text-white text-4xl md:text-6xl font-bold mb-6">
+            Meet Our Team
+          </h1>
+          <p className="text-white text-lg md:text-xl max-w-4xl mx-auto leading-relaxed mb-8">
+            Dedicated leaders committed to empowering the next generation of
+            business professionals and fostering innovation in our community.
+          </p>
+        </div>
+
         <TeamNav activeTab={currentDepartment} onTabChange={handleTabChange} />
 
         {/* Loading State */}
@@ -109,6 +121,18 @@ export default function MeetTheTeam() {
         <div className="flex justify-center w-full">
           <Navigation />
         </div>
+
+        {/* Hero Section with Description */}
+        <div className="text-center mb-16 px-6">
+          <h1 className="text-white text-4xl md:text-6xl font-bold mb-6">
+            Meet Our Team
+          </h1>
+          <p className="text-white text-lg md:text-xl max-w-4xl mx-auto leading-relaxed mb-8">
+            Dedicated leaders committed to empowering the next generation of
+            business professionals and fostering innovation in our community.
+          </p>
+        </div>
+
         <TeamNav activeTab={currentDepartment} onTabChange={handleTabChange} />
 
         {/* Error State */}
@@ -141,6 +165,17 @@ export default function MeetTheTeam() {
       <div className="flex justify-center w-full">
         <Navigation />
       </div>
+
+      {/* Hero Section with Description */}
+      <div className="text-center mb-16 px-6">
+        <h1 className="text-white text-4xl md:text-6xl font-bold mb-6">
+          Meet Our {getDepartmentTitle(currentDepartment)}
+        </h1>
+        <p className="text-white text-lg md:text-xl max-w-4xl mx-auto leading-relaxed mb-8">
+          {getDepartmentDescription(currentDepartment)}
+        </p>
+      </div>
+
       <TeamNav activeTab={currentDepartment} onTabChange={handleTabChange} />
 
       {/* Main Content */}
@@ -148,16 +183,6 @@ export default function MeetTheTeam() {
         className="w-full px-6 py-12"
         style={{ marginLeft: "50px", marginRight: "50px" }}
       >
-        {/* Hero Section */}
-        <div className="text-center mb-16">
-          <h1 className="text-white text-4xl md:text-6xl font-bold mb-6">
-            Meet Our {getDepartmentTitle(currentDepartment)}
-          </h1>
-          <p className="text-white text-lg md:text-xl max-w-4xl mx-auto leading-relaxed">
-            {getDepartmentDescription(currentDepartment)}
-          </p>
-        </div>
-
         {/* Team Grid */}
         {currentTeamMembers.length > 0 ? (
           <div className="w-full mb-16">
