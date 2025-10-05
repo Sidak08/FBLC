@@ -205,7 +205,7 @@ export default function AcademicProgramming() {
             {/* Right layered cards container */}
             <div className="relative flex-1">
               {/* Main white card positioned to the far right and vertically centered */}
-              <div className="absolute top-1/2 -translate-y-1/2 right-12 bg-white rounded-xl shadow-[0_8px_40px_-8px_rgba(0,0,0,0.55)] border border-slate-200 w-[500px] max-w-[500px] p-8">
+              <div className="absolute top-0 right-0 bg-white rounded-xl shadow-[0_8px_40px_-8px_rgba(0,0,0,0.55)] border border-slate-200 w-[500px] max-w-[500px] p-8 h-full flex flex-col justify-center pl-12">
                 <h3 className="text-center text-[#B91C1C] font-bold text-2xl mb-4 tracking-wide">
                   The Education Hub
                 </h3>
@@ -224,19 +224,6 @@ export default function AcademicProgramming() {
                   contributes additional content and ongoing updates to support
                   the document’s continued development.
                 </p>
-              </div>
-
-              {/* Mini card overlapping main card (tucked closer) */}
-              <div className="absolute top-[18%] -left-6 bg-white rounded-lg shadow-[0_6px_28px_-6px_rgba(0,0,0,0.5)] border border-slate-200 w-44 p-5">
-                <div className="h-2 w-20 bg-slate-300 mb-3 rounded" />
-                <ul className="space-y-1 text-[10px] leading-snug text-slate-700">
-                  <li className="underline text-blue-600">
-                    Learning resources
-                  </li>
-                  <li className="underline text-blue-600">Frameworks</li>
-                  <li className="underline text-blue-600">Cases</li>
-                  <li className="underline text-blue-600">Videos</li>
-                </ul>
               </div>
             </div>
           </div>
