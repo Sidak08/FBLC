@@ -66,7 +66,7 @@ export default function AcademicProgramming() {
       name: "Swathi Vasupilli",
       role: "Director of the Academic Programming",
       image: "/team/swathi.jpg",
-      hasTag: true,
+      hasTag: false,
     },
     {
       name: "Piraneerth Pathmajeyalan",
@@ -78,50 +78,38 @@ export default function AcademicProgramming() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-800 via-slate-900 to-black">
-      {/* Gradient Spacer Above Navbar */}
-      <div className="w-full" style={{ height: "2.5vw" }}></div>
-
-      {/* Navigation - Centered */}
-      <div className="flex justify-center w-full">
-        <Navigation />
-      </div>
-
-      {/* Hero Section - Fully Centered */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-8">
-        {/* Background decorative elements */}
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-20 right-10 w-64 h-64 border-2 border-red-500/20 rounded-full"></div>
-          <div className="absolute bottom-32 left-10 w-32 h-32 border-2 border-green-500/20 rounded-full"></div>
-          <div className="absolute top-1/2 right-1/4 w-16 h-16 border-2 border-blue-500/20 rounded-full"></div>
+      {/* Hero Section - Images */}
+      <section className="w-full flex flex-col relative">
+        {/* Navigation - Positioned over images */}
+        <div
+          className="absolute top-0 left-0 w-full z-50"
+          style={{ marginTop: "1vw" }}
+        >
+          <div className="flex justify-center w-full">
+            <Navigation />
+          </div>
+        </div>
+        {/* Top Image - heading.svg */}
+        <div className="w-full">
+          <Image
+            src="/ap/FBLC(1)/heading.svg"
+            alt="Academic Programming Heading"
+            width={1920}
+            height={400}
+            className="w-full h-auto object-cover"
+            priority
+          />
         </div>
 
-        {/* Hero Content - Centered Container */}
-        <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto w-full">
-          {/* Department Label - Centered */}
-          <div className="text-white/80 text-lg sm:text-xl font-normal font-[Poppins] mb-4">
-            Department of Education
-          </div>
-
-          {/* Main Title - Centered */}
-          <h1 className="text-white font-black leading-tight mb-6 font-[Poppins] drop-shadow-2xl text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center">
-            Academic Programming
-          </h1>
-
-          {/* Subtitle - Centered */}
-          <p className="text-white/90 text-lg sm:text-xl lg:text-2xl font-normal font-[Poppins] mb-12 max-w-4xl leading-relaxed text-center">
-            Academics at Brampton FBLC, JEC, and TA are a fundamental component
-            of the organization&apos;s functionality.
-          </p>
-
-          {/* CTA Buttons - Centered */}
-          <div className="flex flex-col sm:flex-row gap-6 items-center justify-center">
-            <button className="bg-[#1E40AF] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#1D4ED8] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-              Join Us
-            </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white hover:text-slate-900 transition-all duration-300">
-              Membership Prospectus
-            </button>
-          </div>
+        {/* Bottom Image - banner */}
+        <div className="w-full">
+          <Image
+            src="/ap/FBLC(1)/banner.svg"
+            alt="Academic Programming Banner"
+            width={1920}
+            height={600}
+            className="w-full h-auto object-cover"
+          />
         </div>
       </section>
 
@@ -284,35 +272,39 @@ export default function AcademicProgramming() {
             priority
           />
         </div>
-        <div className="relative z-10 mx-auto text-center">
+        <div className="relative z-10 mx-auto text-center w-full flex flex-col items-center">
           <h2 className="text-white text-4xl sm:text-5xl font-black font-[Poppins] mb-6 text-center">
             Administration
           </h2>
-          <p className="text-white/80 text-lg lg:text-xl font-normal font-[Poppins] mb-16 text-center max-w-3xl mx-auto leading-relaxed">
+          <p
+            className="text-white/80 text-lg lg:text-xl font-normal font-[Poppins] mb-16 text-center max-w-3xl mx-auto leading-relaxed"
+            style={{ textAlign: "center", width: "100%", marginBottom: "70px" }}
+          >
             If you have any questions about academic programming, please
             redirect it to these people.
           </p>
 
           {/* Cards Layout - 2 on top, 1 below centered */}
-          <div className="max-w-7xl mx-auto">
+          <div className="mx-auto flex flex-col items-center">
             {/* Top row - 2 cards */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8 justify-items-center">
               {adminTeam.slice(0, 2).map((member, index) => (
                 <div key={index} className="relative">
-                  {member.hasTag && (
-                    <div className="absolute -top-3 left-8 bg-blue-500 text-white px-3 py-1 rounded text-sm font-medium z-10">
-                      Rectangle
-                    </div>
-                  )}
-                  <div className="bg-slate-900/80 backdrop-blur-sm border border-blue-500/40 rounded-2xl p-8 flex items-center gap-6 shadow-[10px_10px_30px_rgba(0,0,0,0.4)] hover:shadow-[15px_15px_40px_rgba(0,0,0,0.5)] transition-all duration-300 min-h-[200px]">
+                  <div
+                    className="bg-slate-900/80 backdrop-blur-sm border border-blue-500/40 rounded-2xl p-8 flex items-center gap-6 shadow-[10px_10px_30px_rgba(0,0,0,0.4)] hover:shadow-[15px_15px_40px_rgba(0,0,0,0.5)] transition-all duration-300"
+                    style={{ width: "700px", height: "250px" }}
+                  >
                     {/* Profile Image */}
-                    <div className="flex-shrink-0">
-                      <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-blue-500/30">
+                    <div
+                      className="flex-shrink-0"
+                      style={{ marginLeft: "40px" }}
+                    >
+                      <div className="w-[200px] h-[200px] rounded-full overflow-hidden border-4 border-blue-500/30">
                         <Image
                           src={member.image}
                           alt={member.name}
-                          width={128}
-                          height={128}
+                          width={200}
+                          height={200}
                           className="w-full h-full object-cover"
                         />
                       </div>
@@ -320,10 +312,10 @@ export default function AcademicProgramming() {
 
                     {/* Text Content */}
                     <div className="flex-1">
-                      <div className="text-white/80 text-sm font-medium font-[Poppins] mb-2">
+                      <div className="text-white/80 text-sm font-medium font-[Poppins] mb-2 text-left">
                         {member.role}
                       </div>
-                      <h3 className="text-white text-2xl lg:text-3xl font-bold font-[Poppins] leading-tight">
+                      <h3 className="text-white text-2xl lg:text-3xl font-bold font-[Poppins] leading-tight text-left">
                         {member.name.split(" ").map((word, i) => (
                           <div key={i}>{word}</div>
                         ))}
@@ -335,21 +327,25 @@ export default function AcademicProgramming() {
             </div>
 
             {/* Bottom row - 1 card centered */}
-            <div className="flex justify-center">
-              <div className="w-full max-w-2xl">
+            <div className="flex justify-center w-full">
+              <div className="max-w-2xl" style={{ marginTop: "40px" }}>
                 {adminTeam.slice(2).map((member, index) => (
                   <div
                     key={index}
-                    className="bg-slate-900/80 backdrop-blur-sm border border-blue-500/40 rounded-2xl p-8 flex items-center gap-6 shadow-[10px_10px_30px_rgba(0,0,0,0.4)] hover:shadow-[15px_15px_40px_rgba(0,0,0,0.5)] transition-all duration-300 min-h-[200px]"
+                    className="bg-slate-900/80 backdrop-blur-sm border border-blue-500/40 rounded-2xl p-8 flex items-center gap-6 shadow-[10px_10px_30px_rgba(0,0,0,0.4)] hover:shadow-[15px_15px_40px_rgba(0,0,0,0.5)] transition-all duration-300"
+                    style={{ width: "700px", height: "250px" }}
                   >
                     {/* Profile Image */}
-                    <div className="flex-shrink-0">
-                      <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-blue-500/30">
+                    <div
+                      className="flex-shrink-0"
+                      style={{ marginLeft: "40px" }}
+                    >
+                      <div className="w-[200px] h-[200px] rounded-full overflow-hidden border-4 border-blue-500/30">
                         <Image
                           src={member.image}
                           alt={member.name}
-                          width={128}
-                          height={128}
+                          width={200}
+                          height={200}
                           className="w-full h-full object-cover"
                         />
                       </div>
@@ -357,10 +353,10 @@ export default function AcademicProgramming() {
 
                     {/* Text Content */}
                     <div className="flex-1">
-                      <div className="text-white/80 text-sm font-medium font-[Poppins] mb-2">
+                      <div className="text-white/80 text-sm font-medium font-[Poppins] mb-2 text-left">
                         {member.role}
                       </div>
-                      <h3 className="text-white text-2xl lg:text-3xl font-bold font-[Poppins] leading-tight">
+                      <h3 className="text-white text-2xl lg:text-3xl font-bold font-[Poppins] leading-tight text-left">
                         {member.name.split(" ").map((word, i) => (
                           <div key={i}>{word}</div>
                         ))}
@@ -374,21 +370,26 @@ export default function AcademicProgramming() {
         </div>
       </section>
 
-      {/* Footer Section - Following Home Page Pattern */}
-      <footer className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto">
-          <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
-            {/* Footer Logo removed */}
-            {/* Footer Text */}
-            <div className="flex-1 text-center md:text-left">
-              <p className="text-white text-lg lg:text-xl font-normal font-[Kufam] leading-relaxed">
-                Be part of the movement that&apos;s changing the game this is
-                more than content, it&apos;s a community. Don&apos;t just sit on
-                the sidelines, join us and help shape the future. Together,
-                we&apos;re building something bigger than ourselves, and we want
-                you to be a part of it.
-              </p>
-            </div>
+      {/* Footer Section */}
+      <footer
+        className="py-12 px-4 flex justify-start items-center w-[90%] ml-[60px] pl-[60px]"
+        style={{ marginTop: "100px", paddingLeft: "100px" }}
+      >
+        <div className="w-full max-w-2xl flex flex-row items-center gap-8 md:gap-12 min-h-[16rem] ml-[60px]">
+          {/* Footer Image */}
+          <img
+            src="https://placehold.co/215x129"
+            alt="Footer Logo"
+            className="w-52 h-32 object-cover rounded-xl"
+          />
+          {/* Footer Text */}
+          <div className="flex-1 flex items-center">
+            <p className="text-white text-lg font-normal font-[Kufam]">
+              Be part of the movement that's changing the game this is more than
+              content, it's a community. Don't just sit on the sidelines, join
+              us and help shape the future. Together, we're building something
+              bigger than ourselves, and we want you to be a part of it.
+            </p>
           </div>
         </div>
       </footer>
