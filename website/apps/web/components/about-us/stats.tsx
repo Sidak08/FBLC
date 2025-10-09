@@ -109,7 +109,7 @@ export function Stats({
   ],
 }: StatsProps) {
   return (
-    <section className="py-16 sm:py-24 lg:py-32 bg-fblc-navy">
+    <section className="py-16 sm:py-24 lg:py-32">
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-4 text-center">
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white">{heading}</h2>
