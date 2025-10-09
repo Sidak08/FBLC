@@ -28,22 +28,27 @@ export default function AboutUsPage() {
             <Tabs defaultValue="fblc" className="w-full">
               {/* Tab Navigation */}
               <div className="flex justify-center mb-8 sm:mb-12">
-                <TabsList className="bg-fblc-navy/20 border border-white/20 p-2 flex flex-col sm:flex-row w-full max-w-md sm:max-w-none sm:w-auto gap-2 sm:gap-0">
+                <TabsList 
+                  className="border border-white/30 p-2 flex flex-col sm:flex-row w-full max-w-md sm:max-w-none sm:w-auto gap-2 sm:gap-0 backdrop-blur-md shadow-xl"
+                  style={{
+                    background: 'linear-gradient(135deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.06) 50%, rgba(31,47,85,0.3) 100%)'
+                  }}
+                >
                   <TabsTrigger 
                     value="fblc" 
-                    className="data-[state=active]:bg-blue-600 data-[state=active]:text-white text-white/70 px-4 sm:px-8 py-3 sm:py-3 w-full sm:w-auto text-sm sm:text-base"
+                    className="data-[state=active]:bg-white/25 data-[state=active]:text-white data-[state=active]:shadow-lg text-white/80 px-4 sm:px-8 py-3 sm:py-3 w-full sm:w-auto text-sm sm:text-base font-medium hover:bg-white/10 transition-all duration-200 rounded-md"
                   >
                     FBLC
                   </TabsTrigger>
                   <TabsTrigger 
                     value="target-alpha" 
-                    className="data-[state=active]:bg-blue-600 data-[state=active]:text-white text-white/70 px-4 sm:px-8 py-3 sm:py-3 w-full sm:w-auto text-sm sm:text-base"
+                    className="data-[state=active]:bg-white/25 data-[state=active]:text-white data-[state=active]:shadow-lg text-white/80 px-4 sm:px-8 py-3 sm:py-3 w-full sm:w-auto text-sm sm:text-base font-medium hover:bg-white/10 transition-all duration-200 rounded-md"
                   >
                     Target Alpha
                   </TabsTrigger>
                   <TabsTrigger 
                     value="jec" 
-                    className="data-[state=active]:bg-blue-600 data-[state=active]:text-white text-white/70 px-4 sm:px-8 py-3 sm:py-3 w-full sm:w-auto text-sm sm:text-base"
+                    className="data-[state=active]:bg-white/25 data-[state=active]:text-white data-[state=active]:shadow-lg text-white/80 px-4 sm:px-8 py-3 sm:py-3 w-full sm:w-auto text-sm sm:text-base font-medium hover:bg-white/10 transition-all duration-200 rounded-md"
                   >
                     JEC Canada
                   </TabsTrigger>

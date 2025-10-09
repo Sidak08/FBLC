@@ -124,9 +124,11 @@ export function Stats({
         </div>
         <div className="mt-8 sm:mt-12 lg:mt-14 grid gap-x-4 sm:gap-x-8 gap-y-8 sm:gap-y-12 grid-cols-1 sm:grid-cols-3 justify-items-center">
           {stats.map((stat) => (
-            <div key={stat.id} className="flex flex-col gap-3 sm:gap-4 text-center w-full max-w-xs">
-              <AnimatedCounter value={stat.value} />
-              <div className="bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-medium text-sm sm:text-base">
+            <div key={stat.id} className="flex flex-col gap-3 sm:gap-4 text-center w-full max-w-xs group">
+              <div className="transform group-hover:scale-110 transition-transform duration-300">
+                <AnimatedCounter value={stat.value} />
+              </div>
+              <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-xl font-medium text-sm sm:text-base shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                 {stat.label}
               </div>
             </div>

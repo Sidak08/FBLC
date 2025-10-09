@@ -48,14 +48,14 @@ export function Timeline() {
         </h1>
         <div className="relative mx-auto max-w-4xl">
           {/* Vertical line */}
-          <div className="absolute left-2 top-4 bottom-4 w-0.5 bg-white/30"></div>
+          <div className="absolute left-2 top-4 bottom-4 w-0.5 bg-white/40 shadow-lg"></div>
           
           {timelineData.map((entry, index) => (
             <div key={index} className="relative mb-8 sm:mb-10 pl-6 sm:pl-8">
               {/* Timeline dot */}
-              <div className="bg-white absolute left-0 top-3 sm:top-3.5 w-3 sm:w-4 h-3 sm:h-4 rounded-full border-2 sm:border-4 border-white/20"></div>
+              <div className="bg-white absolute left-0 top-3 sm:top-3.5 w-3 sm:w-4 h-3 sm:h-4 rounded-full border-2 sm:border-4 border-white/30 shadow-lg"></div>
               
-              <div className="bg-white rounded-lg p-4 sm:p-6 shadow-md border border-fblc-navy/10">
+              <div className="bg-white/95 rounded-xl p-4 sm:p-6 shadow-xl border border-gray-200/50 backdrop-blur-sm hover:shadow-2xl transition-all duration-300 hover:scale-[1.01]">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
                   <h4 className="text-lg sm:text-xl font-bold text-fblc-navy mb-2 sm:mb-0">
                     {entry.title}
