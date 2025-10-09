@@ -8,7 +8,7 @@ export default function AboutUsPage() {
     <div className="min-h-screen">
       <div className="relative w-full h-[60vh] sm:h-[70vh] lg:h-[80vh] overflow-hidden">
         <Image
-          src="/Heading (1) 1.png"
+          src="/hero/AboutUsHeroImage.png"
           alt="About Us Banner"
           fill
           className="object-cover"
