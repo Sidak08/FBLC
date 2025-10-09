@@ -6,34 +6,15 @@ import { FblcTab, TargetAlphaTab, JecCanadaTab, Timeline, Stats } from "@/compon
 export default function AboutUsPage() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section with Banner */}
       <div className="relative w-full h-[60vh] sm:h-[70vh] lg:h-[80vh] overflow-hidden">
         <Image
-          src="/With_BRAMPTON_FBLC_4.png"
+          src="/Heading (1) 1.png"
           alt="About Us Banner"
           fill
           className="object-cover"
           priority
         />
-        
-        {/* Overlay with blur and color */}
-        <div className="absolute inset-0 bg-fblc-navy/50 backdrop-blur-sm"></div>
-        
-        {/* Text overlay */}
-        <div className="absolute inset-0 flex items-center justify-center sm:items-end sm:justify-start">
-          <div className="px-4 sm:px-8 lg:ml-[25%] lg:mr-auto pb-0 sm:pb-16 lg:pb-24 max-w-sm sm:max-w-md md:max-w-2xl lg:max-w-4xl text-center sm:text-center lg:text-left">
-            <Badge className="mb-3 sm:mb-4 bg-transparent text-white border-white border-2 backdrop-blur-sm text-xs sm:text-sm px-4 py-2 inline-block">
-              Our Mission
-            </Badge>
-            <p className="text-white text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-semibold leading-tight sm:leading-relaxed drop-shadow-lg">
-              Discover the three premier student organizations shaping the future of business education and leadership development across Canada.
-            </p>
-          </div>
-        </div>
       </div>
-
-      {/* Inset Shadow Separator */}
-      <div className="h-8 bg-gradient-to-b from-black/20 via-black/10 to-transparent shadow-inner"></div>
 
       {/* Organizations Section with Tabs */}
       <div className="bg-gradient-to-br from-fblc-navy via-fblc-navy/90 to-fblc-navy/80 py-12 sm:py-16 lg:py-20">
