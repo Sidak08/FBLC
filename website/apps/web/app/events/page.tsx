@@ -92,30 +92,7 @@ export default function EventsPage() {
         {/* Swish overlay for icy effect */}
         
         {/* Frost Summit Card Overlay */}
-        <div className="absolute inset-0 flex items-center justify-center p-8 z-20">
-          <div className="bg-black/40 backdrop-blur-sm border border-white/20 rounded-lg p-8 max-w-2xl mx-auto">
-            <div className="text-white space-y-6">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-4">The FROST SUMMIT</h2>
-              <div className="space-y-4 text-lg leading-relaxed">
-                <p>
-                  Join us for our premier, members-only year-end event hosted by Brampton FBLC, JEC, and TA.
-                </p>
-                <p>
-                  <strong>Date:</strong> December 6th<br/>
-                  <strong>Location:</strong> Toronto
-                </p>
-                <p>
-                  Celebrate the year's achievements, network with like-minded individuals, engage in insightful workshops, purchase exclusive merchandise, enjoy complimentary refreshments, and participate in exciting giveaways.
-                </p>
-              </div>
-              <div className="text-center mt-8">
-                <button className="bg-black text-white px-8 py-4 rounded-lg font-bold uppercase tracking-wide shadow-lg hover:bg-gray-800 transition-colors">
-                  TICKET PORTAL COMING SOON
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+ 
       </div>
 
       {/* Canadian National Leadership Conference Section */}
