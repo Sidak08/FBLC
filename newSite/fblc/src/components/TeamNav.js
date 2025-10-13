@@ -24,10 +24,10 @@ export default function TeamNav({ activeTab = "admins", onTabChange }) {
 
   return (
     <div
-      className="w-full flex justify-center px-6"
+      className="w-full flex justify-center px-24"
       style={{ paddingTop: "50px", paddingBottom: "50px" }}
     >
-      <div className="bg-[#334155] rounded-lg p-1 flex gap-10 max-w-fit min-h-[65px] items-center">
+      <div className="bg-[#334155] rounded-lg p-1 px-24 flex gap-10 max-w-fit min-h-[65px] items-center">
         {tabs.map((tab) => (
           <button
             key={tab.id}
