@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${fontMono.variable} antialiased`}
-        style={{ fontFamily: '"Gotham Bold", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif', fontWeight: '700' }}
+        style={{ fontFamily: 'sans-serif' }}
       >
         <Providers>
           <Navbar />
