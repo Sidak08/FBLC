@@ -94,9 +94,7 @@ export function Footer(props?: FooterProps) {
                 {logo.title}
               </span>
             </Link>
-            <p className="text-gray-300 text-sm leading-relaxed">
-              {tagline}
-            </p>
+            <p className="text-gray-300 text-sm leading-relaxed">{tagline}</p>
           </div>
 
           {/* Menu Items */}
