@@ -1,27 +1,27 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { Button } from "@workspace/ui/components/button"
-import { cn } from "@workspace/ui/lib/utils"
-import { useState } from "react"
-import { User } from "lucide-react"
+import Link from "next/link";
+import { Button } from "@workspace/ui/components/button";
+import { cn } from "@workspace/ui/lib/utils";
+import { useState } from "react";
+import { User } from "lucide-react";
 
 interface NavbarProps {
-  className?: string
+  className?: string;
 }
 
 const navigationLinks = [
   { name: "About Us", href: "/about-us" },
   { name: "Join Us", href: "/join-us" },
   { name: "Meet the Team", href: "/meet-the-team" },
-  { name: "ELP", href: "/elp" },
-  { name: "FLP", href: "/flp" },
-  { name: "AP Partners", href: "/ap-partners" },
+  { name: "ELP", href: "/elevate-leaders" },
+  { name: "FLP", href: "/future-leaders" },
+  { name: "AP", href: "/academic-programming" },
   { name: "Events", href: "/events" },
-]
+];
 
 export function Navbar({ className }: NavbarProps) {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <nav className={cn("bg-white border-b border-border", className)}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -31,9 +31,9 @@ export function Navbar({ className }: NavbarProps) {
             {/* Logo */}
             <div className="flex-shrink-0">
               <Link href="/" className="flex items-center">
-                <img 
-                  src="/FBLC Logo.svg" 
-                  alt="FBLC Logo" 
+                <img
+                  src="/FBLC Logo.svg"
+                  alt="FBLC Logo"
                   className="h-16 w-auto filter brightness-0 -mt-3"
                 />
               </Link>
@@ -115,5 +115,5 @@ export function Navbar({ className }: NavbarProps) {
         )}
       </div>
     </nav>
-  )
+  );
 }
