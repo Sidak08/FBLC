@@ -117,10 +117,10 @@ export default function AcademicProgramming() {
                     }}
                   />
                 </div>
-                <div className="text-white text-lg sm:text-xl lg:text-2xl font-bold font-[Poppins] mb-2 text-center">
+                <div className="text-white text-lg sm:text-xl lg:text-2xl font-bold mb-2 text-center">
                   {stat.title}
                 </div>
-                <div className="text-white/80 text-base sm:text-lg lg:text-xl font-medium font-[Poppins] text-center">
+                <div className="text-white/80 text-base sm:text-lg lg:text-xl font-medium text-center">
                   {stat.subtitle}
                 </div>
               </div>
@@ -139,10 +139,10 @@ export default function AcademicProgramming() {
 
           <div className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl py-6 sm:py-8 lg:py-12 px-6 sm:px-8 lg:px-12 xl:px-20 shadow-[15px_15px_30px_rgba(0,0,0,0.3)] flex flex-col justify-center gap-6 sm:gap-8 lg:gap-10 w-full max-w-7xl h-auto min-h-[350px] sm:min-h-[470px] mx-auto">
             <div className="w-full lg:pl-[150px]">
-              <h2 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black font-[Poppins] mb-4 sm:mb-6 text-center lg:text-left">
+              <h2 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-4 sm:mb-6 text-center lg:text-left">
                 What to expect?
               </h2>
-              <p className="text-white/90 text-base sm:text-lg lg:text-xl font-normal font-[Poppins] mb-6 sm:mb-8 leading-relaxed text-center lg:text-left">
+              <p className="text-white/90 text-base sm:text-lg lg:text-xl font-normal mb-6 sm:mb-8 leading-relaxed text-center lg:text-left">
                 Academics at Brampton FBLC, JEC, and TA believes in a
                 case-oriented and hands-on approach to learning business,
                 facilitating a fun and productive learning environment. Specific
@@ -156,7 +156,7 @@ export default function AcademicProgramming() {
                   (label) => (
                     <div key={label} className="flex items-center gap-3">
                       <span className="inline-block w-[2px] h-[12px] bg-blue-500"></span>
-                      <span className="text-white text-base sm:text-lg font-medium font-[Poppins]">
+                      <span className="text-white text-base sm:text-lg font-medium">
                         {label}
                       </span>
                     </div>
@@ -168,100 +168,133 @@ export default function AcademicProgramming() {
         </div>
       </section>
 
-      {/* Education Hub Section - Refined Layout */}
-      <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 flex justify-center">
-        <div
-          className="w-full max-w-7xl relative"
-          style={{ marginTop: "40px" }}
-        >
-          {/* Mobile/Tablet: Stacked Layout */}
+      {/* Education Hub Section - Enhanced Design */}
+      <section className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 flex justify-center">
+        <div className="w-full max-w-7xl relative">
+          {/* Mobile/Tablet: Enhanced Stacked Layout */}
           <div className="lg:hidden">
-            <div className="bg-[#0E1420] border border-[#3B82F6] rounded-2xl p-6 sm:p-8 mb-6">
-              <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-black font-[Poppins] leading-tight mb-4 text-center">
-                Education Hub
-              </h2>
-              <p className="text-white/90 text-base sm:text-lg font-normal font-[Poppins] leading-relaxed text-center mb-6">
-                The Education Hub is a comprehensive document listing thousands
-                of resources under many topics.
-              </p>
-
-              {/* Mobile Education Hub Card */}
-              <div className="bg-white rounded-xl shadow-[0_8px_40px_-8px_rgba(0,0,0,0.55)] border border-slate-200 p-6 sm:p-8">
-                <h3 className="text-center text-[#B91C1C] font-bold text-lg sm:text-xl lg:text-2xl mb-4 tracking-wide">
-                  The Education Hub
-                </h3>
-                <div className="h-px w-full bg-slate-300 mb-4" />
-                <p className="text-slate-800 text-sm sm:text-base leading-relaxed mb-4">
-                  <strong>This Education Hub</strong> was created for the
-                  purpose of compiling over <strong>1000+ resources</strong>{" "}
-                  that general members of Brampton FBLC, JEC, &amp; TA can use.
-                  All of these resources have been officially approved by the
-                  Department of Education.
-                </p>
-                <p className="text-slate-800 text-sm sm:text-base leading-relaxed">
-                  The document was created and initially developed by
-                  Co-President Piraneerth Pathmajeyalan, who serves as the
-                  original author and lead curator. The Department of Education
-                  contributes additional content and ongoing updates to support
-                  the document&apos;s continued development.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Desktop: Side-by-side Layout */}
-          <div className="hidden lg:block">
-            <div className="relative w-full h-[276px] rounded-2xl bg-[#0E1420] border border-[#3B82F6] overflow-visible py-6 pr-6 flex">
-              {/* Left content block */}
-              <div
-                className="flex flex-col justify-center w-[55%] min-w-[520px] pr-4"
-                style={{ marginLeft: "80px" }}
-              >
-                <h2 className="text-white text-4xl xl:text-5xl font-black font-[Poppins] leading-tight mb-3">
+            <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 border-2 border-blue-500/30 rounded-3xl p-6 sm:p-8 mb-8 shadow-2xl">
+              <div className="text-center mb-6">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-500/20 rounded-full mb-4">
+                  <svg className="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
+                </div>
+                <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-4">
                   Education Hub
                 </h2>
-                <p className="text-white/90 text-lg xl:text-xl font-normal font-[Poppins] leading-relaxed max-w-[640px]">
-                  The Education Hub is a comprehensive document listing
-                  thousands of resources under many topics.
+                <p className="text-white/90 text-lg sm:text-xl font-normal leading-relaxed max-w-2xl mx-auto">
+                  The Education Hub is a comprehensive document listing thousands of resources under many topics.
                 </p>
               </div>
 
-              {/* Right layered cards container */}
-              <div className="relative flex-1">
-                {/* Main white card positioned to the far right and vertically centered */}
-                <div className="absolute top-0 right-0 bg-white rounded-xl shadow-[0_8px_40px_-8px_rgba(0,0,0,0.55)] border border-slate-200 w-[500px] max-w-[500px] p-8 h-full flex flex-col justify-center pl-12">
-                  <h3 className="text-center text-[#B91C1C] font-bold text-2xl mb-4 tracking-wide">
-                    The Education Hub
-                  </h3>
-                  <div className="h-px w-full bg-slate-300 mb-5" />
-                  <p className="text-slate-800 text-sm leading-relaxed mb-4">
-                    <strong>This Education Hub</strong> was created for the
-                    purpose of compiling over <strong>1000+ resources</strong>{" "}
-                    that general members of Brampton FBLC, JEC, &amp; TA can
-                    use. All of these resources have been officially approved by
-                    the Department of Education.
-                  </p>
-                  <p className="text-slate-800 text-sm leading-relaxed">
-                    The document was created and initially developed by
-                    Co-President Piraneerth Pathmajeyalan, who serves as the
-                    original author and lead curator. The Department of
-                    Education contributes additional content and ongoing updates
-                    to support the document's continued development.
-                  </p>
+              {/* Enhanced Mobile Education Hub Card */}
+              <div className="bg-gradient-to-br from-white to-slate-50 rounded-2xl shadow-[0_20px_60px_-12px_rgba(0,0,0,0.4)] border border-slate-200 p-6 sm:p-8 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-100 to-transparent rounded-full -translate-y-16 translate-x-16"></div>
+                <div className="relative z-10">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-10 h-10 bg-red-500 rounded-lg flex items-center justify-center">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                      </svg>
+                    </div>
+                    <h3 className="text-red-600 font-bold text-xl sm:text-2xl tracking-wide">
+                      The Education Hub
+                    </h3>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+                      <p className="text-slate-800 text-sm sm:text-base leading-relaxed">
+                        <span className="font-semibold text-blue-700">This Education Hub</span> was created for the purpose of compiling over <span className="font-bold text-blue-700">1000+ resources</span> that general members of Brampton FBLC, JEC, & TA can use. All of these resources have been officially approved by the Department of Education.
+                      </p>
+                    </div>
+                    
+                    <div className="bg-slate-50 rounded-lg p-4 border-l-4 border-slate-400">
+                      <p className="text-slate-800 text-sm sm:text-base leading-relaxed">
+                        The document was created and initially developed by <span className="font-semibold text-slate-700">Co-President Piraneerth Pathmajeyalan</span>, who serves as the original author and lead curator. The Department of Education contributes additional content and ongoing updates to support the document's continued development.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Tags row for all screen sizes */}
-          <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3 sm:gap-4">
+          {/* Desktop: Enhanced Side-by-side Layout */}
+          <div className="hidden lg:block">
+            <div className="relative w-full min-h-[400px] rounded-3xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 border-2 border-blue-500/30 overflow-hidden shadow-2xl">
+              {/* Background decoration */}
+              <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-blue-500/10 to-transparent rounded-full -translate-y-48 translate-x-48"></div>
+              <div className="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-tr from-blue-400/10 to-transparent rounded-full translate-y-32 -translate-x-32"></div>
+              
+              <div className="relative z-10 flex h-full min-h-[400px]">
+                {/* Left content block */}
+                <div className="flex flex-col justify-center w-[55%] min-w-[520px] px-12 py-12">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 bg-blue-500/20 rounded-2xl flex items-center justify-center">
+                      <svg className="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                      </svg>
+                    </div>
+                    <h2 className="text-white text-5xl xl:text-6xl font-black leading-tight">
+                      Education Hub
+                    </h2>
+                  </div>
+                  <p className="text-white/90 text-xl xl:text-2xl font-normal leading-relaxed max-w-[640px]">
+                    The Education Hub is a comprehensive document listing thousands of resources under many topics.
+                  </p>
+                </div>
+
+                {/* Right enhanced card container */}
+                <div className="relative flex-1 flex items-center justify-end pr-8">
+                  <div className="bg-gradient-to-br from-white to-slate-50 rounded-2xl shadow-[0_25px_80px_-12px_rgba(0,0,0,0.4)] border border-slate-200 w-[520px] max-w-[520px] p-8 relative overflow-hidden">
+                    {/* Card decoration */}
+                    <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-blue-100 to-transparent rounded-full -translate-y-20 translate-x-20"></div>
+                    
+                    <div className="relative z-10">
+                      <div className="flex items-center gap-4 mb-6">
+                        <div className="w-12 h-12 bg-red-500 rounded-xl flex items-center justify-center">
+                          <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                          </svg>
+                        </div>
+                        <h3 className="text-red-600 font-bold text-2xl tracking-wide">
+                          The Education Hub
+                        </h3>
+                      </div>
+                      
+                      <div className="space-y-5">
+                        <div className="bg-blue-50 rounded-xl p-5 border-l-4 border-blue-500">
+                          <p className="text-slate-800 text-sm leading-relaxed">
+                            <span className="font-semibold text-blue-700">This Education Hub</span> was created for the purpose of compiling over <span className="font-bold text-blue-700">1000+ resources</span> that general members of Brampton FBLC, JEC, & TA can use. All of these resources have been officially approved by the Department of Education.
+                          </p>
+                        </div>
+                        
+                        <div className="bg-slate-50 rounded-xl p-5 border-l-4 border-slate-400">
+                          <p className="text-slate-800 text-sm leading-relaxed">
+                            The document was created and initially developed by <span className="font-semibold text-slate-700">Co-President Piraneerth Pathmajeyalan</span>, who serves as the original author and lead curator. The Department of Education contributes additional content and ongoing updates to support the document's continued development.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Enhanced Tags row for all screen sizes */}
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 sm:gap-6">
             {subjects.map((subject, index) => (
-              <span
+              <div
                 key={index}
-                className="h-[50px] sm:h-[65px] flex items-center justify-center rounded-md bg-slate-800/80 border border-slate-600/40 text-white text-sm font-medium font-[Poppins] backdrop-blur-sm hover:bg-slate-700/80 transition-colors px-4"
+                className="group h-[60px] sm:h-[75px] flex items-center justify-center rounded-xl bg-gradient-to-r from-slate-800/90 to-slate-700/90 border border-slate-600/50 text-white text-sm font-medium backdrop-blur-sm hover:from-blue-600/90 hover:to-blue-700/90 hover:border-blue-500/50 transition-all duration-300 px-4 cursor-pointer transform hover:-translate-y-1 hover:shadow-lg"
               >
-                {subject}
-              </span>
+                <span className="group-hover:text-blue-100 transition-colors duration-300">
+                  {subject}
+                </span>
+              </div>
             ))}
           </div>
         </div>
@@ -284,10 +317,10 @@ export default function AcademicProgramming() {
           />
         </div>
         <div className="relative z-10 mx-auto text-center w-full flex flex-col items-center max-w-7xl">
-          <h2 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black font-[Poppins] mb-4 sm:mb-6 text-center">
+          <h2 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black mb-4 sm:mb-6 text-center">
             Administration
           </h2>
-          <p className="text-white/80 text-base sm:text-lg lg:text-xl font-normal font-[Poppins] mb-8 sm:mb-12 lg:mb-16 text-center max-w-3xl mx-auto leading-relaxed">
+          <p className="text-white/80 text-base sm:text-lg lg:text-xl font-normal mb-8 sm:mb-12 lg:mb-16 text-center max-w-3xl mx-auto leading-relaxed">
             If you have any questions about academic programming, please
             redirect it to these people.
           </p>
@@ -318,10 +351,10 @@ export default function AcademicProgramming() {
 
                     {/* Text Content */}
                     <div className="flex-1 text-center sm:text-left">
-                      <div className="text-white/80 text-xs sm:text-sm font-medium font-[Poppins] mb-2">
+                      <div className="text-white/80 text-xs sm:text-sm font-medium mb-2">
                         {member.role}
                       </div>
-                      <h3 className="text-white text-lg sm:text-xl lg:text-2xl xl:text-3xl font-bold font-[Poppins] leading-tight">
+                      <h3 className="text-white text-lg sm:text-xl lg:text-2xl xl:text-3xl font-bold leading-tight">
                         {member.name.split(" ").map((word, i) => (
                           <div key={i}>{word}</div>
                         ))}
@@ -349,7 +382,7 @@ export default function AcademicProgramming() {
           />
           {/* Footer Text */}
           <div className="flex-1 flex items-center">
-            <p className="text-white text-sm sm:text-base lg:text-lg font-normal font-[Kufam] text-center sm:text-left leading-relaxed">
+            <p className="text-white text-sm sm:text-base lg:text-lg font-normal text-center sm:text-left leading-relaxed">
               Be part of the movement that&apos;s changing the game this is more
               than content, it&apos;s a community. Don&apos;t just sit on the
               sidelines, join us and help shape the future. Together, we&apos;re
