@@ -56,11 +56,11 @@ export function Navbar({ className }: NavbarProps) {
           </div>
 
           {/* Profile Icon */}
-          {/* <div className="hidden md:block">
-            <Link href="/profile" className="text-black">
+          <div className="hidden md:block">
+            <Link href="" className="text-black">
               <User className="h-5 w-5" />
             </Link>
-          </div> */}
+          </div>
 
           {/* Mobile menu button */}
           <div className="lg:hidden">
