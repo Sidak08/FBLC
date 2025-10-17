@@ -1,18 +1,9 @@
 "use client";
-import { useState } from "react";
-import Image from "next/image";
-import { Navigation } from "../../components/navigation";
 
 interface StatData {
   icon: string;
   title: string;
   subtitle: string;
-}
-
-interface DevelopmentStrategy {
-  title: string;
-  subtitle: string;
-  color: string;
 }
 
 interface AdminTeamMember {
@@ -23,8 +14,6 @@ interface AdminTeamMember {
 }
 
 export default function AcademicProgramming() {
-  const [activeTab, setActiveTab] = useState("training");
-
   const statsData: StatData[] = [
     {
       icon: "/ap/FBLC/Vector.svg",
@@ -40,29 +29,6 @@ export default function AcademicProgramming() {
       icon: "/ap/FBLC/briefcase-solid-full 2.svg",
       title: "Interactive & Educational",
       subtitle: "Workshops",
-    },
-  ];
-
-  const developmentStrategy: DevelopmentStrategy[] = [
-    {
-      title: "INTEGRATES",
-      subtitle: "ACADEMICS AND FUN",
-      color: "from-blue-600 to-blue-800",
-    },
-    {
-      title: "REKINDLES",
-      subtitle: "COMPETITIVE SPIRIT",
-      color: "from-purple-600 to-purple-800",
-    },
-    {
-      title: "FUELS",
-      subtitle: "CREATIVITY",
-      color: "from-green-600 to-green-800",
-    },
-    {
-      title: "ENCOURAGES",
-      subtitle: "THOUGHTFUL EXPLORATION",
-      color: "from-red-600 to-red-800",
     },
   ];
 
@@ -99,35 +65,35 @@ export default function AcademicProgramming() {
     <div className="min-h-screen bg-gradient-to-b from-slate-800 via-slate-900 to-black">
       {/* Hero Section - Images */}
       <section className="w-full flex flex-col relative">
-        {/* Navigation - Positioned over images */}
-        <div
-          className="absolute top-0 left-0 w-full z-50"
-          style={{ marginTop: "1vw" }}
-        >
-          <div className="flex justify-center w-full">
-            <Navigation />
-          </div>
-        </div>
         {/* Top Image - heading.svg */}
-        <div className="w-full">
-          <Image
+        <div className="w-full bg-slate-800 min-h-[200px] flex items-center justify-center">
+          <img
             src="/ap/FBLC(1)/heading.svg"
             alt="Academic Programming Heading"
-            width={1920}
-            height={400}
             className="w-full h-auto object-cover"
-            priority
+            onError={(e) => {
+              e.currentTarget.style.display = "none";
+              if (e.currentTarget.parentElement) {
+                e.currentTarget.parentElement.innerHTML =
+                  '<div class="text-white text-4xl font-bold text-center py-12">Academic Programming</div>';
+              }
+            }}
           />
         </div>
 
         {/* Bottom Image - banner */}
-        <div className="w-full">
-          <Image
+        <div className="w-full bg-slate-900 min-h-[300px] flex items-center justify-center">
+          <img
             src="/ap/FBLC(1)/banner.svg"
             alt="Academic Programming Banner"
-            width={1920}
-            height={600}
             className="w-full h-auto object-cover"
+            onError={(e) => {
+              e.currentTarget.style.display = "none";
+              if (e.currentTarget.parentElement) {
+                e.currentTarget.parentElement.innerHTML =
+                  '<div class="text-white text-2xl text-center py-16">Empowering Future Business Leaders</div>';
+              }
+            }}
           />
         </div>
       </section>
@@ -142,12 +108,13 @@ export default function AcademicProgramming() {
                 className="bg-slate-800/50 backdrop-blur-sm border-2 border-blue-500/30 rounded-2xl p-6 sm:p-8 text-center shadow-[10px_10px_20px_rgba(0,0,0,0.3)] hover:shadow-[15px_15px_30px_rgba(0,0,0,0.4)] transition-all duration-300 hover:-translate-y-2 w-full max-w-sm min-h-[250px] sm:min-h-[300px] flex flex-col items-center justify-center"
               >
                 <div className="mb-3 flex justify-center">
-                  <Image
+                  <img
                     src={stat.icon}
                     alt={`${stat.title} icon`}
-                    width={64}
-                    height={64}
                     className="w-12 h-12 sm:w-16 sm:h-16 object-contain"
+                    onError={(e) => {
+                      e.currentTarget.style.display = "none";
+                    }}
                   />
                 </div>
                 <div className="text-white text-lg sm:text-xl lg:text-2xl font-bold font-[Poppins] mb-2 text-center">
@@ -236,7 +203,7 @@ export default function AcademicProgramming() {
                   Co-President Piraneerth Pathmajeyalan, who serves as the
                   original author and lead curator. The Department of Education
                   contributes additional content and ongoing updates to support
-                  the document's continued development.
+                  the document&apos;s continued development.
                 </p>
               </div>
             </div>
@@ -306,13 +273,14 @@ export default function AcademicProgramming() {
         style={{ marginTop: "50px" }}
       >
         {/* Full-width background rectangle */}
-        <div className="absolute inset-0 z-0">
-          <Image
+        <div className="absolute inset-0 z-0 bg-slate-800">
+          <img
             src="/ap/Rectangle.svg"
             alt="Background rectangle"
-            fill
-            className="object-cover w-full h-full"
-            priority
+            className="object-cover w-full h-full absolute inset-0"
+            onError={(e) => {
+              e.currentTarget.style.display = "none";
+            }}
           />
         </div>
         <div className="relative z-10 mx-auto text-center w-full flex flex-col items-center max-w-7xl">
@@ -333,13 +301,17 @@ export default function AcademicProgramming() {
                   <div className="bg-slate-900/80 backdrop-blur-sm border border-blue-500/40 rounded-2xl p-4 sm:p-6 lg:p-8 flex flex-col sm:flex-row items-center gap-4 sm:gap-6 shadow-[10px_10px_30px_rgba(0,0,0,0.4)] hover:shadow-[15px_15px_40px_rgba(0,0,0,0.5)] transition-all duration-300 min-h-[200px] sm:min-h-[250px]">
                     {/* Profile Image */}
                     <div className="flex-shrink-0">
-                      <div className="w-24 h-24 sm:w-32 sm:h-32 lg:w-[150px] lg:h-[150px] xl:w-[200px] xl:h-[200px] rounded-full overflow-hidden border-4 border-blue-500/30">
-                        <Image
+                      <div className="w-24 h-24 sm:w-32 sm:h-32 lg:w-[150px] lg:h-[150px] xl:w-[200px] xl:h-[200px] rounded-full overflow-hidden border-4 border-blue-500/30 bg-gradient-to-r from-[#3B82F6] to-[#1E40AF] flex items-center justify-center">
+                        <img
                           src={member.image}
                           alt={member.name}
-                          width={200}
-                          height={200}
                           className="w-full h-full object-cover"
+                          onError={(e) => {
+                            e.currentTarget.style.display = "none";
+                            if (e.currentTarget.parentElement) {
+                              e.currentTarget.parentElement.innerHTML = `<span class="text-white text-2xl font-bold">${member.name.charAt(0)}</span>`;
+                            }
+                          }}
                         />
                       </div>
                     </div>
@@ -378,10 +350,11 @@ export default function AcademicProgramming() {
           {/* Footer Text */}
           <div className="flex-1 flex items-center">
             <p className="text-white text-sm sm:text-base lg:text-lg font-normal font-[Kufam] text-center sm:text-left leading-relaxed">
-              Be part of the movement that's changing the game this is more than
-              content, it's a community. Don't just sit on the sidelines, join
-              us and help shape the future. Together, we're building something
-              bigger than ourselves, and we want you to be a part of it.
+              Be part of the movement that&apos;s changing the game this is more
+              than content, it&apos;s a community. Don&apos;t just sit on the
+              sidelines, join us and help shape the future. Together, we&apos;re
+              building something bigger than ourselves, and we want you to be a
+              part of it.
             </p>
           </div>
         </div>

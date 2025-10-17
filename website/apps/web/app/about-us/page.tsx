@@ -1,7 +1,18 @@
-import Image from "next/image"
-import { Badge } from "@workspace/ui/components/badge"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@workspace/ui/components/tabs"
-import { FblcTab, TargetAlphaTab, JecCanadaTab, Timeline, Stats } from "@/components/about-us"
+import Image from "next/image";
+
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@workspace/ui/components/tabs";
+import {
+  FblcTab,
+  TargetAlphaTab,
+  JecCanadaTab,
+  Timeline,
+  Stats,
+} from "@/components/about-us";
 
 export default function AboutUsPage() {
   return (
@@ -17,9 +28,10 @@ export default function AboutUsPage() {
       </div>
 
       {/* Continuous Background Container */}
-      <div 
+      <div
         style={{
-          background: 'linear-gradient(353.51deg, #04070D 2.91%, #1A2537 60.43%, #1F2F55 98.7%)'
+          background:
+            "linear-gradient(353.51deg, #04070D 2.91%, #1A2537 60.43%, #1F2F55 98.7%)",
         }}
       >
         {/* Organizations Section with Tabs */}
@@ -28,26 +40,27 @@ export default function AboutUsPage() {
             <Tabs defaultValue="fblc" className="w-full">
               {/* Tab Navigation */}
               <div className="flex justify-center mb-8 sm:mb-12">
-                <TabsList 
+                <TabsList
                   className="border border-white/30 p-2 flex flex-col sm:flex-row w-full max-w-md sm:max-w-none sm:w-auto gap-2 sm:gap-0 backdrop-blur-md shadow-xl"
                   style={{
-                    background: 'linear-gradient(135deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.06) 50%, rgba(31,47,85,0.3) 100%)'
+                    background:
+                      "linear-gradient(135deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.06) 50%, rgba(31,47,85,0.3) 100%)",
                   }}
                 >
-                  <TabsTrigger 
-                    value="fblc" 
+                  <TabsTrigger
+                    value="fblc"
                     className="data-[state=active]:bg-white/25 data-[state=active]:text-white data-[state=active]:shadow-lg text-white/80 px-4 sm:px-8 py-3 sm:py-3 w-full sm:w-auto text-sm sm:text-base font-medium hover:bg-white/10 transition-all duration-200 rounded-md"
                   >
                     FBLC
                   </TabsTrigger>
-                  <TabsTrigger 
-                    value="target-alpha" 
+                  <TabsTrigger
+                    value="target-alpha"
                     className="data-[state=active]:bg-white/25 data-[state=active]:text-white data-[state=active]:shadow-lg text-white/80 px-4 sm:px-8 py-3 sm:py-3 w-full sm:w-auto text-sm sm:text-base font-medium hover:bg-white/10 transition-all duration-200 rounded-md"
                   >
                     Target Alpha
                   </TabsTrigger>
-                  <TabsTrigger 
-                    value="jec" 
+                  <TabsTrigger
+                    value="jec"
                     className="data-[state=active]:bg-white/25 data-[state=active]:text-white data-[state=active]:shadow-lg text-white/80 px-4 sm:px-8 py-3 sm:py-3 w-full sm:w-auto text-sm sm:text-base font-medium hover:bg-white/10 transition-all duration-200 rounded-md"
                   >
                     JEC Canada
@@ -83,5 +96,5 @@ export default function AboutUsPage() {
         <Stats />
       </div>
     </div>
-  )
+  );
 }

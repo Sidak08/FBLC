@@ -1,8 +1,6 @@
 "use client";
 
 //import { Navigation } from "../components/navigation";
-import { StatsCard } from "../components/stats-card";
-import { Button } from "../components/button";
 
 export default function Home() {
   return (
@@ -259,10 +257,11 @@ export default function Home() {
           {/* Footer Text */}
           <div className="flex-1 flex items-center">
             <p className="text-white text-sm sm:text-base lg:text-lg font-normal font-[Kufam] text-center sm:text-left leading-relaxed">
-              Be part of the movement that's changing the game this is more than
-              content, it's a community. Don't just sit on the sidelines, join
-              us and help shape the future. Together, we're building something
-              bigger than ourselves, and we want you to be a part of it.
+              Be part of the movement that&apos;s changing the game this is more
+              than content, it&apos;s a community. Don&apos;t just sit on the
+              sidelines, join us and help shape the future. Together, we&apos;re
+              building something bigger than ourselves, and we want you to be a
+              part of it.
             </p>
           </div>
         </div>

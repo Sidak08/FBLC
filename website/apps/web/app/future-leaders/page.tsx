@@ -20,8 +20,8 @@ export default function FutureBusinessProgram() {
             Future Business Program
           </h1>
           <p className="text-white/90 text-base sm:text-lg md:text-xl leading-relaxed mb-6 sm:mb-8">
-            Preparing tomorrow's business leaders through innovative programs
-            and real-world experience.
+            Preparing tomorrow&apos;s business leaders through innovative
+            programs and real-world experience.
           </p>
         </div>
 
@@ -35,7 +35,7 @@ export default function FutureBusinessProgram() {
               Coming Soon
             </h2>
             <p className="text-white/80 text-base sm:text-lg mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed">
-              We're working hard to bring you an exciting Future Business
+              We&apos;re working hard to bring you an exciting Future Business
               Program. This comprehensive program will provide students with
               cutting-edge business skills, entrepreneurial mindset development,
               and hands-on experience with real business challenges.
