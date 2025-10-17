@@ -28,24 +28,23 @@ export function TeamNav({ activeTab = "admins", onTabChange }: TeamNavProps) {
   };
 
   return (
-    <div
-      className="w-full flex justify-center px-24"
-      style={{ paddingTop: "50px", paddingBottom: "50px" }}
-    >
-      <div className="bg-[#334155] rounded-lg p-1 px-24 flex gap-10 max-w-fit min-h-[65px] items-center">
-        {tabs.map((tab) => (
-          <button
-            key={tab.id}
-            onClick={() => handleTabClick(tab.id, tab.label)}
-            className={`px-5 py-3 rounded-md font-medium transition-all duration-200 whitespace-nowrap h-[60px] flex items-center ${
-              tab.id === active
-                ? "bg-[#1E40AF] text-white shadow-sm"
-                : "text-white/80 hover:text-white hover:bg-white/10"
-            }`}
-          >
-            {tab.label}
-          </button>
-        ))}
+    <div className="w-full flex justify-center px-4 sm:px-6 lg:px-24 py-8 sm:py-12 lg:py-[50px]">
+      <div className="w-full max-w-7xl overflow-x-auto">
+        <div className="bg-[#334155] rounded-lg p-1 sm:p-2 lg:p-1 flex gap-2 sm:gap-4 lg:gap-10 min-h-[52px] sm:min-h-[60px] lg:min-h-[65px] items-center justify-start sm:justify-center min-w-max sm:min-w-0 px-4 sm:px-8 lg:px-24">
+          {tabs.map((tab) => (
+            <button
+              key={tab.id}
+              onClick={() => handleTabClick(tab.id, tab.label)}
+              className={`px-3 sm:px-4 lg:px-5 py-2 sm:py-3 rounded-md font-medium transition-all duration-200 whitespace-nowrap h-[44px] sm:h-[52px] lg:h-[60px] flex items-center text-xs sm:text-sm lg:text-base min-h-[44px] touch-manipulation ${
+                tab.id === active
+                  ? "bg-[#1E40AF] text-white shadow-sm"
+                  : "text-white/80 hover:text-white hover:bg-white/10"
+              }`}
+            >
+              {tab.label}
+            </button>
+          ))}
+        </div>
       </div>
     </div>
   );

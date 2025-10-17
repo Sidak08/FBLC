@@ -102,11 +102,11 @@ export default function MeetTheTeam() {
         </div>*/}
 
         {/* Hero Section with Description */}
-        <div className="text-center mb-16 px-6">
-          <h1 className="text-white text-4xl md:text-6xl font-bold mb-6">
+        <div className="text-center mb-12 sm:mb-16 px-4 sm:px-6">
+          <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
             Meet Our Team
           </h1>
-          <p className="text-white text-lg md:text-xl max-w-4xl mx-auto leading-relaxed mb-8">
+          <p className="text-white text-base sm:text-lg md:text-xl max-w-4xl mx-auto leading-relaxed mb-6 sm:mb-8">
             Dedicated leaders committed to empowering the next generation of
             business professionals and fostering innovation in our community.
           </p>
@@ -115,10 +115,12 @@ export default function MeetTheTeam() {
         <TeamNav activeTab={currentDepartment} onTabChange={handleTabChange} />
 
         {/* Loading State */}
-        <main className="max-w-7xl mx-auto px-6 py-12">
+        <main className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
           <div className="text-center">
-            <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-white mx-auto mb-4"></div>
-            <p className="text-white text-lg">Loading team data...</p>
+            <div className="animate-spin rounded-full h-12 sm:h-16 w-12 sm:w-16 border-b-2 border-white mx-auto mb-4"></div>
+            <p className="text-white text-base sm:text-lg">
+              Loading team data...
+            </p>
           </div>
         </main>
       </div>
@@ -136,11 +138,11 @@ export default function MeetTheTeam() {
         </div>*/}
 
         {/* Hero Section with Description */}
-        <div className="text-center mb-16 px-6">
-          <h1 className="text-white text-4xl md:text-6xl font-bold mb-6">
+        <div className="text-center mb-12 sm:mb-16 px-4 sm:px-6">
+          <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">
             Meet Our Team
           </h1>
-          <p className="text-white text-lg md:text-xl max-w-4xl mx-auto leading-relaxed mb-8">
+          <p className="text-white text-base sm:text-lg md:text-xl max-w-4xl mx-auto leading-relaxed mb-6 sm:mb-8">
             Dedicated leaders committed to empowering the next generation of
             business professionals and fostering innovation in our community.
           </p>
@@ -149,16 +151,18 @@ export default function MeetTheTeam() {
         <TeamNav activeTab={currentDepartment} onTabChange={handleTabChange} />
 
         {/* Error State */}
-        <main className="max-w-7xl mx-auto px-6 py-12">
+        <main className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
           <div className="text-center">
             <div className="text-red-400 text-6xl mb-4">⚠️</div>
-            <h2 className="text-white text-2xl font-bold mb-2">
+            <h2 className="text-white text-xl sm:text-2xl font-bold mb-2">
               Unable to Load Team Data
             </h2>
-            <p className="text-white/80 mb-4">Error: {error}</p>
+            <p className="text-white/80 mb-4 text-sm sm:text-base">
+              Error: {error}
+            </p>
             <button
               onClick={() => window.location.reload()}
-              className="bg-gradient-to-r from-[#3B82F6] to-[#1E40AF] text-white px-6 py-3 rounded-lg font-semibold hover:from-[#2563EB] hover:to-[#1D4ED8] transition-all duration-300"
+              className="bg-gradient-to-r from-[#3B82F6] to-[#1E40AF] text-white px-6 py-3 rounded-lg font-semibold hover:from-[#2563EB] hover:to-[#1D4ED8] transition-all duration-300 min-h-[44px] touch-manipulation"
             >
               Retry
             </button>
@@ -178,11 +182,11 @@ export default function MeetTheTeam() {
       <div className="flex justify-center w-full">{/*<Navigation />*/}</div>
 
       {/* Hero Section with Description */}
-      <div className="text-center mb-16 px-6">
-        <h1 className="text-white text-4xl md:text-6xl font-bold mb-6">
+      <div className="text-center mb-12 sm:mb-16 px-4 sm:px-6">
+        <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6">
           Meet Our {getDepartmentTitle(currentDepartment)}
         </h1>
-        <p className="text-white text-lg md:text-xl max-w-4xl mx-auto leading-relaxed mb-8">
+        <p className="text-white text-base sm:text-lg md:text-xl max-w-4xl mx-auto leading-relaxed mb-6 sm:mb-8">
           {getDepartmentDescription(currentDepartment)}
         </p>
       </div>
@@ -190,42 +194,38 @@ export default function MeetTheTeam() {
       <TeamNav activeTab={currentDepartment} onTabChange={handleTabChange} />
 
       {/* Main Content */}
-      <main
-        className="w-full px-6 py-12"
-        style={{ marginLeft: "50px", marginRight: "50px" }}
-      >
+      <main className="w-full px-4 sm:px-6 lg:px-8 py-8 sm:py-12 max-w-7xl mx-auto">
         {/* Team Grid */}
         {currentTeamMembers.length > 0 ? (
-          <div className="w-full mb-16">
-            <div className="flex flex-wrap justify-center gap-12 w-full">
+          <div className="w-full mb-12 sm:mb-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8 lg:gap-12 justify-items-center">
               {currentTeamMembers.map((member, index) => (
                 <div
                   key={`${currentDepartment}-${index}`}
-                  className="bg-transparent border border-[#60A5FA]/30 rounded-2xl p-8 backdrop-blur-sm hover:border-[#60A5FA]/50 transition-all duration-300 flex flex-col justify-between flex-shrink-0"
-                  style={{ width: "650px", minHeight: "500px" }}
+                  className="bg-transparent border border-[#60A5FA]/30 rounded-2xl p-6 sm:p-8 backdrop-blur-sm hover:border-[#60A5FA]/50 transition-all duration-300 flex flex-col justify-between w-full max-w-md lg:max-w-lg xl:max-w-xl min-h-[450px] sm:min-h-[500px]"
                 >
                   <div className="flex-grow">
                     {/* Profile Circle */}
-                    <div className="flex justify-center mb-8">
-                      <div className="w-40 h-40 rounded-full bg-gradient-to-r from-[#3B82F6] to-[#1E40AF] flex items-center justify-center">
-                        <span className="text-white text-6xl font-bold">
+                    <div className="flex justify-center mb-6 sm:mb-8">
+                      <div className="w-24 sm:w-32 lg:w-40 h-24 sm:h-32 lg:h-40 rounded-full bg-gradient-to-r from-[#3B82F6] to-[#1E40AF] flex items-center justify-center">
+                        <span className="text-white text-3xl sm:text-4xl lg:text-6xl font-bold">
                           {member.initial || member.name.charAt(0)}
                         </span>
                       </div>
                     </div>
 
                     {/* Name */}
-                    <h3 className="text-white text-3xl font-bold text-center mb-6">
+                    <h3 className="text-white text-xl sm:text-2xl lg:text-3xl font-bold text-center mb-4 sm:mb-6">
                       {member.name}
                     </h3>
 
                     {/* Position(s) */}
-                    <div className="flex flex-wrap justify-center gap-3 mb-6">
-                      <span className="bg-[#1E40AF] text-white px-6 py-3 rounded-lg text-base font-medium">
+                    <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+                      <span className="bg-[#1E40AF] text-white px-3 sm:px-4 lg:px-6 py-2 sm:py-3 rounded-lg text-xs sm:text-sm lg:text-base font-medium">
                         {member.title}
                       </span>
                       {member.secondPosition && (
-                        <span className="bg-[#1E40AF] text-white px-6 py-3 rounded-lg text-base font-medium">
+                        <span className="bg-[#1E40AF] text-white px-3 sm:px-4 lg:px-6 py-2 sm:py-3 rounded-lg text-xs sm:text-sm lg:text-base font-medium">
                           {member.secondPosition}
                         </span>
                       )}
@@ -234,7 +234,7 @@ export default function MeetTheTeam() {
                     {/* Description */}
                     {member.description && (
                       <p
-                        className="text-white text-center mb-6 text-base leading-relaxed overflow-hidden"
+                        className="text-white text-center mb-4 sm:mb-6 text-sm sm:text-base leading-relaxed overflow-hidden"
                         style={{
                           display: "-webkit-box",
                           WebkitLineClamp: 5,
@@ -247,11 +247,11 @@ export default function MeetTheTeam() {
 
                     {/* Tags/Adjectives */}
                     {member.adjectives && member.adjectives.length > 0 && (
-                      <div className="flex flex-wrap justify-center gap-2 mb-6">
+                      <div className="flex flex-wrap justify-center gap-2 mb-4 sm:mb-6">
                         {member.adjectives.map((adjective, adjectiveIndex) => (
                           <span
                             key={adjectiveIndex}
-                            className="text-white text-sm px-4 py-2 border border-white/20 rounded-full"
+                            className="text-white text-xs sm:text-sm px-3 sm:px-4 py-1 sm:py-2 border border-white/20 rounded-full"
                           >
                             {adjective}
                           </span>
@@ -262,7 +262,7 @@ export default function MeetTheTeam() {
 
                   {/* Learn More Button */}
                   <div className="text-center mt-auto">
-                    <button className="bg-gradient-to-r from-[#3B82F6] to-[#1E40AF] text-white px-10 py-4 rounded-lg text-lg font-semibold hover:from-[#2563EB] hover:to-[#1D4ED8] transition-all duration-300">
+                    <button className="bg-gradient-to-r from-[#3B82F6] to-[#1E40AF] text-white px-6 sm:px-8 lg:px-10 py-3 sm:py-4 rounded-lg text-sm sm:text-base lg:text-lg font-semibold hover:from-[#2563EB] hover:to-[#1D4ED8] transition-all duration-300 min-h-[44px] touch-manipulation">
                       Learn More
                     </button>
                   </div>
@@ -271,29 +271,29 @@ export default function MeetTheTeam() {
             </div>
           </div>
         ) : (
-          <div className="text-center mb-16">
-            <div className="text-white/60 text-6xl mb-4">👥</div>
-            <h3 className="text-white text-2xl font-bold mb-2">
+          <div className="text-center mb-12 sm:mb-16">
+            <div className="text-white/60 text-4xl sm:text-6xl mb-4">👥</div>
+            <h3 className="text-white text-xl sm:text-2xl font-bold mb-2">
               No Team Members Found
             </h3>
-            <p className="text-white/80">
+            <p className="text-white/80 text-sm sm:text-base">
               We&apos;re currently building this team. Check back soon!
             </p>
           </div>
         )}
 
         {/* Call to Action */}
-        <div className="w-full bg-transparent border border-[#60A5FA]/30 rounded-2xl p-12 text-center backdrop-blur-sm">
-          <h2 className="text-white text-3xl font-bold mb-4">
+        <div className="w-full bg-transparent border border-[#60A5FA]/30 rounded-2xl p-6 sm:p-8 lg:p-12 text-center backdrop-blur-sm">
+          <h2 className="text-white text-2xl sm:text-3xl font-bold mb-4">
             Ready to Join Our Team?
           </h2>
-          <p className="text-white text-lg mb-8 max-w-3xl mx-auto">
+          <p className="text-white text-base sm:text-lg mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed">
             Discover leadership opportunities and become part of our growing
             community of future business leaders.
           </p>
           <Link
             href="/join-us"
-            className="inline-block bg-gradient-to-r from-[#3B82F6] to-[#1E40AF] text-white px-8 py-4 rounded-lg font-bold text-lg hover:from-[#2563EB] hover:to-[#1D4ED8] transition-all duration-300"
+            className="inline-block bg-gradient-to-r from-[#3B82F6] to-[#1E40AF] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-base sm:text-lg hover:from-[#2563EB] hover:to-[#1D4ED8] transition-all duration-300 min-h-[44px] touch-manipulation"
           >
             Start Your Journey
           </Link>
