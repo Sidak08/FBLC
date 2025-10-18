@@ -20,13 +20,13 @@ export default function Home() {
         {/* Hero Content */}
         <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full min-h-[400px]">
           {/* Main Heading */}
-          <h1 className="text-white font-black leading-tight mb-4 sm:mb-6 font-[Poppins] drop-shadow-2xl text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+          <h1 className="text-white font-black leading-tight mb-4 sm:mb-6 drop-shadow-2xl text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
             <span className="block">EMPOWERING FUTURE</span>
             <span className="block">BUSINESS</span>
           </h1>
 
           {/* Sub Heading */}
-          <h2 className="text-white font-black leading-tight mb-8 sm:mb-12 font-[Poppins] text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+          <h2 className="text-white font-black leading-tight mb-8 sm:mb-12 text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
             LEADERS, ONE STEP AT A TIME!
           </h2>
 
@@ -54,28 +54,28 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 lg:gap-8 w-full">
             {/* General Members Card */}
             <div className="w-full sm:flex-1 flex flex-col items-center justify-center bg-blue-400 rounded-xl shadow-[10px_10px_8px_2px_rgba(0,0,0,0.25)] border border-black p-4 sm:p-6 min-h-[10rem] sm:min-h-[11rem]">
-              <div className="text-white text-4xl sm:text-5xl lg:text-6xl font-black font-['MuseoModerno'] mb-2 text-center">
+              <div className="text-white text-4xl sm:text-5xl lg:text-6xl font-black mb-2 text-center">
                 200+
               </div>
-              <div className="text-white text-xl sm:text-2xl lg:text-3xl font-extrabold font-['Mukta_Malar'] text-center">
+              <div className="text-white text-xl sm:text-2xl lg:text-3xl font-extrabold text-center">
                 General Members
               </div>
             </div>
             {/* Executive Members Card */}
             <div className="w-full sm:flex-1 flex flex-col items-center justify-center bg-indigo-900 rounded-xl shadow-[10px_10px_8px_2px_rgba(0,0,0,0.25)] p-4 sm:p-6 min-h-[10rem] sm:min-h-[11rem]">
-              <div className="text-white text-4xl sm:text-5xl lg:text-6xl font-black font-['MuseoModerno'] mb-2 text-center">
+              <div className="text-white text-4xl sm:text-5xl lg:text-6xl font-black mb-2 text-center">
                 30+
               </div>
-              <div className="text-white text-xl sm:text-2xl lg:text-3xl font-extrabold font-['Mukta_Malar'] text-center">
+              <div className="text-white text-xl sm:text-2xl lg:text-3xl font-extrabold text-center">
                 Executive Members
               </div>
             </div>
             {/* Subsidiaries Card */}
             <div className="w-full sm:flex-1 flex flex-col items-center justify-center bg-blue-950 rounded-xl shadow-[10px_10px_8px_2px_rgba(0,0,0,0.25)] border border-black p-4 sm:p-6 min-h-[10rem] sm:min-h-[11rem]">
-              <div className="text-white text-4xl sm:text-5xl lg:text-6xl font-black font-['MuseoModerno'] mb-2 text-center">
+              <div className="text-white text-4xl sm:text-5xl lg:text-6xl font-black mb-2 text-center">
                 2
               </div>
-              <div className="text-white text-xl sm:text-2xl lg:text-3xl font-extrabold font-['Mukta_Malar'] text-center">
+              <div className="text-white text-xl sm:text-2xl lg:text-3xl font-extrabold text-center">
                 Subsidiaries
               </div>
             </div>
@@ -106,10 +106,10 @@ export default function Home() {
             </div>
             {/* Content Side */}
             <div className="flex flex-col justify-center items-center gap-8 sm:gap-12 lg:gap-16 shadow-[12px_12px_6px_0px_rgba(0,0,0,0.25)] bg-slate-800/60 backdrop-blur-sm rounded-2xl p-6 sm:p-8 lg:p-12 xl:p-20 border border-slate-700/30 flex-1 w-full lg:max-w-xl self-center h-auto min-h-[500px] sm:min-h-[600px] lg:min-h-[650px]">
-              <div className="w-full text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-[Poppins] text-center mb-2">
+              <div className="w-full text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-center mb-2">
                 About Brampton FBLC, JEC, & TA
               </div>
-              <div className="w-full text-white text-base sm:text-lg lg:text-xl xl:text-2xl font-normal font-[Poppins] text-center mb-2 leading-relaxed">
+              <div className="w-full text-white text-base sm:text-lg lg:text-xl xl:text-2xl font-normal text-center mb-2 leading-relaxed">
                 Brampton FBLC , JEC, & TA is a youth-driven business club
                 dedicated to empowering the next generation of entrepreneurs and
                 leaders. Our mission is to educate, inspire, and equip
@@ -123,7 +123,7 @@ export default function Home() {
                   className="w-64 sm:w-80 lg:w-96 h-16 sm:h-18 lg:h-20 pt-2 rounded-2xl shadow-[12px_12px_8px_0px_rgba(2,2,2,0.25)] inline-flex justify-center items-center gap-2.5 cursor-pointer hover:bg-[#8A2337] transition-colors duration-300 px-4"
                   style={{ backgroundColor: "#A42B43" }}
                 >
-                  <div className="text-white text-xl sm:text-2xl lg:text-3xl font-bold font-['Mulish'] text-center">
+                  <div className="text-white text-xl sm:text-2xl lg:text-3xl font-bold text-center">
                     LEARN MORE
                   </div>
                 </div>
@@ -163,12 +163,12 @@ export default function Home() {
           {/* Text Column */}
           <div className="flex flex-col justify-center items-center lg:items-start gap-6 lg:gap-8 w-full lg:w-[525px] text-center lg:text-left">
             <div
-              className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-black font-[Poppins] drop-shadow-lg mb-2 sm:mb-4"
+              className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-black drop-shadow-lg mb-2 sm:mb-4"
               style={{ textShadow: "0px 4px 4px rgba(0,0,0,0.25)" }}
             >
               WHAT WE ARE UP TO
             </div>
-            <div className="text-white text-base sm:text-lg lg:text-xl xl:text-2xl font-normal font-['Kufam'] max-w-full lg:max-w-[545px] leading-relaxed">
+            <div className="text-white text-base sm:text-lg lg:text-xl xl:text-2xl font-normal max-w-full lg:max-w-[545px] leading-relaxed">
               Follow us on Instagram, TikTok, and all your favorite platforms to
               stay connected. Don't miss out on the latest updates,
               behind-the-scenes content, and more—join the community and keep up
@@ -256,7 +256,7 @@ export default function Home() {
           />
           {/* Footer Text */}
           <div className="flex-1 flex items-center">
-            <p className="text-white text-sm sm:text-base lg:text-lg font-normal font-[Kufam] text-center sm:text-left leading-relaxed">
+            <p className="text-white text-sm sm:text-base lg:text-lg font-normal text-center sm:text-left leading-relaxed">
               Be part of the movement that&apos;s changing the game this is more
               than content, it&apos;s a community. Don&apos;t just sit on the
               sidelines, join us and help shape the future. Together, we&apos;re

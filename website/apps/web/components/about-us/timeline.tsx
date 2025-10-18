@@ -11,13 +11,13 @@ const timelineData: TimelineEntry[] = [
     date: "September 2024",
     title: "Founding & Registration",
     content:
-      "Former President Richakm and VP Pravishten officially register Brampton FBLC as a chapter of FBL Canada, establishing the foundation for what would become a thriving student organization.",
+      "Former President Resakan and VP Piraneerth officially register Brampton FBLC as a chapter of FBL Canada, establishing the foundation for what would become a leading student organization.",
   },
   {
     date: "September 2024",
     title: "Co-Founder Joins",
     content:
-      "VP Hariham joins as co-founder and Vice-President, forming a strong leadership team of founders and strengthening the leadership foundation of the organization.",
+      "VP Hasham joins as co-founder and Vice-President, forming the original trio of founders and strengthening the leadership foundation of the organization.",
   },
   {
     date: "October 18, 2024",
@@ -35,7 +35,7 @@ const timelineData: TimelineEntry[] = [
     date: "Spring 2025",
     title: "Major Expansion & National Competition",
     content:
-      "VP Hariham acquires TA and JEC Brampton, making Brampton FBLC the only FBL Canada chapter with two subsidiaries, significantly expanding our reach and capabilities. Brampton FBLC, JEC, and TA co-host Founder's Den, drawing 130+ students nationwide and establishing our organization as a major force in Canadian business education.",
+      "VP Hasham acquires TA and JEC Brampton, making Brampton FBLC the only FBL Canada chapter with two subsidiaries, significantly expanding our reach and capabilities. Brampton FBLC, JEC, and TA co-host Founder's Den, drawing 120+ students nationwide and establishing our organization as a major force in Canadian business education.",
   },
 ];
 

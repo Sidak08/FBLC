@@ -1,7 +1,8 @@
 {
   "version": 2,
-  "buildCommand": "cd apps/web && npm run build",
-  "devCommand": "cd apps/web && npm run dev",
+  "buildCommand": "pnpm build --filter=web",
+  "devCommand": "pnpm dev --filter=web",
   "installCommand": "npm install -g pnpm && pnpm install",
-  "outputDirectory": "apps/web/.next"
+  "outputDirectory": "apps/web/.next",
+  "framework": "nextjs"
 }

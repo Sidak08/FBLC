@@ -1,4 +1,5 @@
 import { Geist_Mono } from "next/font/google";
+import type { Metadata } from "next";
 
 import "@workspace/ui/globals.css"
 import { Providers } from "@/components/providers"
@@ -10,6 +11,14 @@ const fontMono = Geist_Mono({
   variable: "--font-mono",
 });
 
+export const metadata: Metadata = {
+  title: "Brampton FBLC",
+  description: "Empowering Future Business Leaders, One Step at a Time",
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -19,7 +28,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${fontMono.variable} antialiased`}
-        style={{ fontFamily: '"Gotham Bold", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif', fontWeight: '700' }}
+        style={{ fontFamily: 'sans-serif' }}
       >
         <Providers>
           <Navbar />

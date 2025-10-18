@@ -57,7 +57,7 @@ export function Navbar({ className }: NavbarProps) {
 
           {/* Profile Icon */}
           <div className="hidden md:block">
-            <Link href="/profile" className="text-black">
+            <Link href="" className="text-black">
               <User className="h-5 w-5" />
             </Link>
           </div>
