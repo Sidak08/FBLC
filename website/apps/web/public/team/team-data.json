@@ -1,0 +1,330 @@
+{
+  "admins": [
+    {
+      "name": "Hasham Ahmad",
+      "title": "First Co-President",
+      "description": "Piraneerth holds the position of Second Co-President of Brampton FBLC, JEC & TA, and is currently a Grade 12 student at Chinguacousy Secondary School. As a founding member of Brampton FBLC, JEC & TA, he plays a key role in overseeing the chapter's Educational Programming and Special Functions, additionally, he helps shape the strategic vision of the Chapter.",
+      "adjectives": [
+        "Strategic Leadership",
+        "Founding Member",
+        "Educational Programming"
+      ],
+      "initial": "H",
+      "email": "hasham.ahmad.bramptonfblc@gmail.com",
+      "phone": "437-988-9938",
+      "contactFor": "Inquiries concerning critical complaints about chapter operation. Please contact Hasham through his secretary",
+      "bigBox": true,
+      "image": "/team/Website Pictures/Admin Team/Hasham.png"
+    },
+    {
+      "name": "Piraneerth Pathmajeyalan",
+      "title": "Second Co-President",
+      "description": "Piraneerth holds the position of Second Co-President of Brampton FBLC, JEC & TA, and is currently a Grade 12 student at Chinguacousy Secondary School. As a founding member of Brampton FBLC, JEC & TA, he plays a key role in overseeing the chapter's Educational Programming and Special Functions, additionally, he helps shape the strategic vision of the Chapter.",
+      "adjectives": [
+        "Educational Programming",
+        "Special Functions",
+        "Founding Member"
+      ],
+      "initial": "P",
+      "email": "Piraneerth Pathmajeyalan",
+      "phone": "437-242-8925",
+      "contactFor": "Inquiries concerning Educational Programming or critical complaints",
+      "bigBox": true,
+      "image": "/team/Website Pictures/Admin Team/Piraneerth.png"
+    },
+    {
+      "name": "Christina Guo",
+      "title": "Chief of Staff and Secretary to the First Co-President",
+      "description": "Christina Guo holds the position of Chief of Staff and Secretary to the First Co-President. Currently, she is a Grade 12 student at Agincourt Collegiate Institute. Since joining in the 2024-2025 academic year, she has rapidly ascended through the ranks. In her essential role, she oversees the chapter's staff, communications and human resources, and assists the First Co-President with mission-critical tasks.",
+      "adjectives": ["Communications", "Human Resources", "Mission-Critical"],
+      "initial": "C",
+      "email": "christina.guo.bramptonfblc@gmail.com",
+      "phone": "437-605-2888",
+      "contactFor": "Inquiries concerning Executives, Attendance, Strikes, and any communications for the First Co-President",
+      "image": "/team/Website Pictures/Admin Team/Christina.png"
+    },
+    {
+      "name": "Deetya Amuluru",
+      "title": "Vice-President",
+      "secondPosition": "Program Director for Elevate Leaders Program",
+      "description": "Deetya Amuluru holds the position of Vice-President and Program Director for the Elevate Leaders Program. Currently, she is an 11th-grade student at St. Edmund Campion Secondary School. After joining the Chapter as an Executive for the 2024-2025 year, she quickly ascended through the ranks and now manages the Elevate Leaders Program.",
+      "adjectives": [
+        "Program Management",
+        "Leadership Development",
+        "Executive Growth"
+      ],
+      "initial": "D",
+      "email": "deetya.amuluru.bramptonfblc@gmail.com",
+      "phone": "647-722-7222",
+      "contactFor": "Concerns regarding Junior Executives and the Elevate Leaders Program",
+      "image": "/team/Website Pictures/Admin Team/Deetya.png"
+    },
+    {
+      "name": "Garvit Chadha",
+      "title": "Executive Director",
+      "secondPosition": "Program Director for Future Leaders Bursary Program",
+      "description": "Garvit Chadha holds the position of Executive Director for Brampton FBLC, JEC & TA, in addition to serving as the Program Director for the Future Leaders Bursary Program. He is currently a Grade 11 student at St. Edmund Campion Secondary School. After joining the Chapter as an Executive for the 2024-2025 year, Garvit has advanced through the ranks and now oversees events and operations for Brampton FBLC, JEC & TA.",
+      "adjectives": ["Events Management", "Operations", "Program Leadership"],
+      "initial": "G",
+      "email": "garvit.chadha.bramptonfblc@gmail.com",
+      "phone": "416-817-0492",
+      "contactFor": "Concerns regarding Events",
+      "image": "/team/Website Pictures/Admin Team/Garvit.png"
+    }
+  ],
+  "presidential": [
+    {
+      "name": "Sharib Rizvi",
+      "title": "Presidential Oversight & Compliance Officer",
+      "description": "Sharib Rizvi, a Grade 12 student at Jean Augustine Secondary School, serves as the Presidential Oversight & Compliance Officer. Dedicated to accountability, integrity, and effective decision-making, he strengthens organizational oversight and supports future-focused initiatives. Known for his flexibility, persistence, and dependability, Sharib approaches challenges thoughtfully and leads with collaboration, responsibility, and a consistently positive attitude.",
+      "adjectives": ["Accountability", "Integrity", "Collaborative"],
+      "initial": "S",
+      "image": "/team/Website Pictures/Office of the First Co-President/Sharib.png"
+    },
+    {
+      "name": "Palwinder Pal Sharma",
+      "title": "Presidential Oversight & Compliance Officer",
+      "description": "Palwinde Pal Sharma, a Grade 12 student, serves as the Presidential Oversight & Compliance Officer and has been part of the chapter since its founding on October 15. Passionate about sports, business, finance, and politics, Palwinde is dedicated to supporting the club's continued success and growth through leadership and active involvement.",
+      "adjectives": ["Business", "Finance", "Politics"],
+      "initial": "P",
+      "image": "/team/Website Pictures/Office of the First Co-President/Palwinder.png"
+    },
+    {
+      "name": "Dhenushan Ramesh",
+      "title": "Presidential Advisor for General Member Affairs",
+      "description": "Dhenushan, a passionate and motivated grade 12 student who seeks new experiences. He embrace challenges for personal and professional growth. With a background in volunteering, competitions, and school activities, he is a reliable, competitive, and adaptable. Eager to contribute, learn from others, and seize opportunities to expand his knowledge.",
+      "adjectives": ["Motivated", "Competitive", "Adaptable"],
+      "initial": "D",
+      "image": "/team/Website Pictures/Office of the First Co-President/Dhenushan.png"
+    }
+  ],
+  "education": [
+    {
+      "name": "Swathi Vasupilli",
+      "title": "Director",
+      "description": "Swathi Vasupilli is a Grade 11 Student at St. Edmund Campion C.S.S, serving as the Director of Education for Brampton FBLC. Passionate about business and education, she is committed to help develop resources that make complex concepts accessible and engaging for all members. Outside of her role, Swathi enjoys the arts, watching films, and listening to music. She aims to use her creativity to foster a positive and meaningful environment for future leaders in her community.",
+      "adjectives": ["Creative", "Accessible Education", "Engaging"],
+      "initial": "S",
+      "bigBox": true,
+      "image": "/team/Website Pictures/Department of Education/Swathi.png"
+    },
+    {
+      "name": "Dhruv Aggarwal",
+      "title": "Deputy Director",
+      "description": "Dhruv Aggarwal is a Grade 11 student attending St. Edmund Campion, who is currently serving as Brampton FBLC's Deputy Director of Education. Dhruv loves to compete against others but also enjoys creating those meaningful connections that come from every experience. He wants to push the members at Brampton FBLC to do the same.",
+      "adjectives": ["Competitive", "Connection Builder", "Motivational"],
+      "initial": "D",
+      "image": "/team/Website Pictures/Department of Education/Dhruv.png"
+    },
+    {
+      "name": "Keshav Suresh",
+      "title": "Officer",
+      "description": "Keshav is a grade 12 student in Sinclair Secondary School. He is an Education Officer and he creates and teaches lessons for students to learn and grow from. Beyond the club he is an avid business enthusiast.",
+      "adjectives": ["Teaching", "Business Enthusiast", "Growth-Focused"],
+      "initial": "K",
+      "image": "/team/Website Pictures/Department of Education/Keshav.png"
+    },
+    {
+      "name": "Meher Chatrath",
+      "title": "Officer",
+      "description": "Meher Chatrath is a Grade 11 student, currently serving as one of the education officers at Brampton FBLC, JEC & TA. She was involved last year as a general member and a junior executive. As an education officer, she prepares resources to be used by the general members to prepare for upcoming competitions, as well as offers clarification if they have any doubts. Outside of FBLC, Meher is a high-achieving student who tries to find pride in everything she does.",
+      "adjectives": ["Resource Development", "High-Achieving", "Supportive"],
+      "initial": "M",
+      "image": "/team/Website Pictures/Department of Education/Meher.png"
+    },
+    {
+      "name": "Tharuksith Pathmajeyalan",
+      "title": "Officer",
+      "description": "Tharuksith is a Grade 10 student currently attending Chinguacousy Secondary School. He was a general member of Brampton FBLC last year and became an Education Officer this summer. Since then, Tharuksith has created numerous lessons for CNLC using his past experience in the competition. Tharuksith enjoys coding, video games and volleyball. He hopes Brampton FBLC is able to grow extensively this year and make numerous members get top spots at CNLC.",
+      "adjectives": ["CNLC Expert", "Coding", "Growth-Oriented"],
+      "initial": "T",
+      "image": "/team/Website Pictures/Department of Education/Tharuksith.png"
+    },
+    {
+      "name": "Arisha Rahman",
+      "title": "Officer",
+      "description": "Arisha Rahman, a Grade 11 student and Education Officer at Brampton FBLC, is passionate about inspiring joy in learning and mentoring peers in academic and personal growth. Creative and driven, she expresses herself through the arts and basketball, embracing competition and excellence. Arisha aims to use her leadership, creativity, and dedication to make a meaningful impact at FBLC this year.",
+      "adjectives": ["Mentoring", "Creative", "Excellence-Driven"],
+      "initial": "A",
+      "image": "/team/Website Pictures/Department of Education/Arisha.png"
+    },
+    {
+      "name": "Hrishet Narwade",
+      "title": "Officer",
+      "description": "Hrishet Narwade is a Grade 11 student serving as an Education Officer at Brampton FBLC. Passionate about learning and leadership, Hrishet works to create resources that help members excel in competitions and build confidence in their skills. He values collaboration and enjoys sharing knowledge to inspire others to achieve their goals. Outside of FBLC, Hrishet pursues academic growth, enjoys sports, and explores creative outlets, always seeking opportunities to challenge himself and grow as a leader.",
+      "adjectives": ["Collaborative", "Knowledge Sharing", "Leadership Growth"],
+      "initial": "H",
+      "image": "/team/Website Pictures/Department of Education/Hrishet.png"
+    },
+    {
+      "name": "Aanya Kaushik",
+      "title": "Officer",
+      "description": "Education Officer supporting curriculum development and student learning initiatives.",
+      "adjectives": ["Curriculum Development", "Student Support", "Learning"],
+      "initial": "A",
+      "image": "/team/Website Pictures/Department of Education/Aanya K.png"
+    }
+  ],
+  "special": [
+    {
+      "name": "Sidak Singh",
+      "title": "Director",
+      "description": "A Grade 12 student driven by curiosity and creation, he is always seeking meaning through code and ideas. To him, programming is more than logic; it's a way to shape possibilities. Whether building projects, competing in hackathons, or playing sports, they pursue growth, challenge, and the chance to leave something lasting.",
+      "adjectives": ["Programming", "Innovation", "Growth-Oriented"],
+      "initial": "S",
+      "bigBox": true,
+      "image": "/team/Website Pictures/Department of Special Functions/Sidak.png"
+    },
+    {
+      "name": "Ritmay Luthra",
+      "title": "Finance Officer",
+      "description": "Ritmay Luthra is a motivated 15-year-old who serves as Finance Officer at Brampton FBLC, JEC, and TA, gaining valuable experience in responsibility and financial management. He balances academics, sports, and personal growth, playing hockey and actively participating in Air Cadets to strengthen leadership and discipline. With a strong interest in business and technology, he created Investify to help others learn about investing. Ritmay enjoys math, problem-solving, and staying active, always seeking new challenges to build skills for the future.",
+      "adjectives": ["Financial Management", "Entrepreneur", "Leadership"],
+      "initial": "R",
+      "image": "/team/Website Pictures/Department of Special Functions/Ritmay.png"
+    },
+    {
+      "name": "Taha Khan",
+      "title": "Finance Officer",
+      "description": "Taha Khan currently serves as the Finance Officer for FBLC. He is passionate about leadership, collaboration, and creating opportunities for students to grow personally and professionally. With a strong interest in finance and business, he enjoys building connections with peers, organizing events, and supporting initiatives that empower future leaders. His goal is to contribute to a dynamic and inclusive club environment where members can learn, share ideas, and achieve success together.",
+      "adjectives": ["Finance", "Collaboration", "Inclusive"],
+      "initial": "T",
+      "image": "/team/Website Pictures/Department of Special Functions/Taha.png"
+    },
+    {
+      "name": "Riddhiman Sinha",
+      "title": "Systems Officer",
+      "description": "Riddhiman Sinha is a Grade 12 student currently attending Chinguacousy Secondary School. Alongside his studies, he serves as a Systems Officer, where he is dedicated to enhancing performance and reliability across operations. Since taking on this role, he has focused on aligning systems with organizational goals, streamlining processes, and supporting long-term growth. Known for his adaptability and creativity, Riddhiman values teamwork, continuous improvement, and purposeful problem-solving, making him a dependable and impactful presence in every role he undertakes.",
+      "adjectives": ["Systems Management", "Process Improvement", "Adaptable"],
+      "initial": "R",
+      "image": "/team/Website Pictures/Department of Special Functions/Riddhiman.png"
+    },
+    {
+      "name": "Roshan Iruku",
+      "title": "Officer",
+      "description": "Roshan Iruku is a grade 12 student and likes gardening, coding, playing video games, as well venturing in the great outdoors.",
+      "adjectives": ["Coding", "Outdoors", "Gaming"],
+      "initial": "R",
+      "image": "/team/Website Pictures/Department of Special Functions/Roshan.png"
+    }
+  ],
+  "operations": [
+    {
+      "name": "Arjun Malik",
+      "title": "Director",
+      "description": "Director of Operations overseeing organizational efficiency and coordination.",
+      "adjectives": ["Operations", "Efficiency", "Coordination"],
+      "initial": "A",
+      "image": "/team/Website Pictures/Department of Operations/Arjun.png"
+    },
+    {
+      "name": "Shloka Peddolla",
+      "title": "Officer",
+      "description": "Operations Officer supporting departmental coordination and administrative functions.",
+      "adjectives": ["Administrative", "Coordination", "Support"],
+      "initial": "S",
+      "image": "/team/Website Pictures/Department of Operations/Shloka.png"
+    }
+  ],
+  "marketing": [
+    {
+      "name": "Kkapish Baghla",
+      "title": "Director",
+      "description": "Kkapish is a grade 11 student attending St. Edmund Campion Catholic Secondary School in the AP program and an aspiring lawyer. Last year, he was one of the marketing officers for Brampton FBLC and was promoted earlier this calendar year. He enjoys playing sports (such as cricket, table tennis, badminton, volleyball, soccer, basketball, etc) and making edits. He has multiple law certifications from schools such as Yale University and University of Pennsylvania.",
+      "adjectives": [
+        "Legal Aspirations",
+        "Sports Enthusiast",
+        "Creative Editing"
+      ],
+      "initial": "K",
+      "bigBox": true,
+      "image": "/team/Website Pictures/Department of Marketing/Kkapish.png"
+    },
+    {
+      "name": "Maahi Jani",
+      "title": "Deputy Director",
+      "description": "Maahi is a grade 11 student serving as the Deputy Director of Marketing at Brampton FBLC. She combines creativity with strategy to strengthen the club's presence and engagement. Passionate about visual arts, Maahi enjoys drawing and painting, which bring a unique perspective to her role. Through her work, she aims to contribute fresh ideas, support FBLC's growth, and inspire others with creativity and dedication.",
+      "adjectives": ["Creative Strategy", "Visual Arts", "Innovative"],
+      "initial": "M",
+      "image": "/team/Website Pictures/Department of Marketing/Maahi.png"
+    },
+    {
+      "name": "Sanvitha Ambati",
+      "title": "Officer",
+      "description": "Sanvitha Ambati is a Grade 11 student who is a current marketing officer for Brampton FBLC. She enjoys embracing and including her creativity in everything she does. As a marketing officer, Sanvitha is able to work on her graphic design skills and use her artistic abilities in a professional environment, displaying how Brampton FBLC has a place for everyone who is passionate about anything. Outside of Brampton FBLC, Sanvitha enjoys drawing, painting, reading, and writing.",
+      "adjectives": ["Graphic Design", "Artistic", "Creative"],
+      "initial": "S",
+      "image": "/team/Website Pictures/Department of Marketing/Sanvitha.png"
+    },
+    {
+      "name": "Gurlakshit Kaur",
+      "title": "Officer",
+      "description": "Marketing Officer contributing to brand development and promotional activities.",
+      "adjectives": ["Brand Development", "Promotional", "Strategic"],
+      "initial": "G"
+    },
+    {
+      "name": "Arnav Nayyar",
+      "title": "Officer",
+      "description": "Arnav Nayyar is a Grade 11 student currently attending North Park Secondary in the IBT program. In the last year, I have transformed from a general member at FBLC to an esteemed executive of the club. Since his commencement, he has created several marketing posts, managed the TargetAlpha social media account, and received a 92% on the executive member introductory exam. Alongside FBLC, Arnav plays the piano at an RCM level (@pianoplayingguy), plays multiple sports (varsity badminton, tennis, table tennis, basketball, and volleyball), and is also a part of three youth councils. As an aspiring young leader, he hopes to make a difference and continue to provide for the club.",
+      "adjectives": ["Social Media", "Multi-talented", "Leadership"],
+      "initial": "A",
+      "image": "/team/Website Pictures/Department of Marketing/Arnav.png"
+    },
+    {
+      "name": "Ansh Chatrath",
+      "title": "Officer",
+      "description": "Ansh Chatrath is a grade 12 student at Chingucousy S.S with a passion for business, finance, and leadership. Ansh is a student who loves competition and excelling in different topics. Ansh uses his creative knowledge to help the marketing department as much as possible and is trying to further the reach of Brampton FBLC.",
+      "adjectives": ["Business Focus", "Competitive", "Reach Expansion"],
+      "initial": "A",
+      "image": "/team/Website Pictures/Department of Marketing/Ansh.png"
+    }
+  ],
+  "recruitment": [
+    {
+      "name": "Siya Parikh",
+      "title": "Director",
+      "description": "Siya P. is a Grade 11 student at St. Edmund Campion C.S.S, serving as the Director of Recruitment and Membership Services for Brampton FBLC. Passionate about creating a welcoming and supportive environment, she works to ensure members feel connected and engaged within the club. Siya is dedicated to fostering collaboration and providing opportunities for students to grow as leaders while building a strong sense of community. Outside of FBLC, she enjoys babysitting, listening to music, and exploring creative interests, all of which inspire her to bring energy and inclusivity to her role.",
+      "adjectives": ["Welcoming", "Community Building", "Inclusive"],
+      "initial": "S",
+      "image": "/team/Website Pictures/Department of Recruitment & Membership Services /Siya.png"
+    },
+    {
+      "name": "Charmi Pathak",
+      "title": "Deputy Director",
+      "description": "Charmi Pathak is a grade 10 student serving as the Deputy Director of Recruitment and Membership Services at Brampton FBLC. She is committed to fostering meaningful connections, supporting new members, and strengthening organizational relationships through effective communication and leadership. Academically accomplished, Charmi approaches her studies with dedication and embraces challenges that enhance her critical thinking and problem-solving skills. A professional dancer with 10 years of training in 3 different dance styles. Beyond dance, Charmi actively participates in three sports. Charmi is eager to further develop her leadership, contribute to FBLC, and inspire others through her dedication and diverse talents.",
+      "adjectives": ["Professional Dancer", "Multi-sport", "Leadership"],
+      "initial": "C",
+      "image": "/team/Website Pictures/Department of Recruitment & Membership Services /Charmi.png"
+    },
+    {
+      "name": "Prachi Kumar",
+      "title": "Officer",
+      "description": "Prachi is a passionate individual who loves music and basketball. She works with children with special needs, creating supportive and inclusive experiences, and also leads a South Asian club at her school to celebrate culture and community.",
+      "adjectives": ["Special Needs Support", "Cultural Leader", "Inclusive"],
+      "initial": "P",
+      "image": "/team/Website Pictures/Department of Recruitment & Membership Services /Prachi.png"
+    },
+    {
+      "name": "Bala Apoorva George",
+      "title": "Officer",
+      "secondPosition": "Member Onboarding Coordinator",
+      "description": "Apoorva George, a Grade 10 student, is the Recruitment & Membership Services Officer at Brampton FBLC, serving as the Member Onboarding Coordinator. She is passionate about welcoming new members, fostering connections, and building relationships through strong communication. Outside of FBLC, Apoorva dances professionally, plays piano, enjoys chess, and journals to reflect and grow. She's excited to develop as a leader this year!",
+      "adjectives": [
+        "Member Onboarding",
+        "Professional Dancer",
+        "Multi-talented"
+      ],
+      "initial": "A",
+      "image": "/team/Website Pictures/Department of Recruitment & Membership Services /Apoorva.png"
+    },
+    {
+      "name": "Nitgun Singh",
+      "title": "Officer",
+      "description": "Nitgun S. is a Grade 11 student at North Park Secondary School, serving as the Officer of Recruitment and Outreach for Brampton FBLC. In this role, he is focused on building meaningful connections, ensuring every member feels valued, and creating opportunities for students to engage with the club in impactful ways. Nitgun is passionate about encouraging participation, strengthening relationships, and helping members find their place within the FBLC community. Outside of FBLC, Nitgun is a professional badminton player, an entrepreneur running his own business, and a contributor at the DMZ incubator, where he gains hands-on experience in innovation and leadership. These experiences fuel his drive to bring creativity, dedication, and a strong work ethic to his role, while inspiring others to pursue their own passions.",
+      "adjectives": ["Professional Athlete", "Entrepreneur", "Innovation"],
+      "initial": "N",
+      "image": "/team/Website Pictures/Department of Recruitment & Membership Services /Nitgun.png"
+    }
+  ]
+}

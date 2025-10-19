@@ -15,7 +15,7 @@ export default function MeetTheTeam() {
     const fetchTeamData = async () => {
       try {
         setLoading(true);
-        const response = await fetch("/team-data.json");
+        const response = await fetch("/team/team-data.json");
         if (!response.ok) {
           throw new Error("Failed to fetch team data");
         }
@@ -39,15 +39,12 @@ export default function MeetTheTeam() {
   const getDepartmentTitle = (dept) => {
     const titles = {
       admins: "Admin Team",
-      operations: "Operations Team",
-      education: "Education Team",
-      recruitment: "Recruitment & Service Team",
-      special: "Special Functions Team",
-      marketing: "Marketing Team",
-      juniors: "Juniors Team",
-      test1: "Test Team (1 Member)",
-      test3: "Test Team (3 Members)",
-      test7: "Test Team (7 Members)",
+      presidential: "Office of the First Co-President",
+      education: "Department of Education",
+      special: "Department of Special Functions",
+      operations: "Department of Operations",
+      marketing: "Department of Marketing",
+      recruitment: "Department of Recruitment & Membership Services",
     };
     return titles[dept] || "Team";
   };
@@ -56,24 +53,18 @@ export default function MeetTheTeam() {
     const descriptions = {
       admins:
         "Dedicated leaders committed to empowering the next generation of business professionals and fostering innovation in our community.",
-      operations:
-        "Ensuring smooth day-to-day operations and coordinating seamless execution of all organizational initiatives.",
+      presidential:
+        "Supporting the First Co-President with oversight, compliance, and general member affairs to ensure effective governance and accountability.",
       education:
         "Developing comprehensive curriculum and delivering exceptional educational experiences that prepare students for business success.",
-      recruitment:
-        "Building inclusive communities through strategic outreach and meaningful service learning opportunities.",
       special:
         "Driving innovation through special events, partnerships, and cutting-edge initiatives that create lasting impact.",
+      operations:
+        "Ensuring smooth day-to-day operations and coordinating seamless execution of all organizational initiatives.",
       marketing:
         "Crafting compelling brand stories and building engaging digital communities that connect with our audience.",
-      juniors:
-        "Nurturing young talent through age-appropriate programs that build foundational business skills and leadership qualities.",
-      test1:
-        "Demonstrating responsive layout with a single team member - notice how the card is perfectly centered.",
-      test3:
-        "Showcasing optimal layout for three members with balanced spacing and proper grid distribution.",
-      test7:
-        "Testing larger team layout with seven members, showing how the grid adapts to accommodate more content while maintaining visual balance.",
+      recruitment:
+        "Building inclusive communities through strategic outreach and meaningful service learning opportunities.",
     };
     return descriptions[dept] || "Our dedicated team members.";
   };
@@ -194,12 +185,20 @@ export default function MeetTheTeam() {
                   style={{ width: "650px", minHeight: "500px" }}
                 >
                   <div className="flex-grow">
-                    {/* Profile Circle */}
+                    {/* Profile Circle/Image */}
                     <div className="flex justify-center mb-8">
-                      <div className="w-40 h-40 rounded-full bg-gradient-to-r from-[#3B82F6] to-[#1E40AF] flex items-center justify-center">
-                        <span className="text-white text-6xl font-bold">
-                          {member.initial || member.name.charAt(0)}
-                        </span>
+                      <div className="w-40 h-40 rounded-full overflow-hidden bg-gradient-to-r from-[#3B82F6] to-[#1E40AF] flex items-center justify-center">
+                        {member.image ? (
+                          <img
+                            src={member.image}
+                            alt={member.name}
+                            className="w-full h-full object-cover"
+                          />
+                        ) : (
+                          <span className="text-white text-6xl font-bold">
+                            {member.initial || member.name.charAt(0)}
+                          </span>
+                        )}
                       </div>
                     </div>
 
