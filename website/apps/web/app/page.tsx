@@ -15,7 +15,10 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-4">
         {/* Background */}
-        <div className="absolute inset-0 pointer-events-none"></div>
+        <div
+          className="absolute inset-0 pointer-events-none bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/home/main.png')" }}
+        ></div>
 
         {/* Hero Content */}
         <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full min-h-[400px]">
@@ -246,26 +249,7 @@ export default function Home() {
       </section>
 
       {/* Footer Section */}
-      <footer className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8 flex justify-center items-center w-full">
-        <div className="w-full max-w-4xl flex flex-col sm:flex-row items-center gap-6 sm:gap-8 lg:gap-12 min-h-[12rem] sm:min-h-[16rem]">
-          {/* Footer Image */}
-          <img
-            src="https://placehold.co/215x129"
-            alt="Footer Logo"
-            className="w-40 sm:w-48 lg:w-52 h-24 sm:h-28 lg:h-32 object-cover rounded-xl flex-shrink-0"
-          />
-          {/* Footer Text */}
-          <div className="flex-1 flex items-center">
-            <p className="text-white text-sm sm:text-base lg:text-lg font-normal text-center sm:text-left leading-relaxed">
-              Be part of the movement that&apos;s changing the game this is more
-              than content, it&apos;s a community. Don&apos;t just sit on the
-              sidelines, join us and help shape the future. Together, we&apos;re
-              building something bigger than ourselves, and we want you to be a
-              part of it.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <footer className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8 flex justify-center items-center w-full"></footer>
     </div>
   );
 }
