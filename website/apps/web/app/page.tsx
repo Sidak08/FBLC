@@ -123,7 +123,7 @@ export default function Home() {
           <img
             src="/home/piran-and-hasham.png"
             alt="FBLC Leadership"
-            className="w-full sm:w-1/3 max-w-[280px] sm:max-w-md h-52 sm:h-64 lg:h-80 object-cover rounded-[10px] shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)] -rotate-2 sm:-rotate-6"
+            className="w-[280px] h-[380px] object-contain rounded-[10px] shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)] -rotate-2 sm:-rotate-6"
           />
           <img
             src="/home/group-picture-right.png"
