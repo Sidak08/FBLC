@@ -15,34 +15,13 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-4">
         {/* Background */}
-        <div className="absolute inset-0 pointer-events-none"></div>
+        <div
+          className="absolute inset-0 pointer-events-none bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/home/main.png')" }}
+        ></div>
 
         {/* Hero Content */}
-        <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full min-h-[400px]">
-          {/* Main Heading */}
-          <h1 className="text-white font-black leading-tight mb-4 sm:mb-6 drop-shadow-2xl text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
-            <span className="block">EMPOWERING FUTURE</span>
-            <span className="block">BUSINESS</span>
-          </h1>
-
-          {/* Sub Heading */}
-          <h2 className="text-white font-black leading-tight mb-8 sm:mb-12 text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
-            LEADERS, ONE STEP AT A TIME!
-          </h2>
-
-          {/* CTA Button */}
-          <div
-            className="flex justify-center"
-            style={{ marginTop: "20px !important" }}
-          >
-            <div
-              className="w-72 xs:w-80 sm:w-96 h-20 xs:h-24 sm:h-28 rounded-xl flex items-center justify-center font-black tracking-wide shadow-2xl text-white text-lg xs:text-xl sm:text-2xl md:text-3xl cursor-pointer hover:bg-[#8A2337] transition-colors duration-300 px-4"
-              style={{ backgroundColor: "#A42B43" }}
-            >
-              REGISTER NOW!
-            </div>
-          </div>
-        </div>
+        <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full min-h-[400px]"></div>
 
         {/* Decorative gradient at bottom */}
         <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-slate-900 to-transparent"></div>
@@ -94,13 +73,13 @@ export default function Home() {
             {/* Images Side - Both images in a column, but as a flex item in the row */}
             <div className="flex flex-col items-center justify-center gap-4 flex-shrink-0 w-full lg:w-auto">
               <img
-                src="https://placehold.co/556x147"
+                src="/home/titles.png"
                 alt="FBLC Logo Banner"
-                className="w-full max-w-sm sm:max-w-md lg:max-w-lg h-32 sm:h-40 lg:h-48 object-cover rounded-xl shadow-lg"
+                className="w-full max-w-sm sm:max-w-md lg:max-w-lg h-32 sm:h-40 lg:h-48 object-contain rounded-xl shadow-lg"
               />
               <img
-                src="https://placehold.co/599x450"
-                alt="FBLC Activity"
+                src="/home/group-picture-top.png"
+                alt="FBLC Group Activity"
                 className="w-full max-w-sm sm:max-w-md lg:max-w-xl h-64 sm:h-80 lg:h-[28rem] object-cover rounded-xl shadow-[24px_24px_16px_8px_rgba(0,0,0,0.35)] -rotate-1 lg:-rotate-2"
               />
             </div>
@@ -137,18 +116,18 @@ export default function Home() {
       <section className="w-full flex justify-center items-center mb-8 sm:mb-12 lg:mb-16">
         <div className="min-h-[300px] sm:min-h-[450px] lg:min-h-[630px] w-[95%] max-w-7xl mx-auto rounded-2xl border border-blue-400 bg-gradient-to-r from-gray-900 to-gray-800 backdrop-blur-[2px] px-4 py-6 sm:py-8 flex flex-col sm:flex-row items-center justify-center sm:justify-evenly gap-4 sm:gap-6 lg:gap-8 overflow-hidden">
           <img
-            src="https://placehold.co/397x287"
-            alt="Gallery 1"
+            src="/home/group-picture-left.png"
+            alt="FBLC Team Photo"
             className="w-full sm:w-1/3 max-w-[250px] sm:max-w-xs h-48 sm:h-60 lg:h-72 object-cover rounded-xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)] rotate-3 sm:rotate-12"
           />
           <img
-            src="https://placehold.co/498x323"
-            alt="Gallery 2"
-            className="w-full sm:w-1/3 max-w-[280px] sm:max-w-md h-52 sm:h-64 lg:h-80 object-cover rounded-[10px] shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)] -rotate-2 sm:-rotate-6"
+            src="/home/piran-and-hasham.png"
+            alt="FBLC Leadership"
+            className="w-[280px] h-[380px] object-contain rounded-[10px] shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)] -rotate-2 sm:-rotate-6"
           />
           <img
-            src="https://placehold.co/282x376"
-            alt="Gallery 3"
+            src="/home/group-picture-right.png"
+            alt="FBLC Members"
             className="w-full sm:w-1/3 max-w-[220px] sm:max-w-xs h-56 sm:h-72 lg:h-96 object-cover rounded-xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)] rotate-1 sm:rotate-3"
           />
         </div>
@@ -181,36 +160,36 @@ export default function Home() {
             {/* Mobile/Tablet: Simple row layout */}
             <div className="flex sm:hidden lg:hidden flex-col items-center gap-4 w-full">
               <img
-                src="https://placehold.co/350x400"
-                alt="Gallery 1"
+                src="/home/instagramPost.png"
+                alt="FBLC Team"
                 className="w-48 h-64 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
               />
               <img
-                src="https://placehold.co/350x400"
-                alt="Gallery 2"
+                src="/home/instagramPost.png"
+                alt="FBLC Leadership"
                 className="w-52 h-72 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
               />
               <img
-                src="https://placehold.co/350x400"
-                alt="Gallery 3"
+                src="/home/instagramPost.png"
+                alt="FBLC Activities"
                 className="w-48 h-64 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
               />
             </div>
             {/* Small tablets: Simple row layout */}
             <div className="hidden sm:flex lg:hidden flex-row items-center justify-center gap-4 w-full">
               <img
-                src="https://placehold.co/350x400"
-                alt="Gallery 1"
+                src="/home/instagramPost.png"
+                alt="FBLC Team"
                 className="w-32 h-40 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
               />
               <img
-                src="https://placehold.co/350x400"
-                alt="Gallery 2"
+                src="/home/instagramPost.png"
+                alt="FBLC Leadership"
                 className="w-36 h-48 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
               />
               <img
-                src="https://placehold.co/350x400"
-                alt="Gallery 3"
+                src="/home/instagramPost.png"
+                alt="FBLC Activities"
                 className="w-32 h-40 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
               />
             </div>
@@ -219,24 +198,24 @@ export default function Home() {
               {/* Card 1 - Layer height 1, 50% opacity, overlaps center from left */}
               <div className="absolute left-1/2 top-1/2 transform -translate-x-[120%] -translate-y-1/2 z-10 opacity-50">
                 <img
-                  src="https://placehold.co/350x400"
-                  alt="Gallery 1"
+                  src="/home/instagramPost.png"
+                  alt="FBLC Team"
                   className="w-72 h-96 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
                 />
               </div>
               {/* Card 2 - Layer height 2, full opacity */}
               <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
                 <img
-                  src="https://placehold.co/350x400"
-                  alt="Gallery 2"
+                  src="/home/instagramPost.png"
+                  alt="FBLC Leadership"
                   className="w-72 h-96 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
                 />
               </div>
               {/* Card 3 - Layer height 1, 50% opacity, overlaps center from right */}
               <div className="absolute left-1/2 top-1/2 transform translate-x-[20%] -translate-y-1/2 z-10 opacity-50">
                 <img
-                  src="https://placehold.co/350x400"
-                  alt="Gallery 3"
+                  src="/home/instagramPost.png"
+                  alt="FBLC Activities"
                   className="w-72 h-96 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
                 />
               </div>
@@ -246,26 +225,7 @@ export default function Home() {
       </section>
 
       {/* Footer Section */}
-      <footer className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8 flex justify-center items-center w-full">
-        <div className="w-full max-w-4xl flex flex-col sm:flex-row items-center gap-6 sm:gap-8 lg:gap-12 min-h-[12rem] sm:min-h-[16rem]">
-          {/* Footer Image */}
-          <img
-            src="https://placehold.co/215x129"
-            alt="Footer Logo"
-            className="w-40 sm:w-48 lg:w-52 h-24 sm:h-28 lg:h-32 object-cover rounded-xl flex-shrink-0"
-          />
-          {/* Footer Text */}
-          <div className="flex-1 flex items-center">
-            <p className="text-white text-sm sm:text-base lg:text-lg font-normal text-center sm:text-left leading-relaxed">
-              Be part of the movement that&apos;s changing the game this is more
-              than content, it&apos;s a community. Don&apos;t just sit on the
-              sidelines, join us and help shape the future. Together, we&apos;re
-              building something bigger than ourselves, and we want you to be a
-              part of it.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <footer className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8 flex justify-center items-center w-full"></footer>
     </div>
   );
 }

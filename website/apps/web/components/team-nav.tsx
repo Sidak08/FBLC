@@ -12,12 +12,12 @@ export function TeamNav({ activeTab = "admins", onTabChange }: TeamNavProps) {
 
   const tabs = [
     { id: "admins", label: "Admins", active: true },
-    { id: "operations", label: "Operations", active: false },
-    { id: "education", label: "Education", active: false },
-    { id: "recruitment", label: "Recruitment & Service", active: false },
+    { id: "presidential", label: "Presidential Office", active: true },
+    { id: "education", label: "Education", active: true },
     { id: "special", label: "Special Functions", active: true },
+    { id: "operations", label: "Operations", active: true },
     { id: "marketing", label: "Marketing", active: true },
-    { id: "juniors", label: "Juniors", active: false },
+    { id: "recruitment", label: "Recruitment", active: true },
   ];
 
   const handleTabClick = (tabId: string, tabLabel: string) => {
