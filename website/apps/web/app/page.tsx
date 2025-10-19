@@ -21,31 +21,7 @@ export default function Home() {
         ></div>
 
         {/* Hero Content */}
-        <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full min-h-[400px]">
-          {/* Main Heading */}
-          <h1 className="text-white font-black leading-tight mb-4 sm:mb-6 drop-shadow-2xl text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
-            <span className="block">EMPOWERING FUTURE</span>
-            <span className="block">BUSINESS</span>
-          </h1>
-
-          {/* Sub Heading */}
-          <h2 className="text-white font-black leading-tight mb-8 sm:mb-12 text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
-            LEADERS, ONE STEP AT A TIME!
-          </h2>
-
-          {/* CTA Button */}
-          <div
-            className="flex justify-center"
-            style={{ marginTop: "20px !important" }}
-          >
-            <div
-              className="w-72 xs:w-80 sm:w-96 h-20 xs:h-24 sm:h-28 rounded-xl flex items-center justify-center font-black tracking-wide shadow-2xl text-white text-lg xs:text-xl sm:text-2xl md:text-3xl cursor-pointer hover:bg-[#8A2337] transition-colors duration-300 px-4"
-              style={{ backgroundColor: "#A42B43" }}
-            >
-              REGISTER NOW!
-            </div>
-          </div>
-        </div>
+        <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full min-h-[400px]"></div>
 
         {/* Decorative gradient at bottom */}
         <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-slate-900 to-transparent"></div>
@@ -97,12 +73,12 @@ export default function Home() {
             {/* Images Side - Both images in a column, but as a flex item in the row */}
             <div className="flex flex-col items-center justify-center gap-4 flex-shrink-0 w-full lg:w-auto">
               <img
-                src="https://placehold.co/556x147"
+                src="/home/titles.png"
                 alt="FBLC Logo Banner"
-                className="w-full max-w-sm sm:max-w-md lg:max-w-lg h-32 sm:h-40 lg:h-48 object-cover rounded-xl shadow-lg"
+                className="w-full max-w-sm sm:max-w-md lg:max-w-lg h-32 sm:h-40 lg:h-48 object-contain rounded-xl shadow-lg"
               />
               <img
-                src="https://placehold.co/599x450"
+                src="/home/bellowTitle.png"
                 alt="FBLC Activity"
                 className="w-full max-w-sm sm:max-w-md lg:max-w-xl h-64 sm:h-80 lg:h-[28rem] object-cover rounded-xl shadow-[24px_24px_16px_8px_rgba(0,0,0,0.35)] -rotate-1 lg:-rotate-2"
               />
