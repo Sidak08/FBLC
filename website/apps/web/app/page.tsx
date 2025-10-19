@@ -78,8 +78,8 @@ export default function Home() {
                 className="w-full max-w-sm sm:max-w-md lg:max-w-lg h-32 sm:h-40 lg:h-48 object-contain rounded-xl shadow-lg"
               />
               <img
-                src="/home/bellowTitle.png"
-                alt="FBLC Activity"
+                src="/home/group-picture-top.png"
+                alt="FBLC Group Activity"
                 className="w-full max-w-sm sm:max-w-md lg:max-w-xl h-64 sm:h-80 lg:h-[28rem] object-cover rounded-xl shadow-[24px_24px_16px_8px_rgba(0,0,0,0.35)] -rotate-1 lg:-rotate-2"
               />
             </div>
@@ -116,18 +116,18 @@ export default function Home() {
       <section className="w-full flex justify-center items-center mb-8 sm:mb-12 lg:mb-16">
         <div className="min-h-[300px] sm:min-h-[450px] lg:min-h-[630px] w-[95%] max-w-7xl mx-auto rounded-2xl border border-blue-400 bg-gradient-to-r from-gray-900 to-gray-800 backdrop-blur-[2px] px-4 py-6 sm:py-8 flex flex-col sm:flex-row items-center justify-center sm:justify-evenly gap-4 sm:gap-6 lg:gap-8 overflow-hidden">
           <img
-            src="https://placehold.co/397x287"
-            alt="Gallery 1"
+            src="/home/group-picture-left.png"
+            alt="FBLC Team Photo"
             className="w-full sm:w-1/3 max-w-[250px] sm:max-w-xs h-48 sm:h-60 lg:h-72 object-cover rounded-xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)] rotate-3 sm:rotate-12"
           />
           <img
-            src="https://placehold.co/498x323"
-            alt="Gallery 2"
+            src="/home/piran-and-hasham.png"
+            alt="FBLC Leadership"
             className="w-full sm:w-1/3 max-w-[280px] sm:max-w-md h-52 sm:h-64 lg:h-80 object-cover rounded-[10px] shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)] -rotate-2 sm:-rotate-6"
           />
           <img
-            src="https://placehold.co/282x376"
-            alt="Gallery 3"
+            src="/home/group-picture-right.png"
+            alt="FBLC Members"
             className="w-full sm:w-1/3 max-w-[220px] sm:max-w-xs h-56 sm:h-72 lg:h-96 object-cover rounded-xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)] rotate-1 sm:rotate-3"
           />
         </div>
@@ -160,36 +160,36 @@ export default function Home() {
             {/* Mobile/Tablet: Simple row layout */}
             <div className="flex sm:hidden lg:hidden flex-col items-center gap-4 w-full">
               <img
-                src="https://placehold.co/350x400"
-                alt="Gallery 1"
+                src="/home/group-picture-left.png"
+                alt="FBLC Team"
                 className="w-48 h-64 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
               />
               <img
-                src="https://placehold.co/350x400"
-                alt="Gallery 2"
+                src="/home/piran-and-hasham.png"
+                alt="FBLC Leadership"
                 className="w-52 h-72 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
               />
               <img
-                src="https://placehold.co/350x400"
-                alt="Gallery 3"
+                src="/home/group-picture-right.png"
+                alt="FBLC Activities"
                 className="w-48 h-64 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
               />
             </div>
             {/* Small tablets: Simple row layout */}
             <div className="hidden sm:flex lg:hidden flex-row items-center justify-center gap-4 w-full">
               <img
-                src="https://placehold.co/350x400"
-                alt="Gallery 1"
+                src="/home/group-picture-left.png"
+                alt="FBLC Team"
                 className="w-32 h-40 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
               />
               <img
-                src="https://placehold.co/350x400"
-                alt="Gallery 2"
+                src="/home/piran-and-hasham.png"
+                alt="FBLC Leadership"
                 className="w-36 h-48 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
               />
               <img
-                src="https://placehold.co/350x400"
-                alt="Gallery 3"
+                src="/home/group-picture-right.png"
+                alt="FBLC Activities"
                 className="w-32 h-40 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
               />
             </div>
@@ -198,24 +198,24 @@ export default function Home() {
               {/* Card 1 - Layer height 1, 50% opacity, overlaps center from left */}
               <div className="absolute left-1/2 top-1/2 transform -translate-x-[120%] -translate-y-1/2 z-10 opacity-50">
                 <img
-                  src="https://placehold.co/350x400"
-                  alt="Gallery 1"
+                  src="/home/group-picture-left.png"
+                  alt="FBLC Team"
                   className="w-72 h-96 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
                 />
               </div>
               {/* Card 2 - Layer height 2, full opacity */}
               <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
                 <img
-                  src="https://placehold.co/350x400"
-                  alt="Gallery 2"
+                  src="/home/piran-and-hasham.png"
+                  alt="FBLC Leadership"
                   className="w-72 h-96 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
                 />
               </div>
               {/* Card 3 - Layer height 1, 50% opacity, overlaps center from right */}
               <div className="absolute left-1/2 top-1/2 transform translate-x-[20%] -translate-y-1/2 z-10 opacity-50">
                 <img
-                  src="https://placehold.co/350x400"
-                  alt="Gallery 3"
+                  src="/home/group-picture-right.png"
+                  alt="FBLC Activities"
                   className="w-72 h-96 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
                 />
               </div>
