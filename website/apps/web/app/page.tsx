@@ -160,17 +160,17 @@ export default function Home() {
             {/* Mobile/Tablet: Simple row layout */}
             <div className="flex sm:hidden lg:hidden flex-col items-center gap-4 w-full">
               <img
-                src="/home/group-picture-left.png"
+                src="/home/instagramPost.png"
                 alt="FBLC Team"
                 className="w-48 h-64 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
               />
               <img
-                src="/home/piran-and-hasham.png"
+                src="/home/instagramPost.png"
                 alt="FBLC Leadership"
                 className="w-52 h-72 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
               />
               <img
-                src="/home/group-picture-right.png"
+                src="/home/instagramPost.png"
                 alt="FBLC Activities"
                 className="w-48 h-64 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
               />
@@ -178,17 +178,17 @@ export default function Home() {
             {/* Small tablets: Simple row layout */}
             <div className="hidden sm:flex lg:hidden flex-row items-center justify-center gap-4 w-full">
               <img
-                src="/home/group-picture-left.png"
+                src="/home/instagramPost.png"
                 alt="FBLC Team"
                 className="w-32 h-40 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
               />
               <img
-                src="/home/piran-and-hasham.png"
+                src="/home/instagramPost.png"
                 alt="FBLC Leadership"
                 className="w-36 h-48 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
               />
               <img
-                src="/home/group-picture-right.png"
+                src="/home/instagramPost.png"
                 alt="FBLC Activities"
                 className="w-32 h-40 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
               />
@@ -198,7 +198,7 @@ export default function Home() {
               {/* Card 1 - Layer height 1, 50% opacity, overlaps center from left */}
               <div className="absolute left-1/2 top-1/2 transform -translate-x-[120%] -translate-y-1/2 z-10 opacity-50">
                 <img
-                  src="/home/group-picture-left.png"
+                  src="/home/instagramPost.png"
                   alt="FBLC Team"
                   className="w-72 h-96 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
                 />
@@ -206,7 +206,7 @@ export default function Home() {
               {/* Card 2 - Layer height 2, full opacity */}
               <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
                 <img
-                  src="/home/piran-and-hasham.png"
+                  src="/home/instagramPost.png"
                   alt="FBLC Leadership"
                   className="w-72 h-96 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
                 />
@@ -214,7 +214,7 @@ export default function Home() {
               {/* Card 3 - Layer height 1, 50% opacity, overlaps center from right */}
               <div className="absolute left-1/2 top-1/2 transform translate-x-[20%] -translate-y-1/2 z-10 opacity-50">
                 <img
-                  src="/home/group-picture-right.png"
+                  src="/home/instagramPost.png"
                   alt="FBLC Activities"
                   className="w-72 h-96 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
                 />
