@@ -62,7 +62,7 @@ export default function AcademicProgramming() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-800 via-slate-900 to-black">
+    <div className="min-h-screen bg-gradient-to-b from-slate-800 via-slate-900 to-black"> 
       {/* Hero Section - Images */}
       <section className="w-full flex flex-col relative">
         {/* Top Image - heading.svg */}
@@ -304,7 +304,7 @@ export default function AcademicProgramming() {
       <section
         className="relative py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8"
         style={{ marginTop: "50px" }}
-      >
+      > 
         {/* Full-width background rectangle */}
         <div className="absolute inset-0 z-0 bg-slate-800">
           <img
@@ -376,7 +376,7 @@ export default function AcademicProgramming() {
         <div className="w-full max-w-4xl flex flex-col sm:flex-row items-center gap-6 sm:gap-8 lg:gap-12 min-h-[12rem] sm:min-h-[16rem]">
           {/* Footer Image */}
           <img
-            src="https://placehold.co/215x129"
+            src="FBLC Logo.svg"
             alt="Footer Logo"
             className="w-40 sm:w-48 lg:w-52 h-24 sm:h-28 lg:h-32 object-cover rounded-xl flex-shrink-0"
           />
