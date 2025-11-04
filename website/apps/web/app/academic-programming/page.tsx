@@ -40,23 +40,23 @@ export default function AcademicProgramming() {
     "Personal Finance",
   ];
 
-  const adminTeam: AdminTeamMember[] = [
+  const adminTeam: AdminTeamMember[] = [ // Images added
     {
       name: "Dhruv Aggarwal",
       role: "Deputy Director of Academic Programming",
-      image: "https://placehold.co/200x200/3B82F6/ffffff?text=DA",
+      image: "/team/Website Pictures/Department of Education/Dhruv.png",
       hasTag: false,
     },
     {
       name: "Swathi Vasupilli",
       role: "Director of the Academic Programming",
-      image: "https://placehold.co/200x200/1E40AF/ffffff?text=SV",
+      image: "/team/Website Pictures/Department of Education/Swathi.png",
       hasTag: false,
     },
     {
       name: "Piraneerth Pathmajeyalan",
       role: "Supervising Administrator",
-      image: "https://placehold.co/200x200/3B82F6/ffffff?text=PP",
+      image: "/team/Website Pictures/Admin Team/Piraneeth.png",
       hasTag: false,
     },
   ];

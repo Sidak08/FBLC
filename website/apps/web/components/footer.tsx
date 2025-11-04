@@ -68,7 +68,8 @@ export function Footer(props?: FooterProps) {
         ],
       },
     ],
-    copyright = "© 2024 Future Business Leaders Coalition. All rights reserved.",
+    copyright = `© ${new Date().getFullYear()} Future Business Leaders Coalition. All rights reserved.`,
+
     bottomLinks = [
       { text: "Terms and Conditions", url: "/terms" },
       { text: "Privacy Policy", url: "/privacy" },
