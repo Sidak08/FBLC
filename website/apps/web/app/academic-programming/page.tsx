@@ -131,8 +131,10 @@ export default function AcademicProgramming() {
 
       {/* What to Expect Section - Container Centered, Content Left-Aligned */}
       <section
-        className="py-3 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8"
+        className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8"
+        style={{ marginTop: "-117px" }}
       >
+        
         <div className="mx-auto mt-8 sm:mt-16 lg:mt-[130px] min-h-[350px] sm:min-h-[465px] flex flex-col justify-center items-center">
           {/* Heading moved inside content box for vertical centering */}
 
