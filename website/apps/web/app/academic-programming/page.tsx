@@ -190,7 +190,7 @@ export default function AcademicProgramming() {
               </div>
 
               {/* Enhanced Mobile Education Hub Card */}
-              <div className="bg-gradient-to-br from-white to-slate-50 rounded-2xl shadow-[0_20px_60px_-12px_rgba(0,0,0,0.4)] border border-slate-200 p-6 sm:p-8 relative overflow-hidden">
+              <div class="my-8"><div className="bg-gradient-to-br from-white to-slate-50 rounded-2xl shadow-[0_20px_60px_-12px_rgba(0,0,0,0.4)] border border-slate-200 p-6 sm:p-8 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-100 to-transparent rounded-full -translate-y-16 translate-x-16"></div>
                 <div className="relative z-10">
                   <div className="flex items-center gap-3 mb-6">
