@@ -56,7 +56,7 @@ export default function AcademicProgramming() {
     {
       name: "Piraneerth Pathmajeyalan",
       role: "Supervising Administrator",
-      image: "/team/Website Pictures/Admin Team/Piraneeth.png",
+      image: "/team/Website Pictures/Admin Team/Piraneerth.png",
       hasTag: false,
     },
   ];
@@ -190,7 +190,7 @@ export default function AcademicProgramming() {
               </div>
 
               {/* Enhanced Mobile Education Hub Card */}
-              <div class="my-8"><div className="bg-gradient-to-br from-white to-slate-50 rounded-2xl shadow-[0_20px_60px_-12px_rgba(0,0,0,0.4)] border border-slate-200 p-6 sm:p-8 relative overflow-hidden">
+              <div className="my-8"><div className="bg-gradient-to-br from-white to-slate-50 rounded-2xl shadow-[0_20px_60px_-12px_rgba(0,0,0,0.4)] border border-slate-200 p-6 sm:p-8 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-100 to-transparent rounded-full -translate-y-16 translate-x-16"></div>
                 <div className="relative z-10">
                   <div className="flex items-center gap-3 mb-6">
@@ -284,7 +284,7 @@ export default function AcademicProgramming() {
               </div>
             </div>
           </div>
-
+        </div>      
           {/* Enhanced Tags row for all screen sizes */}
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 sm:gap-6">
             {subjects.map((subject, index) => (
@@ -300,12 +300,12 @@ export default function AcademicProgramming() {
           </div>
         </div>
       </section>
-
       {/* Administration Section - All Content Centered */}
       <section
-        className="relative py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8"
-        style={{ marginTop: "50px" }}
-      > 
+        className="relative py-12 sm:py-16 lg py:20 px-4 sm:px-6 lg:px-8"      
+        style={{marginTop: "50px"}}   
+      >
+
         {/* Full-width background rectangle */}
         <div className="absolute inset-0 z-0 bg-slate-800">
           <img
