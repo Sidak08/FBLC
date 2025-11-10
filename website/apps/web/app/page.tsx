@@ -4,32 +4,28 @@
 
 export default function Home() {
   return (
-    <div className="min-h-screen h-full bg-gradient-to-b from-slate-800 via-slate-900 to-black">
-      {/* Gradient Spacer Above Navbar */}
-      <div className="w-full" style={{ height: "2.5vw" }}></div>
+    <div className="min-h-screen hmin-h-screen h-full bg-gradient-to-b from-slate-800 via-slate-900 to-black m-0 p-0">
       {/* Navigation */}
       {/*<div className="flex justify-center w-full">
         <Navigation />
       </div>*/}
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-4">
-        {/* Background */}
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden">        {/* Background */}
         <div
           className="absolute inset-0 pointer-events-none bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/home/main.png')" }}
         ></div>
 
         {/* Hero Content */}
-        <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full min-h-[400px]"></div>
-
+        <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 mx-auto w-full min-h-[400px]"></div>
         {/* Decorative gradient at bottom */}
         <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-slate-900 to-transparent"></div>
       </section>
 
       {/* Stats Section */}
       <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 flex items-center justify-center">
-        <div className="w-full max-w-7xl mx-auto">
+        <div className="w-full mx-auto">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 lg:gap-8 w-full">
             {/* General Members Card */}
             <div className="w-full sm:flex-1 flex flex-col items-center justify-center bg-blue-400 rounded-xl shadow-[10px_10px_8px_2px_rgba(0,0,0,0.25)] border border-black p-4 sm:p-6 min-h-[10rem] sm:min-h-[11rem]">
@@ -113,22 +109,22 @@ export default function Home() {
       </section>
 
       {/* Dynamic Image Row Section Above 'What We Are Up To' */}
-      <section className="w-full flex justify-center items-center mb-8 sm:mb-12 lg:mb-16">
-        <div className="min-h-[300px] sm:min-h-[450px] lg:min-h-[630px] w-[95%] max-w-7xl mx-auto rounded-2xl border border-blue-400 bg-gradient-to-r from-gray-900 to-gray-800 backdrop-blur-[2px] px-4 py-6 sm:py-8 flex flex-col sm:flex-row items-center justify-center sm:justify-evenly gap-4 sm:gap-6 lg:gap-8 overflow-hidden">
+      <section className="w-full flex justify-center items-center mb-8 sm:mb-12 lg:mb-16 overflow-x-hidden">
+        <div className="min-h-[300px] sm:min-h-[450px] lg:min-h-[630px] w-[95%] mx-auto rounded-2xl border border-blue-400 bg-gradient-to-r from-gray-900 to-gray-800 backdrop-blur-[2px] px-4 py-6 sm:py-8 flex flex-col sm:flex-row flex-nowrap items-center justify-center sm:justify-between sm:gap-0 box-border overflow-x-clip**">
           <img
             src="/home/group-picture-left.png"
             alt="FBLC Team Photo"
-            className="w-full sm:w-1/3 max-w-[250px] sm:max-w-xs h-48 sm:h-60 lg:h-72 object-cover rounded-xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)] rotate-3 sm:rotate-12"
+            className="w-1/3 shrink min-w-0 h-60 sm:h-80 lg:h-[450px] object-contain rounded-[10px] shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)] mx-1 -rotate-2 sm:rotate-4"
           />
           <img
             src="/home/piran-and-hasham.png"
             alt="FBLC Leadership"
-            className="w-[280px] h-[380px] object-contain rounded-[10px] shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)] -rotate-2 sm:-rotate-6"
+            className="w-1/3 shrink min-w-0 h-60 sm:h-80 lg:h-[500px] object-contain rounded-[10px] shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)] mx-1 -rotate-2 sm:-rotate-6"
           />
           <img
             src="/home/group-picture-right.png"
             alt="FBLC Members"
-            className="w-full sm:w-1/3 max-w-[220px] sm:max-w-xs h-56 sm:h-72 lg:h-96 object-cover rounded-xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)] rotate-1 sm:rotate-3"
+            className="w-1/3 shrink min-w-0 h-60 sm:h-80 lg:h-[500px] object-contain rounded-[10px] shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)] mx-1 -rotate-2 sm:-rotate-4"
           />
         </div>
       </section>

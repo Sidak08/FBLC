@@ -64,9 +64,15 @@ export default function JoinPage() {
               </li>
             </ul>
 
-            <button className="w-full bg-gradient-to-r from-[#3B82F6] to-[#1E40AF] text-white px-6 py-3 sm:py-4 rounded-lg font-semibold hover:from-[#2563EB] hover:to-[#1D4ED8] transition-all duration-300 text-sm sm:text-base min-h-[44px] touch-manipulation">
-              Apply as General Member
-            </button>
+            <a 
+              href="https://form.jotform.com/252156876829270"
+              target="_blank"        
+              rel="noopener noreferrer" 
+              className="w-full bg-gradient-to-r from-[#3B82F6] to-[#1E40AF] text-white px-6 py-3 sm:py-4 rounded-lg font-semibold hover:from-[#2563EB] hover:to-[#1D4ED8] transition-all duration-300 text-sm sm:text-base min-h-[44px] touch-manipulation flex items-center justify-center"
+              >
+              Apply as a General Member
+            </a>
+
           </div>
 
           {/* Executive Membership */}
@@ -176,18 +182,18 @@ export default function JoinPage() {
             right for you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md sm:max-w-none mx-auto">
-            <Link
+            <a
               href="/meet-the-team"
               className="bg-transparent border border-[#60A5FA] text-white px-6 py-3 sm:py-4 rounded-lg font-semibold hover:bg-[#60A5FA]/10 transition-all duration-300 text-sm sm:text-base min-h-[44px] touch-manipulation flex items-center justify-center"
             >
               Meet Our Team
-            </Link>
-            <Link
+            </a>
+            <a
               href="/contact"
               className="bg-gradient-to-r from-[#3B82F6] to-[#1E40AF] text-white px-6 py-3 sm:py-4 rounded-lg font-semibold hover:from-[#2563EB] hover:to-[#1D4ED8] transition-all duration-300 text-sm sm:text-base min-h-[44px] touch-manipulation flex items-center justify-center"
             >
               Contact Us
-            </Link>
+            </a>
           </div>
         </div>
       </main>
