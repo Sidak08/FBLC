@@ -44,20 +44,20 @@
       "image": "/team/Website Pictures/Admin Team/Christina.png"
     },
     {
-      "name": "Deetya Amuluru",
+      "name": "Maahi Jani",
       "title": "Vice-President",
       "secondPosition": "Program Director for Elevate Leaders Program",
-      "description": "Deetya Amuluru holds the position of Vice-President and Program Director for the Elevate Leaders Program. Currently, she is an 11th-grade student at St. Edmund Campion Secondary School. After joining the Chapter as an Executive for the 2024-2025 year, she quickly ascended through the ranks and now manages the Elevate Leaders Program.",
-      "adjectives": [
-        "Program Management",
-        "Leadership Development",
-        "Executive Growth"
-      ],
-      "initial": "D",
-      "email": "deetya.amuluru.bramptonfblc@gmail.com",
-      "phone": "647-722-7222",
+      "description": "Maahi is a grade 11 student serving as the Deputy Director of Marketing at Brampton FBLC. She combines creativity with strategy to strengthen the club's presence and engagement. Passionate about visual arts, Maahi enjoys drawing and painting, which bring a unique perspective to her role. Through her work, she aims to contribute fresh ideas, support FBLC's growth, and inspire others with creativity and dedication.",
+      "adjectives":  [
+        "Creative Strategy", 
+        "Visual Arts", 
+        "Innovative"
+    ],
+      "initial": "M",
+      "email": "maahi.jani.bramptonfblc@gmail.com",
+      "phone": "437-499-5987",
       "contactFor": "Concerns regarding Junior Executives and the Elevate Leaders Program",
-      "image": "/team/Website Pictures/Admin Team/Deetya.png"
+      "image": "/team/Website Pictures/Department of Marketing/Maahi.png"
     },
     {
       "name": "Garvit Chadha",
@@ -84,7 +84,7 @@
     {
       "name": "Palwinder Pal Sharma",
       "title": "Presidential Oversight & Compliance Officer",
-      "description": "Palwinde Pal Sharma, a Grade 12 student, serves as the Presidential Oversight & Compliance Officer and has been part of the chapter since its founding on October 15. Passionate about sports, business, finance, and politics, Palwinde is dedicated to supporting the club's continued success and growth through leadership and active involvement.",
+      "description": "Palwinder Pal Sharma, a Grade 12 student, serves as the Presidential Oversight & Compliance Officer and has been part of the chapter since its founding on October 15. Passionate about sports, business, finance, and politics, Palwinde is dedicated to supporting the club's continued success and growth through leadership and active involvement.",
       "adjectives": ["Business", "Finance", "Politics"],
       "initial": "P",
       "image": "/team/Website Pictures/Office of the First Co-President/Palwinder.png"
@@ -237,25 +237,12 @@
   ],
   "marketing": [
     {
-      "name": "Kkapish Baghla",
-      "title": "Director",
-      "description": "Kkapish is a grade 11 student attending St. Edmund Campion Catholic Secondary School in the AP program and an aspiring lawyer. Last year, he was one of the marketing officers for Brampton FBLC and was promoted earlier this calendar year. He enjoys playing sports (such as cricket, table tennis, badminton, volleyball, soccer, basketball, etc) and making edits. He has multiple law certifications from schools such as Yale University and University of Pennsylvania.",
-      "adjectives": [
-        "Legal Aspirations",
-        "Sports Enthusiast",
-        "Creative Editing"
-      ],
-      "initial": "K",
-      "bigBox": true,
-      "image": "/team/Website Pictures/Department of Marketing/Kkapish.png"
-    },
-    {
-      "name": "Maahi Jani",
-      "title": "Deputy Director",
-      "description": "Maahi is a grade 11 student serving as the Deputy Director of Marketing at Brampton FBLC. She combines creativity with strategy to strengthen the club's presence and engagement. Passionate about visual arts, Maahi enjoys drawing and painting, which bring a unique perspective to her role. Through her work, she aims to contribute fresh ideas, support FBLC's growth, and inspire others with creativity and dedication.",
-      "adjectives": ["Creative Strategy", "Visual Arts", "Innovative"],
-      "initial": "M",
-      "image": "/team/Website Pictures/Department of Marketing/Maahi.png"
+      "name": "Ansh Chatrath",
+      "title": "Director of Marketing",
+      "description": "Ansh Chatrath is a grade 12 student at Chingucousy S.S with a passion for business, finance, and leadership. Ansh is a student who loves competition and excelling in different topics. Ansh uses his creative knowledge to help the marketing department as much as possible and is trying to further the reach of Brampton FBLC.",
+      "adjectives": ["Business Focus", "Competitive", "Reach Expansion"],
+      "initial": "A",
+      "image": "/team/Website Pictures/Department of Marketing/Ansh.png"
     },
     {
       "name": "Sanvitha Ambati",
@@ -279,14 +266,6 @@
       "adjectives": ["Social Media", "Multi-talented", "Leadership"],
       "initial": "A",
       "image": "/team/Website Pictures/Department of Marketing/Arnav.png"
-    },
-    {
-      "name": "Ansh Chatrath",
-      "title": "Officer",
-      "description": "Ansh Chatrath is a grade 12 student at Chingucousy S.S with a passion for business, finance, and leadership. Ansh is a student who loves competition and excelling in different topics. Ansh uses his creative knowledge to help the marketing department as much as possible and is trying to further the reach of Brampton FBLC.",
-      "adjectives": ["Business Focus", "Competitive", "Reach Expansion"],
-      "initial": "A",
-      "image": "/team/Website Pictures/Department of Marketing/Ansh.png"
     }
   ],
   "recruitment": [

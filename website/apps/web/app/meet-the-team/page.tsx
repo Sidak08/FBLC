@@ -14,28 +14,6 @@ interface TeamMember {
   initial?: string;
   image?: string;
 }
-function LearnMore() {
-      const [isOpen, setIsOpen] = useState(false);
-
-      const togglePopup = () => {
-        setIsOpen(!isOpen);
-      };
-
-      return (
-        <div>
-          <button onClick={togglePopup}>Open Popup</button>
-          {isOpen && (
-            <div className="popup-overlay">
-              <div className="popup-content">
-                <h2>Information on Admin</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                <button onClick={togglePopup}>Close</button>
-              </div>
-            </div>
-          )}
-        </div>
-      );
-    }
 
 interface TeamData {
   [key: string]: TeamMember[];
@@ -285,7 +263,6 @@ export default function MeetTheTeam() {
                   {/* Learn More Button */}
                   <div className="text-center mt-auto">
                     <a
-                      onClick={LearnMore}
                       className="bg-gradient-to-r from-[#3B82F6] to-[#1E40AF] text-white px-6 py-3 sm:py-4 rounded-lg font-semibold hover:from-[#2563EB] hover:to-[#1D4ED8] transition-all duration-300 text-sm sm:text-base min-h-[44px] touch-manipulation flex items-center justify-center"
                     >
                       Learn More
