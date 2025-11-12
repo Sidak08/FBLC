@@ -53,19 +53,19 @@ export function Timeline() {
           {timelineData.map((entry, index) => (
             <div key={index} className="relative mb-8 sm:mb-10 pl-6 sm:pl-8">
               {/* Timeline dot */}
-              <div className="bg-white absolute left-0 top-3 sm:top-3.5 w-3 sm:w-4 h-3 sm:h-4 rounded-full border-2 sm:border-4 border-white/30 shadow-lg"></div>
-              
-              <div className="bg-white/95 rounded-xl p-4 sm:p-6 shadow-xl border border-gray-200/50 backdrop-blur-sm hover:shadow-2xl transition-all duration-300 hover:scale-[1.01]">
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
-                  <h4 className="text-lg sm:text-xl font-bold text-fblc-navy mb-2 sm:mb-0">
-                    {entry.title}
+            <div className="bg-blue-900 absolute left-0 top-3 sm:top-3.5 w-6 h-6 sm:w-8 sm:h-8 shadow-lg flex items-center justify-center">
+                <div className="bg-white w-2 h-2 sm:w-3 sm:h-3"></div>
+            </div>              
+              <div className="bg-[#031540] rounded-xl p-4 sm:p-6 shadow-xl border border-gray-700/50 backdrop-blur-sm hover:shadow-2xl transition-all duration-300 hover:scale-[1.01]">                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
+                <h4 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-0">                    
+                  {entry.title}
                   </h4>
-                  <span className="text-xs sm:text-sm font-semibold text-fblc-navy/60 bg-fblc-navy/10 px-2 sm:px-3 py-1 rounded-full">
-                    {entry.date}
+                <span className="text-xs sm:text-sm font-semibold text-white/70 bg-white/10 px-2 sm:px-3 py-1 rounded-full">                    
+                  {entry.date}
                   </span>
                 </div>
                 
-                <div className="text-fblc-navy/80 leading-relaxed text-sm sm:text-base">
+                <div className="text-white/90 leading-relaxed text-sm sm:text-base">
                   {entry.content}
                 </div>
               </div>

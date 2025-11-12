@@ -4,7 +4,7 @@ import { InfoCard } from "./info-card"
 
 export function FblcTab() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-start">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-start bg-[#141D2B] p-9 border border-solid border-[#60A5FA] rounded-lg">
       {/* Left side - Organization info */}
       <div className="space-y-6 sm:space-y-8">
         <div className="flex items-center space-x-3 sm:space-x-4">
