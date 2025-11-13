@@ -82,7 +82,6 @@ export default function AcademicProgramming() {
         </div>
 
         {/* Bottom Image - banner */}
-        <div className="w-full bg-slate-900 min-h-[300px] flex items-center justify-center">
           <img
             src="/ap/FBLC(1)/banner.svg"
             alt="Academic Programming Banner"
@@ -91,11 +90,10 @@ export default function AcademicProgramming() {
               e.currentTarget.style.display = "none";
               if (e.currentTarget.parentElement) {
                 e.currentTarget.parentElement.innerHTML =
-                  '<div class="text-white text-2xl text-center py-16">Empowering Future Business Leaders</div>';
+                  '<div class="text-white text-2xl text-center">Empowering Future Business Leaders</div>';
               }
             }}
           />
-        </div>
       </section>
 
       {/* Stats Section - Cards Centered */}

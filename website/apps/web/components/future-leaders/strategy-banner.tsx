@@ -1,7 +1,6 @@
 export default function StrategyBanner() {
   return (
-    <div className="bg-fblc-navy py-16 sm:py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="bg-fblc-navy py-16 sm:py-7 ">
         <div className="text-center mb-12">
           <h2 className="text-fblc-sky-blue text-xl sm:text-2xl md:text-3xl font-bold uppercase tracking-wide">
             Brampton FBLC, JEC & TA's Comprehensive Member Development Strategy
@@ -46,6 +45,5 @@ export default function StrategyBanner() {
           </div>
         </div>
       </div>
-    </div>
   )
 }

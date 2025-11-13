@@ -54,8 +54,8 @@ export function Footer(props?: FooterProps) {
       {
         title: "Programs",
         links: [
-          { text: "ELP", url: "/elp" },
-          { text: "FLP", url: "/flp" },
+          { text: "ELP", url: "/elevate-leaders" },
+          { text: "FLP", url: "/future-leaders" },
           { text: "AP Partners", url: "/ap-partners" },
         ],
       },
