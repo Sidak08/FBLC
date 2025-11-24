@@ -10,6 +10,13 @@ export default function HeroSection() {
         className="object-cover"
         priority
       />
+      <Image
+        src="/governance/MBLGovernanceBG.png" 
+        alt="Governance Mobile Banner"
+        fill
+        className="object-cover sm:hidden" 
+        priority
+      />
       {/* Dark overlay for better text readability */}
       <div className="relative z-10 flex items-center justify-center h-full">
       </div>

@@ -70,7 +70,7 @@ export default function AcademicProgramming() {
           <img
             src="/ap/FBLC(1)/heading.svg"
             alt="Academic Programming Heading"
-            className="w-full h-auto object-cover"
+            className="object-cover hidden sm:block"
             onError={(e) => {
               e.currentTarget.style.display = "none";
               if (e.currentTarget.parentElement) {
@@ -79,6 +79,20 @@ export default function AcademicProgramming() {
               }
             }}
           />
+
+          <img
+            src="/ap/FBLC(1)/MBLheading.svg"
+            alt="Academic Programming Heading"
+            className="object-cover sm:hidden" 
+            onError={(e) => {
+              e.currentTarget.style.display = "none";
+              if (e.currentTarget.parentElement) {
+                e.currentTarget.parentElement.innerHTML =
+                  '<div class="text-white text-4xl font-bold text-center py-12">Academic Programming</div>';
+              }
+            }}
+          />
+
         </div>
 
         {/* Bottom Image - banner */}

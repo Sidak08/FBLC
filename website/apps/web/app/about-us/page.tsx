@@ -22,7 +22,14 @@ export default function AboutUsPage() {
           src="/hero/AboutUsHeroImage.png"
           alt="About Us Banner"
           fill
-          className="object-cover"
+          className="object-cover hidden sm:block"
+          priority
+        />
+        <Image
+          src="/hero/AboutUsMobileHeroImage.png" 
+          alt="About Us Mobile Banner"
+          fill
+          className="object-cover sm:hidden" 
           priority
         />
       </div>

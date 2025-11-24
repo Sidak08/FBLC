@@ -7,9 +7,16 @@ export default function HeroSection() {
         src="/future-leader/FutureLeadersBanner.png"
         alt="Future Leaders"
         fill
-        className="object-cover"
+        className="object-cover hidden sm:block"
         priority
       />
+    <Image
+      src="/future-leader/MBLFutureLeadersBanner.png" 
+      alt="Mobile Future Leaders"
+      fill
+      className="object-cover sm:hidden" 
+      priority
+    />
     </div>
   )
 }
