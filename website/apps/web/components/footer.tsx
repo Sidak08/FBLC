@@ -56,15 +56,14 @@ export function Footer(props?: FooterProps) {
         links: [
           { text: "ELP", url: "/elevate-leaders" },
           { text: "FLP", url: "/future-leaders" },
-          { text: "AP Partners", url: "/ap-partners" },
+          { text: "AP Partners", url: "/academic-programming" },
         ],
       },
       {
         title: "Connect",
         links: [
           { text: "About Us", url: "/about-us" },
-          { text: "Contact", url: "/contact" },
-          { text: "LinkedIn", url: "#" },
+          { text: "LinkedIn", url: "https://www.linkedin.com/company/brampton-fblc-jec-ta/" },
         ],
       },
     ],
