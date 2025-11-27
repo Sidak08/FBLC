@@ -1,6 +1,7 @@
 "use client";
 
 //import { Navigation } from "../components/navigation";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -11,16 +12,28 @@ export default function Home() {
       </div>*/}
 
       {/* Hero Section */}
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden">        {/* Background */}
-        <div
-          className="absolute inset-0 pointer-events-none bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/home/main.png')" }}
-        ></div>
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
 
-        {/* Hero Content */}
-        <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 mx-auto w-full min-h-[400px]"></div>
-        {/* Decorative gradient at bottom */}
-        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-slate-900 to-transparent"></div>
+        {/* Mobile banner */}
+        <Image
+          src="/home/main-mobile.png"
+          alt="Home Banner"
+          fill
+          className="object-cover sm:hidden"
+          priority
+        />
+
+        {/* Desktop background */}
+        <div
+          className="absolute inset-0 pointer-events-none bg-cover bg-center bg-no-repeat hidden sm:block"
+          style={{ backgroundImage: "url('/home/main.png')" }}
+        />
+
+        {/* Content */}
+        <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 mx-auto w-full min-h-[400px]">
+        </div>
+
+        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-slate-900 to-transparent" />
       </section>
 
       {/* Stats Section */}
