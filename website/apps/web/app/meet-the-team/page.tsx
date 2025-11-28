@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 // import { Navigation } from "../../components/navigation";
 import { TeamNav } from "../../components/team-nav";
@@ -83,11 +84,16 @@ export default function MeetTheTeam() {
     return descriptions[dept] || "Our dedicated team members.";
   };
 
+  const currentTeamMembers = teamData[currentDepartment] || [];
+  const bannerSrc = `/team/Banners/${currentDepartment}-mobile.png`;
+  const bannerAlt = `${getDepartmentTitle(currentDepartment)} banner`;
+
   if (loading) {
     return (
       <div className="min-h-screen bg-gradient-to-b from-slate-800 via-slate-900 to-black">
         {/* Gradient Spacer Above Navbar */}
-        <div className="w-full" style={{ height: "2.5vw" }}></div>
+        <div className="w-full hidden sm:block" style={{ height: "2.5vw" }}></div>
+
         {/* Navigation */}
         {/*<div className="flex justify-center w-full">
           <Navigation />
@@ -123,7 +129,7 @@ export default function MeetTheTeam() {
     return (
       <div className="min-h-screen bg-gradient-to-b from-slate-800 via-slate-900 to-black">
         {/* Gradient Spacer Above Navbar */}
-        <div className="w-full" style={{ height: "2.5vw" }}></div>
+        <div className="w-full hidden sm:block" style={{ height: "2.5vw" }}></div>
         {/* Navigation */}
         {/*<div className="flex justify-center w-full">
           <Navigation />
@@ -164,12 +170,26 @@ export default function MeetTheTeam() {
     );
   }
 
-  const currentTeamMembers = teamData[currentDepartment] || [];
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-800 via-slate-900 to-black">
       {/* Gradient Spacer Above Navbar */}
-      <div className="w-full" style={{ height: "2.5vw" }}></div>
+      <div className="w-full hidden sm:block" style={{ height: "2.5vw" }}></div>
+
+      {/* Mobile-only department banner (shows only on small screens) */}
+      <div className="relative w-full h-54 sm:hidden">
+        <Image
+          src={bannerSrc}
+          alt={bannerAlt}
+          fill
+          className="object-cover"
+          priority
+        />
+        {/* Optional overlay for centered text (keeps same structure if you want content over the banner) */}
+        <div className="relative z-10 flex items-center justify-center h-full">
+          {/* put centered text/buttons here if desired */}
+        </div>
+      </div>
+
       {/* Navigation */}
       <div className="flex justify-center w-full">{/*<Navigation />*/}</div>
 
