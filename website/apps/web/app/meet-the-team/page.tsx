@@ -176,7 +176,7 @@ export default function MeetTheTeam() {
       <div className="w-full hidden sm:block" style={{ height: "2.5vw" }}></div>
 
       {/* Mobile-only department banner (shows only on small screens) */}
-      <div className="relative w-full h-54 sm:hidden">
+      <div className="relative w-full h-[60vh] sm:h-[70vh] lg:h-[80vh] overflow-hidden sm:hidden">
         <Image
           src={bannerSrc}
           alt={bannerAlt}
