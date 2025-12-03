@@ -4,7 +4,7 @@ import { InfoCard } from "./info-card"
 
 export function TargetAlphaTab() {
   return (
-    <div className="grid md:grid-cols-2 gap-12 items-start">
+    <div className="grid md:grid-cols-2 gap-12 items-start bg-[#141D2B] p-9 border border-solid border-[#60A5FA] rounded-lg">
       {/* Left side - Organization info */}
       <div className="space-y-8">
         <div className="flex items-center space-x-4">

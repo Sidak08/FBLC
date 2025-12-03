@@ -14,9 +14,9 @@ const navigationLinks = [
   { name: "About Us", href: "/about-us" },
   { name: "Join Us", href: "/join-us" },
   { name: "Meet the Team", href: "/meet-the-team" },
-  { name: "ELP", href: "/elevate-leaders" },
-  { name: "FLP", href: "/future-leaders" },
-  { name: "AP", href: "/academic-programming" },
+  { name: "FBLC × ELP", href: "/elevate-leaders" },
+  { name: "FBLC × FLP", href: "/future-leaders" },
+  { name: "FBLC × AP", href: "/academic-programming" },
   { name: "Events", href: "/events" },
 ];
 

@@ -7,7 +7,14 @@ export default function HeroSection() {
         src="/events/EventsBanner.png"
         alt="Events Banner"
         fill
-        className="object-cover"
+        className="object-cover hidden sm:block"
+        priority
+        />
+      <Image
+        src="/events/MBLEventsBanner.png" 
+        alt="Events Mobile Banner"
+        fill
+        className="object-cover sm:hidden" 
         priority
       />
     </div>

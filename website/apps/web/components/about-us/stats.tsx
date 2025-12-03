@@ -12,7 +12,6 @@ interface StatsProps {
   };
   stats?: Array<{
     id: string;
-    value: string;
     label: string;
   }>;
 }
@@ -93,24 +92,21 @@ export function Stats({
   stats = [
     {
       id: "stat-1",
-      value: "3",
-      label: "Organizations United",
+      label: "35+ Executives",
     },
     {
       id: "stat-2",
-      value: "120+",
-      label: "Students Reached",
+      label: "300+ Members",
     },
     {
       id: "stat-3",
-      value: "National",
-      label: "Impact",
+      label: "National Impact",
     },
   ],
 }: StatsProps) {
   return (
     <section className="py-16 sm:py-24 lg:py-32">
-      <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-[#141D2B] p-9 border border-solid border-[#60A5FA] rounded-lg">
         <div className="flex flex-col gap-4 text-center">
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white">{heading}</h2>
           <p className="text-white/80 max-w-4xl mx-auto text-base sm:text-lg px-4">{description}</p>
@@ -126,7 +122,6 @@ export function Stats({
           {stats.map((stat) => (
             <div key={stat.id} className="flex flex-col gap-3 sm:gap-4 text-center w-full max-w-xs group">
               <div className="transform group-hover:scale-110 transition-transform duration-300">
-                <AnimatedCounter value={stat.value} />
               </div>
               <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-xl font-medium text-sm sm:text-base shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                 {stat.label}

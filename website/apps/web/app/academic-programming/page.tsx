@@ -40,29 +40,29 @@ export default function AcademicProgramming() {
     "Personal Finance",
   ];
 
-  const adminTeam: AdminTeamMember[] = [
+  const adminTeam: AdminTeamMember[] = [ // Images added
     {
       name: "Dhruv Aggarwal",
       role: "Deputy Director of Academic Programming",
-      image: "https://placehold.co/200x200/3B82F6/ffffff?text=DA",
+      image: "/team/Website Pictures/Department of Education/Dhruv.png",
       hasTag: false,
     },
     {
       name: "Swathi Vasupilli",
       role: "Director of the Academic Programming",
-      image: "https://placehold.co/200x200/1E40AF/ffffff?text=SV",
+      image: "/team/Website Pictures/Department of Education/Swathi.png",
       hasTag: false,
     },
     {
       name: "Piraneerth Pathmajeyalan",
       role: "Supervising Administrator",
-      image: "https://placehold.co/200x200/3B82F6/ffffff?text=PP",
+      image: "/team/Website Pictures/Admin Team/Piraneerth.png",
       hasTag: false,
     },
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-800 via-slate-900 to-black">
+    <div className="min-h-screen bg-gradient-to-b from-slate-800 via-slate-900 to-black"> 
       {/* Hero Section - Images */}
       <section className="w-full flex flex-col relative">
         {/* Top Image - heading.svg */}
@@ -70,7 +70,7 @@ export default function AcademicProgramming() {
           <img
             src="/ap/FBLC(1)/heading.svg"
             alt="Academic Programming Heading"
-            className="w-full h-auto object-cover"
+            className="object-cover hidden sm:block"
             onError={(e) => {
               e.currentTarget.style.display = "none";
               if (e.currentTarget.parentElement) {
@@ -79,23 +79,68 @@ export default function AcademicProgramming() {
               }
             }}
           />
-        </div>
 
-        {/* Bottom Image - banner */}
-        <div className="w-full bg-slate-900 min-h-[300px] flex items-center justify-center">
           <img
-            src="/ap/FBLC(1)/banner.svg"
-            alt="Academic Programming Banner"
-            className="w-full h-auto object-cover"
+            src="/ap/FBLC(1)/MBLheading.svg"
+            alt="Academic Programming Heading"
+            className="object-cover sm:hidden" 
             onError={(e) => {
               e.currentTarget.style.display = "none";
               if (e.currentTarget.parentElement) {
                 e.currentTarget.parentElement.innerHTML =
-                  '<div class="text-white text-2xl text-center py-16">Empowering Future Business Leaders</div>';
+                  '<div class="text-white text-4xl font-bold text-center py-12">Academic Programming</div>';
               }
             }}
           />
+
         </div>
+
+        {/* Bottom Image - banner */}
+        <div className="bg-fblc-navy py-16 sm:py-7 ">
+        <div className="text-center mb-12">
+          <h2 className="text-fblc-sky-blue text-xl sm:text-2xl md:text-3xl font-bold uppercase tracking-wide">
+            Brampton FBLC, JEC & TA's Comprehensive Member Development Strategy
+          </h2>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+          <div className="text-center">
+            <h3 className="text-fblc-sky-blue text-2xl sm:text-3xl md:text-4xl font-bold mb-3">
+              INTEGRATES
+            </h3>
+            <p className="text-fblc-sky-blue text-lg sm:text-xl italic font-normal">
+              Academics and Fun
+            </p>
+          </div>
+          
+          <div className="text-center">
+            <h3 className="text-fblc-sky-blue text-2xl sm:text-3xl md:text-4xl font-bold mb-3">
+              REKINDLES
+            </h3>
+            <p className="text-fblc-sky-blue text-lg sm:text-xl italic font-normal">
+              Competitive Spirit
+            </p>
+          </div>
+          
+          <div className="text-center">
+            <h3 className="text-fblc-sky-blue text-2xl sm:text-3xl md:text-4xl font-bold mb-3">
+              FUELS
+            </h3>
+            <p className="text-fblc-sky-blue text-lg sm:text-xl italic font-normal">
+              Creativity
+            </p>
+          </div>
+          
+          <div className="text-center">
+            <h3 className="text-fblc-sky-blue text-2xl sm:text-3xl md:text-4xl font-bold mb-3">
+              ENCOURAGES
+            </h3>
+            <p className="text-fblc-sky-blue text-lg sm:text-xl italic font-normal">
+              Thoughtful Exploration
+            </p>
+          </div>
+        </div>
+      </div>
       </section>
 
       {/* Stats Section - Cards Centered */}
@@ -132,8 +177,9 @@ export default function AcademicProgramming() {
       {/* What to Expect Section - Container Centered, Content Left-Aligned */}
       <section
         className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8"
-        style={{ marginTop: "50px" }}
+        style={{ marginTop: "-117px" }}
       >
+        
         <div className="mx-auto mt-8 sm:mt-16 lg:mt-[130px] min-h-[350px] sm:min-h-[465px] flex flex-col justify-center items-center">
           {/* Heading moved inside content box for vertical centering */}
 
@@ -189,7 +235,7 @@ export default function AcademicProgramming() {
               </div>
 
               {/* Enhanced Mobile Education Hub Card */}
-              <div className="bg-gradient-to-br from-white to-slate-50 rounded-2xl shadow-[0_20px_60px_-12px_rgba(0,0,0,0.4)] border border-slate-200 p-6 sm:p-8 relative overflow-hidden">
+              <div className="my-8"><div className="bg-gradient-to-br from-white to-slate-50 rounded-2xl shadow-[0_20px_60px_-12px_rgba(0,0,0,0.4)] border border-slate-200 p-6 sm:p-8 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-100 to-transparent rounded-full -translate-y-16 translate-x-16"></div>
                 <div className="relative z-10">
                   <div className="flex items-center gap-3 mb-6">
@@ -283,7 +329,7 @@ export default function AcademicProgramming() {
               </div>
             </div>
           </div>
-
+        </div>      
           {/* Enhanced Tags row for all screen sizes */}
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 sm:gap-6">
             {subjects.map((subject, index) => (
@@ -299,12 +345,12 @@ export default function AcademicProgramming() {
           </div>
         </div>
       </section>
-
       {/* Administration Section - All Content Centered */}
       <section
-        className="relative py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8"
-        style={{ marginTop: "50px" }}
+        className="relative py-12 sm:py-16 lg py:20 px-4 sm:px-6 lg:px-8"      
+        style={{marginTop: "50px"}}   
       >
+
         {/* Full-width background rectangle */}
         <div className="absolute inset-0 z-0 bg-slate-800">
           <img
@@ -376,7 +422,7 @@ export default function AcademicProgramming() {
         <div className="w-full max-w-4xl flex flex-col sm:flex-row items-center gap-6 sm:gap-8 lg:gap-12 min-h-[12rem] sm:min-h-[16rem]">
           {/* Footer Image */}
           <img
-            src="https://placehold.co/215x129"
+            src="FBLC Logo.svg"
             alt="Footer Logo"
             className="w-40 sm:w-48 lg:w-52 h-24 sm:h-28 lg:h-32 object-cover rounded-xl flex-shrink-0"
           />

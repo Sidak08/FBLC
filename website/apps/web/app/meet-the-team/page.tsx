@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 // import { Navigation } from "../../components/navigation";
 import { TeamNav } from "../../components/team-nav";
@@ -83,11 +84,16 @@ export default function MeetTheTeam() {
     return descriptions[dept] || "Our dedicated team members.";
   };
 
+  const currentTeamMembers = teamData[currentDepartment] || [];
+  const bannerSrc = `/team/Banners/${currentDepartment}-mobile.png`;
+  const bannerAlt = `${getDepartmentTitle(currentDepartment)} banner`;
+
   if (loading) {
     return (
       <div className="min-h-screen bg-gradient-to-b from-slate-800 via-slate-900 to-black">
         {/* Gradient Spacer Above Navbar */}
-        <div className="w-full" style={{ height: "2.5vw" }}></div>
+        <div className="w-full hidden sm:block" style={{ height: "2.5vw" }}></div>
+
         {/* Navigation */}
         {/*<div className="flex justify-center w-full">
           <Navigation />
@@ -123,7 +129,7 @@ export default function MeetTheTeam() {
     return (
       <div className="min-h-screen bg-gradient-to-b from-slate-800 via-slate-900 to-black">
         {/* Gradient Spacer Above Navbar */}
-        <div className="w-full" style={{ height: "2.5vw" }}></div>
+        <div className="w-full hidden sm:block" style={{ height: "2.5vw" }}></div>
         {/* Navigation */}
         {/*<div className="flex justify-center w-full">
           <Navigation />
@@ -164,12 +170,26 @@ export default function MeetTheTeam() {
     );
   }
 
-  const currentTeamMembers = teamData[currentDepartment] || [];
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-800 via-slate-900 to-black">
       {/* Gradient Spacer Above Navbar */}
-      <div className="w-full" style={{ height: "2.5vw" }}></div>
+      <div className="w-full hidden sm:block" style={{ height: "2.5vw" }}></div>
+
+      {/* Mobile-only department banner (shows only on small screens) */}
+      <div className="relative w-full h-[60vh] sm:h-[70vh] lg:h-[80vh] overflow-hidden sm:hidden">
+        <Image
+          src={bannerSrc}
+          alt={bannerAlt}
+          fill
+          className="object-cover"
+          priority
+        />
+        {/* Optional overlay for centered text (keeps same structure if you want content over the banner) */}
+        <div className="relative z-10 flex items-center justify-center h-full">
+          {/* put centered text/buttons here if desired */}
+        </div>
+      </div>
+
       {/* Navigation */}
       <div className="flex justify-center w-full">{/*<Navigation />*/}</div>
 
@@ -194,7 +214,8 @@ export default function MeetTheTeam() {
               {currentTeamMembers.map((member, index) => (
                 <div
                   key={`${currentDepartment}-${index}`}
-                  className="bg-transparent border border-[#60A5FA]/30 rounded-2xl p-6 sm:p-8 backdrop-blur-sm hover:border-[#60A5FA]/50 transition-all duration-300 flex flex-col justify-between w-full max-w-md lg:max-w-lg xl:max-w-xl min-h-[450px] sm:min-h-[500px]"
+                  className="bg-transparent border border-[#60A5FA]/30 rounded-2xl p-6 sm:p-8 backdrop-blur-sm hover:border-[#60A5FA]/50 transition-all duration-300 flex flex-col justify-between w-full max-w-md lg:max-w-lg xl:max-w-xl min-h-[450px] sm:min-h-[500px] shadow-mdi
+                  "
                 >
                   <div className="flex-grow">
                     {/* Profile Circle/Image */}
@@ -258,13 +279,6 @@ export default function MeetTheTeam() {
                         ))}
                       </div>
                     )}
-                  </div>
-
-                  {/* Learn More Button */}
-                  <div className="text-center mt-auto">
-                    <button className="bg-gradient-to-r from-[#3B82F6] to-[#1E40AF] text-white px-6 sm:px-8 lg:px-10 py-3 sm:py-4 rounded-lg text-sm sm:text-base lg:text-lg font-semibold hover:from-[#2563EB] hover:to-[#1D4ED8] transition-all duration-300 min-h-[44px] touch-manipulation">
-                      Learn More
-                    </button>
                   </div>
                 </div>
               ))}

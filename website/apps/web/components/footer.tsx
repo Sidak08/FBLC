@@ -54,21 +54,21 @@ export function Footer(props?: FooterProps) {
       {
         title: "Programs",
         links: [
-          { text: "ELP", url: "/elp" },
-          { text: "FLP", url: "/flp" },
-          { text: "AP Partners", url: "/ap-partners" },
+          { text: "ELP", url: "/elevate-leaders" },
+          { text: "FLP", url: "/future-leaders" },
+          { text: "AP Partners", url: "/academic-programming" },
         ],
       },
       {
         title: "Connect",
         links: [
           { text: "About Us", url: "/about-us" },
-          { text: "Contact", url: "/contact" },
-          { text: "LinkedIn", url: "#" },
+          { text: "LinkedIn", url: "https://www.linkedin.com/company/brampton-fblc-jec-ta/" },
         ],
       },
     ],
-    copyright = "© 2024 Future Business Leaders Coalition. All rights reserved.",
+    copyright = `© ${new Date().getFullYear()} Future Business Leaders Coalition. All rights reserved.`,
+
     bottomLinks = [
       { text: "Terms and Conditions", url: "/terms" },
       { text: "Privacy Policy", url: "/privacy" },
