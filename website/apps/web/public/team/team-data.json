@@ -60,16 +60,16 @@
       "image": "/team/Website Pictures/Department of Marketing/Maahi.png"
     },
     {
-      "name": "Garvit Chadha",
+      "name": "Sidak Singh",
       "title": "Executive Director",
       "secondPosition": "Program Director for Future Leaders Bursary Program",
-      "description": "Garvit Chadha holds the position of Executive Director for Brampton FBLC, JEC & TA, in addition to serving as the Program Director for the Future Leaders Bursary Program. He is currently a Grade 11 student at St. Edmund Campion Secondary School. After joining the Chapter as an Executive for the 2024-2025 year, Garvit has advanced through the ranks and now oversees events and operations for Brampton FBLC, JEC & TA.",
+      "description": "Sidak Singh holds the position of Executive Director for Brampton FBLC, JEC & TA, in addition to serving as the Program Director for the Future Leaders Bursary Program. He is currently a Grade 12 student at Chinguacousy Secondary School.",
       "adjectives": ["Events Management", "Operations", "Program Leadership"],
       "initial": "G",
-      "email": "garvit.chadha.bramptonfblc@gmail.com",
-      "phone": "416-817-0492",
+      "email": "sidak.singh.bramptonfblc@gmail.com",
+      "phone": "647-405-7022",
       "contactFor": "Concerns regarding Events",
-      "image": "/team/Website Pictures/Admin Team/Garvit.png"
+      "image": "/team/Website Pictures/Admin Team/Sidak.png"
     }
   ],
   "presidential": [
@@ -167,13 +167,13 @@
   ],
   "special": [
     {
-      "name": "Sidak Singh",
+      "name": "Abhiram Vadali",
       "title": "Director",
-      "description": "A Grade 12 student driven by curiosity and creation, he is always seeking meaning through code and ideas. To him, programming is more than logic; it's a way to shape possibilities. Whether building projects, competing in hackathons, or playing sports, they pursue growth, challenge, and the chance to leave something lasting.",
-      "adjectives": ["Programming", "Innovation", "Growth-Oriented"],
-      "initial": "S",
+      "description": "Abhiram Vadali is a sophomore attending St. Edmund Campion CSS’ AP Program, and he contributes to FBLC's software development. He is the director of the Special Functions dept.",
+      "adjectives": ["Programming", "Creativity", "Entrepreneur"],
+      "initial": "A",
       "bigBox": true,
-      "image": "/team/Website Pictures/Department of Special Functions/Sidak.png"
+      "image": "/team/Website Pictures/Department of Special Functions/Abhiram.png"
     },
     {
       "name": "Ritmay Luthra",
@@ -184,37 +184,19 @@
       "image": "/team/Website Pictures/Department of Special Functions/Ritmay.png"
     },
     {
-      "name": "Taha Khan",
-      "title": "Finance Officer",
-      "description": "Taha Khan currently serves as the Finance Officer for FBLC. He is passionate about leadership, collaboration, and creating opportunities for students to grow personally and professionally. With a strong interest in finance and business, he enjoys building connections with peers, organizing events, and supporting initiatives that empower future leaders. His goal is to contribute to a dynamic and inclusive club environment where members can learn, share ideas, and achieve success together.",
-      "adjectives": ["Finance", "Collaboration", "Inclusive"],
-      "initial": "T",
-      "image": "/team/Website Pictures/Department of Special Functions/Taha.png"
-    },
-    {
-      "name": "Riddhiman Sinha",
+      "name": "Moksh Siruvani",
       "title": "Systems Officer",
-      "description": "Riddhiman Sinha is a Grade 12 student currently attending Chinguacousy Secondary School. Alongside his studies, he serves as a Systems Officer, where he is dedicated to enhancing performance and reliability across operations. Since taking on this role, he has focused on aligning systems with organizational goals, streamlining processes, and supporting long-term growth. Known for his adaptability and creativity, Riddhiman values teamwork, continuous improvement, and purposeful problem-solving, making him a dependable and impactful presence in every role he undertakes.",
-      "adjectives": ["Systems Management", "Process Improvement", "Adaptable"],
-      "initial": "R",
-      "image": "/team/Website Pictures/Department of Special Functions/Riddhiman.png"
+      "description": "Moksh Siruvani, a junior at Sinclair Secondary School graduating a year early, combines hands-on engineering experience with strong drive. From contributing to a championship winning FRC team to sending a robot into the upper atmosphere over the summer, he brings both technical depth and bold ambition into any field he pursues.",
+      "adjectives": ["Programming", "Backend", "Innovation"],
+      "initial": "M"
     },
     {
-      "name": "Roshan Iruku",
-      "title": "Officer",
-      "description": "Roshan Iruku is a grade 12 student and likes gardening, coding, playing video games, as well venturing in the great outdoors.",
-      "adjectives": ["Coding", "Outdoors", "Gaming"],
-      "initial": "R",
-      "image": "/team/Website Pictures/Department of Special Functions/Roshan.png"
-    },
-    {
-      "name": "Abhiram Vadali",
+      "name": "Mansi Patel",
       "title": "Systems Officer",
-      "description": "Abhiram Vadali is a sophomore attending St. Edmund Campion CSS’ AP Program, and he contributes to FBLC's software development.",
-      "adjectives": ["Programming", "Creativity", "Entrepreneur"],
-      "initial": "A",
-      "image": "/team/Website Pictures/Department of Special Functions/Abhiram.png"
-
+      "description": "Mansi Patel is a Grade 12 student serving as a Finance Officer at Brampton FBLC, JEC, and TA. She's the first person with a physical disability to serve as an executive in Brampton FBLC. She's the perfect example of self-actualization and multitasking. Her expertise includes financial modeling, budget forecasting, and cost-reduction strategies. Mansi has driven significant organizational success by securing community grants, recruiting high-profile speakers/guests, and leading successful fundraising initiatives. Outside of school, Mansi loves to do art, do nails, and help in the community. Looking ahead, she is driven to utilize her comprehensive skills and dedication to make a lasting, transformative impact on Brampton FBLC.",
+      "adjectives": ["Finance", "Funding", "Special Functions"],
+      "initial": "M",
+      "image": "/team/Website Pictures/Department of Special Functions/Mansi.jpg"
     }
   ],
   "operations": [
@@ -245,14 +227,6 @@
       "image": "/team/Website Pictures/Department of Marketing/Ansh.png"
     },
     {
-      "name": "Sanvitha Ambati",
-      "title": "Officer",
-      "description": "Sanvitha Ambati is a Grade 11 student who is a current marketing officer for Brampton FBLC. She enjoys embracing and including her creativity in everything she does. As a marketing officer, Sanvitha is able to work on her graphic design skills and use her artistic abilities in a professional environment, displaying how Brampton FBLC has a place for everyone who is passionate about anything. Outside of Brampton FBLC, Sanvitha enjoys drawing, painting, reading, and writing.",
-      "adjectives": ["Graphic Design", "Artistic", "Creative"],
-      "initial": "S",
-      "image": "/team/Website Pictures/Department of Marketing/Sanvitha.png"
-    },
-    {
       "name": "Gurlakshit Kaur",
       "title": "Officer",
       "description": "Marketing Officer contributing to brand development and promotional activities.",
@@ -269,14 +243,6 @@
     }
   ],
   "recruitment": [
-    {
-      "name": "Siya Parikh",
-      "title": "Director",
-      "description": "Siya P. is a Grade 11 student at St. Edmund Campion C.S.S, serving as the Director of Recruitment and Membership Services for Brampton FBLC. Passionate about creating a welcoming and supportive environment, she works to ensure members feel connected and engaged within the club. Siya is dedicated to fostering collaboration and providing opportunities for students to grow as leaders while building a strong sense of community. Outside of FBLC, she enjoys babysitting, listening to music, and exploring creative interests, all of which inspire her to bring energy and inclusivity to her role.",
-      "adjectives": ["Welcoming", "Community Building", "Inclusive"],
-      "initial": "S",
-      "image": "/team/Website Pictures/Department of Recruitment & Membership Services/Siya.png"
-    },
     {
       "name": "Charmi Pathak",
       "title": "Deputy Director",

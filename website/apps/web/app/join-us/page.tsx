@@ -121,7 +121,7 @@ export default function JoinPage() {
             </ul>
 
             <button className="w-full bg-gradient-to-r from-[#1E40AF] to-[#3B82F6] text-white px-6 py-3 sm:py-4 rounded-lg font-semibold hover:from-[#1D4ED8] hover:to-[#2563EB] transition-all duration-300 text-sm sm:text-base min-h-[44px] touch-manipulation">
-              Apply as Executive Member
+              Email christina.guo.bramptonfblc@gmail.com to apply
             </button>
           </div>
         </div>

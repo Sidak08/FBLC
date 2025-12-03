@@ -214,7 +214,8 @@ export default function MeetTheTeam() {
               {currentTeamMembers.map((member, index) => (
                 <div
                   key={`${currentDepartment}-${index}`}
-                  className="bg-transparent border border-[#60A5FA]/30 rounded-2xl p-6 sm:p-8 backdrop-blur-sm hover:border-[#60A5FA]/50 transition-all duration-300 flex flex-col justify-between w-full max-w-md lg:max-w-lg xl:max-w-xl min-h-[450px] sm:min-h-[500px]"
+                  className="bg-transparent border border-[#60A5FA]/30 rounded-2xl p-6 sm:p-8 backdrop-blur-sm hover:border-[#60A5FA]/50 transition-all duration-300 flex flex-col justify-between w-full max-w-md lg:max-w-lg xl:max-w-xl min-h-[450px] sm:min-h-[500px] shadow-mdi
+                  "
                 >
                   <div className="flex-grow">
                     {/* Profile Circle/Image */}
@@ -278,15 +279,6 @@ export default function MeetTheTeam() {
                         ))}
                       </div>
                     )}
-                  </div>
-
-                  {/* Learn More Button */}
-                  <div className="text-center mt-auto">
-                    <a
-                      className="bg-gradient-to-r from-[#3B82F6] to-[#1E40AF] text-white px-6 py-3 sm:py-4 rounded-lg font-semibold hover:from-[#2563EB] hover:to-[#1D4ED8] transition-all duration-300 text-sm sm:text-base min-h-[44px] touch-manipulation flex items-center justify-center"
-                    >
-                      Learn More
-                    </a>
                   </div>
                 </div>
               ))}
