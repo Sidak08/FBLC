@@ -2,6 +2,7 @@
 
 import { ArrowRight } from "lucide-react";
 import { useEffect, useState, useRef } from "react";
+import { Button } from "@workspace/ui/components/button"
 
 interface StatsProps {
   heading?: string;
@@ -126,8 +127,17 @@ export function Stats({
               <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-xl font-medium text-sm sm:text-base shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                 {stat.label}
               </div>
+              <div>
+              </div>
             </div>
           ))}
+        </div>
+        <div className="flex justify-center">
+          <a href="/governance" rel="noopener noreferrer" className="block w-full">
+          <Button className="bg-red-900 hover:bg-blue-700 text-white px-6 py-3 w-full">
+            Governance
+          </Button>
+          </a>
         </div>
       </div>
     </section>

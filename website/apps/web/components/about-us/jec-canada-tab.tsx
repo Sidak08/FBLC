@@ -19,12 +19,11 @@ export function JecCanadaTab() {
         </p>
         
         <div className="flex space-x-4">
+          <a href="https://www.jeccanada.org" target="_blank" rel="noopener noreferrer">
           <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3">
-            Case Competitions
+            Junior Economics Canada
           </Button>
-          <Button variant="outline" className="border-white/30 text-white hover:bg-white/10 px-6 py-3">
-            Junior Economist
-          </Button>
+          </a>
         </div>
       </div>
 

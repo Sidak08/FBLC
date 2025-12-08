@@ -19,12 +19,11 @@ export function TargetAlphaTab() {
         </p>
         
         <div className="flex space-x-4">
+          <a href="https://targetalpha.ca/" target="_blank" rel="noopener noreferrer">
           <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3">
-            Investment Hub
+            Target Alpha Canada
           </Button>
-          <Button variant="outline" className="border-white/30 text-white hover:bg-white/10 px-6 py-3">
-            Market Analysis
-          </Button>
+          </a>
         </div>
       </div>
 

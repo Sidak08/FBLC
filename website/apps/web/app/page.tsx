@@ -2,6 +2,7 @@
 
 //import { Navigation } from "../components/navigation";
 import Image from "next/image";
+import { Button } from "@workspace/ui/components/button"
 
 export default function Home() {
   return (
@@ -107,17 +108,16 @@ export default function Home() {
                 thrive in the world of business.
               </div>
               <div className="w-full flex justify-center">
-                <div
-                  className="w-64 sm:w-80 lg:w-96 h-16 sm:h-18 lg:h-20 pt-2 rounded-2xl shadow-[12px_12px_8px_0px_rgba(2,2,2,0.25)] inline-flex justify-center items-center gap-2.5 cursor-pointer hover:bg-[#8A2337] transition-colors duration-300 px-4"
-                  style={{ backgroundColor: "#A42B43" }}
-                >
-                  <div className="text-white text-xl sm:text-2xl lg:text-3xl font-bold text-center">
-                    LEARN MORE
-                  </div>
+
+                  <a href="about-us" target="_blank" rel="noopener noreferrer">
+                    <Button className="w-64 sm:w-80 lg:w-96 h-16 sm:h-18 lg:h-20 pt-2 rounded-2xl shadow-[12px_12px_8px_0px_rgba(2,2,2,0.25)] inline-flex justify-center items-center gap-2.5 cursor-pointer hover:bg-[#8A2337] transition-colors duration-300 px-4 backgroundColor:#A42B43 text-xl"
+>
+                      Learn More
+                    </Button>
+                  </a>        
                 </div>
               </div>
             </div>
-          </div>
         </div>
       </section>
 
@@ -157,7 +157,7 @@ export default function Home() {
               WHAT WE ARE UP TO
             </div>
             <div className="text-white text-base sm:text-lg lg:text-xl xl:text-2xl font-normal max-w-full lg:max-w-[545px] leading-relaxed">
-              Follow us on Instagram, TikTok, and all your favorite platforms to
+              Follow us on Instagram to
               stay connected. Don't miss out on the latest updates,
               behind-the-scenes content, and more—join the community and keep up
               with everything we're working on. Wherever you scroll, we'll be
@@ -165,67 +165,30 @@ export default function Home() {
             </div>
           </div>
           {/* Images Row */}
-          <div className="flex flex-col sm:flex-row lg:flex-row items-center justify-center gap-4 sm:gap-6 lg:relative w-full lg:w-[50%] lg:h-[400px]">
-            {/* Mobile/Tablet: Simple row layout */}
-            <div className="flex sm:hidden lg:hidden flex-col items-center gap-4 w-full">
-              <img
-                src="/home/instagramPost.png"
-                alt="FBLC Team"
-                className="w-48 h-64 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
-              />
-              <img
-                src="/home/instagramPost.png"
-                alt="FBLC Leadership"
-                className="w-52 h-72 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
-              />
-              <img
-                src="/home/instagramPost.png"
-                alt="FBLC Activities"
-                className="w-48 h-64 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
-              />
-            </div>
-            {/* Small tablets: Simple row layout */}
-            <div className="hidden sm:flex lg:hidden flex-row items-center justify-center gap-4 w-full">
-              <img
-                src="/home/instagramPost.png"
-                alt="FBLC Team"
-                className="w-32 h-40 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
-              />
-              <img
-                src="/home/instagramPost.png"
-                alt="FBLC Leadership"
-                className="w-36 h-48 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
-              />
-              <img
-                src="/home/instagramPost.png"
-                alt="FBLC Activities"
-                className="w-32 h-40 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
-              />
-            </div>
-            {/* Desktop: Complex overlapping layout */}
-            <div className="hidden lg:flex absolute inset-0">
-              {/* Card 1 - Layer height 1, 50% opacity, overlaps center from left */}
-              <div className="absolute left-1/2 top-1/2 transform -translate-x-[120%] -translate-y-1/2 z-10 opacity-50">
+          <div className="flex w-full lg:w-[50%] lg:h-[400px]">
+            <div className="flex overflow-x-scroll snap-x snap-mandatory gap-6 p-4 sm:p-0">
+              
+              <div className="flex-shrink-0 snap-center w-72 h-96">
                 <img
-                  src="/home/instagramPost.png"
+                  src="/home/   .png"
                   alt="FBLC Team"
-                  className="w-72 h-96 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
+                  className="w-full h-full object-cover rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
                 />
               </div>
-              {/* Card 2 - Layer height 2, full opacity */}
-              <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
+
+              <div className="flex-shrink-0 snap-center w-72 h-96">
                 <img
-                  src="/home/instagramPost.png"
+                  src="/home/pic2.jpg"
                   alt="FBLC Leadership"
-                  className="w-72 h-96 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
+                  className="w-full h-full object-cover rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
                 />
               </div>
-              {/* Card 3 - Layer height 1, 50% opacity, overlaps center from right */}
-              <div className="absolute left-1/2 top-1/2 transform translate-x-[20%] -translate-y-1/2 z-10 opacity-50">
+
+              <div className="flex-shrink-0 snap-center w-72 h-96">
                 <img
-                  src="/home/instagramPost.png"
+                  src="/home/pic3.jpg"
                   alt="FBLC Activities"
-                  className="w-72 h-96 rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
+                  className="w-full h-full object-cover rounded-2xl shadow-[12px_12px_8px_4px_rgba(0,0,0,0.25)]"
                 />
               </div>
             </div>

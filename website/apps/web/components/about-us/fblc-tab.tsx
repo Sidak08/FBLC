@@ -15,16 +15,16 @@ export function FblcTab() {
         </div>
         
         <p className="text-white/90 text-base sm:text-lg leading-relaxed">
-          Future Business Leaders Coalition is the umbrella organization that unites three premier student organizations dedicated to promoting learning and interest in the world of business and leadership development.
+          Future Business Leaders of Canada is the umbrella organization that unites three premier student organizations dedicated to promoting learning and interest in the world of business and leadership development.
         </p>
         
         <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+          <a href="https://fblc.ca/" target="_blank" rel="noopener noreferrer">
           <Button className="bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base">
-            Learn More
+            FBL Canada
           </Button>
-          <Button variant="outline" className="border-white/30 text-white hover:bg-white/10 px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base">
-            Join FBLC
-          </Button>
+          </a>
+
         </div>
       </div>
 

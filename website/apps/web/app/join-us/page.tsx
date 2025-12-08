@@ -124,12 +124,62 @@ export default function JoinPage() {
               Email christina.guo.bramptonfblc@gmail.com to apply
             </button>
           </div>
+          
+          {/* Executive Membership */}
+          <div className="bg-transparent border border-[#60A5FA]/50 rounded-2xl p-6 sm:p-8 backdrop-blur-sm hover:border-[#60A5FA]/70 transition-all duration-300 relative">
+            <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+              <span className="bg-gradient-to-r from-[#3B82F6] to-[#1E40AF] text-white px-3 sm:px-4 py-1 rounded-full text-xs sm:text-sm font-semibold">
+                JUNIOR LEADERSHIP
+              </span>
+            </div>
+
+            <div className="text-center mb-6 mt-4">
+              <div className="w-16 sm:w-20 h-16 sm:h-20 mx-auto mb-4 rounded-full bg-gradient-to-r from-[#1E40AF] to-[#3B82F6] flex items-center justify-center">
+                <span className="text-white text-xl sm:text-2xl font-bold">
+                  E
+                </span>
+              </div>
+              <h3 className="text-white text-xl sm:text-2xl font-bold mb-2">
+                Junior Executive
+              </h3>
+              <p className="text-white/80 text-sm sm:text-base">
+                For budding leaders
+              </p>
+            </div>
+
+            <ul className="text-white space-y-3 mb-6 sm:mb-8 text-sm sm:text-base">
+              <li className="flex items-center">
+                <span className="w-2 h-2 bg-[#1E40AF] rounded-full mr-3"></span>
+                All general member benefits
+              </li>
+              <li className="flex items-center">
+                <span className="w-2 h-2 bg-[#1E40AF] rounded-full mr-3"></span>
+                Training programs
+              </li>
+              <li className="flex items-center">
+                <span className="w-2 h-2 bg-[#1E40AF] rounded-full mr-3"></span>
+                Important role in your series
+              </li>
+              <li className="flex items-center">
+                <span className="w-2 h-2 bg-[#1E40AF] rounded-full mr-3"></span>
+                Teamwork/Media opportunities
+              </li>
+              <li className="flex items-center">
+                <span className="w-2 h-2 bg-[#1E40AF] rounded-full mr-3"></span>
+                Direct impact on series direction
+              </li>
+            </ul>
+
+            <button className="w-full bg-gradient-to-r from-[#1E40AF] to-[#3B82F6] text-white px-6 py-3 sm:py-4 rounded-lg font-semibold hover:from-[#1D4ED8] hover:to-[#2563EB] transition-all duration-300 text-sm sm:text-base min-h-[44px] touch-manipulation">
+              Email maahi.jani.bramptonfblc@gmail.com to apply
+            </button>
+          </div>
         </div>
 
         {/* Application Process */}
         <div className="bg-transparent border border-[#60A5FA]/30 rounded-2xl p-6 sm:p-8 backdrop-blur-sm mb-12 sm:mb-16">
           <h2 className="text-white text-2xl sm:text-3xl font-bold text-center mb-6 sm:mb-8">
-            Application Process
+            Executive/Junior Executive Application Process
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">

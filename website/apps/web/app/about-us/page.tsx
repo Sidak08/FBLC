@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Button } from "@workspace/ui/components/button"
 
 import {
   Tabs,
@@ -97,6 +98,7 @@ export default function AboutUsPage() {
 
         {/* Stats Section */}
         <Stats />
+
       </div>
     </div>
   );

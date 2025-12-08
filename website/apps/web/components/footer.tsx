@@ -33,7 +33,7 @@ export function Footer(props?: FooterProps) {
       title: "FBLC",
       url: "/",
     },
-    tagline = "Empowering the next generation of business leaders across Canada.",
+    tagline = "Be part of the movement that’s changing the game. This is more than content, it’s a community. Don’t just sit on the sidelines, join us and help shape the future. Together, we’re building something bigger than ourselves, and we want you to be a part of it!",
     menuItems = [
       {
         title: "Organizations",
@@ -60,14 +60,15 @@ export function Footer(props?: FooterProps) {
         ],
       },
       {
-        title: "Connect",
+        title: "Learn More",
         links: [
           { text: "About Us", url: "/about-us" },
-          { text: "LinkedIn", url: "https://www.linkedin.com/company/brampton-fblc-jec-ta/" },
+          { text: "Governance", url: "/governance" },
+          { text: "LinkedIn", url: "https://www.linkedin.com/company/brampton-fblc-jec-ta/" }
         ],
       },
     ],
-    copyright = `© ${new Date().getFullYear()} Future Business Leaders Coalition. All rights reserved.`,
+    copyright = `© ${new Date().getFullYear()}  © Future Business Leaders of Canada Brampton Chapter \n All Rights Reserved.`,
 
     bottomLinks = [
       { text: "Terms and Conditions", url: "/terms" },
